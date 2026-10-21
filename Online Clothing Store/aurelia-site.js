@@ -10,6 +10,8 @@
   };
 
   const pageFolder = decodeURIComponent(location.pathname.split("/").slice(-2, -1)[0] || "");
+  document.body.classList.add("ma-fashion-page");
+
   const imageReplacements = {
     aurelia_paris_haute_couture_luxury_fashion: {
       source:
