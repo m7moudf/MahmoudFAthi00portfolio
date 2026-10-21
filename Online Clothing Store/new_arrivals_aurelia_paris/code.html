@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#7c3aed", "on-secondary-fixed-variant": "#004e5a", "on-primary-fixed-variant": "#5a00c6", "surface-container-highest": "#2f3446", "on-secondary": "#00363e", "on-tertiary-container": "#4e3d00", "on-surface": "#dee1f9", "tertiary-fixed-dim": "#e9c349", "on-primary-fixed": "#25005a", "tertiary-fixed": "#ffe088", "on-tertiary-fixed-variant": "#574500", "inverse-primary": "#732ee4", "surface-container": "#1a1f30", "secondary-container": "#00cbe6", "secondary": "#5de6ff", "on-primary": "#3f008e", "on-tertiary-fixed": "#241a00", "outline-variant": "#4a4455", "surface-dim": "#0e1323", "inverse-on-surface": "#2b3041", "on-secondary-fixed": "#001f25", "secondary-fixed": "#a2eeff", "tertiary-container": "#cba72f", "secondary-fixed-dim": "#2fd9f4", "outline": "#958da1", "surface-variant": "#2f3446", "tertiary": "#e9c349", "on-tertiary": "#3c2f00", "primary-fixed": "#eaddff", "primary": "#d2bbff", "error-container": "#93000a", "on-error": "#690005", "on-secondary-container": "#00515d", "primary-fixed-dim": "#d2bbff", "surface-container-lowest": "#080d1d", "surface-tint": "#d2bbff", "on-background": "#dee1f9", "on-surface-variant": "#ccc3d8", "surface-container-low": "#161b2b", "on-primary-container": "#ede0ff", "on-error-container": "#ffdad6", "surface-bright": "#34394a", "inverse-surface": "#dee1f9", "surface-container-high": "#25293a", "error": "#ffb4ab", "background": "#0e1323", "surface": "#0e1323" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin": "4rem", "space-sm": "0.5rem", "space-md": "1rem" }, "fontFamily": { "label-caps": ["Inter"], "body-xl": ["Inter"], "headline-xl-mobile": ["Sora"], "display-hero": ["Sora"], "body-lg": ["Inter"], "headline-md": ["Sora"], "headline-xl": ["Sora"], "label-sm": ["Inter"], "headline-lg": ["Sora"], "body-md": ["Inter"], "display-hero-mobile": ["Sora"], "headline-sm": ["Sora"] }, "fontSize": { "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" }], "body-xl": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "300" }], "headline-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-hero": ["80px", { "lineHeight": "88px", "letterSpacing": "-0.04em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/70 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(8,13,29,0.7)]"><div class="w-full px-margin h-20 flex items-center justify-between gap-gutter"><div class="flex items-center gap-gutter"><a class="flex items-center tracking-[0.25em] font-headline-md text-headline-md text-on-surface uppercase group" data-path="home" href="#"><span class="group-hover:text-primary transition-colors duration-300">AURELIA</span><span class="ml-2 text-tertiary font-light text-label-sm tracking-[0.3em]">PARIS</span></a></div><nav class="hidden xl:flex items-center gap-gutter" data-active-classes="text-on-surface border-b-2 border-primary-container"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="home" href="#">Home</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="shop" href="#">Shop</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="men" href="#">Men</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="women" href="#">Women</a><a aria-current="page" class="font-label-caps uppercase py-2 transition-colors duration-200 text-on-surface border-b-2 border-primary-container" data-path="new-arrivals" href="#">New Arrivals</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="sale" href="#">Sale</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-lg"><button aria-label="Search Runway Archive" class="text-on-surface-variant hover:text-secondary transition-colors duration-200 flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Saved Wishlist" class="relative text-on-surface-variant hover:text-primary transition-colors duration-200 flex items-center justify-center" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] flex items-center justify-center font-bold">2</span></a><a aria-label="Shopping Bag" class="relative text-on-surface-variant hover:text-primary transition-colors duration-200 flex items-center justify-center" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[9px] flex items-center justify-center font-bold">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Atmospheric Glow Backdrop Embellishments -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/20 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/2 -right-24 w-[30rem] h-[30rem] bg-secondary/10 rounded-full blur-[160px] pointer-events-none"></div>
+<!-- Editorial Header Section -->
+<section class="w-full px-margin pt-space-xl pb-space-lg flex flex-col relative z-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.25em]">Runway Edition • Series 07 / Live From Grand Palais</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tighter">
+            Autumn / Winter 2026 Atelier Release
+          </h1>
+<p class="font-body-xl text-body-xl text-on-surface-variant font-light max-w-2xl">
+            Fresh off the Paris runway. Ultra-rare architectural silhouettes sculpted in dense virgin wools, liquid silks, and luminescent filament. Produced in numbered micro-batches.
+          </p>
+</div>
+<!-- Global Runway Status Card -->
+<div class="bg-surface-container/60 backdrop-blur-xl p-space-md rounded-xl flex items-center gap-space-lg shadow-xl shadow-surface-container-lowest/80">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Global Allocation</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">300 Units Minted</span>
+</div>
+<div class="w-px h-10 bg-outline-variant/40"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Atelier Queue</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Active Priority</span>
+</div>
+</div>
+</div>
+<!-- Curated Filter / Sequence Bar -->
+<div class="mt-space-xl flex flex-wrap items-center justify-between gap-space-md py-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto">
+<button class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase transition-all duration-300 shadow-[0_0_16px_-2px_rgba(124,58,237,0.4)]">
+            All Runway (6)
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high/60 hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-all duration-200">
+            Outerwear
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high/60 hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-all duration-200">
+            Evening Tailoring
+          </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high/60 hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-all duration-200">
+            Sculptural Gowns
+          </button>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+<span class="tracking-widest uppercase">Certified Paris Couture Federation</span>
+</div>
+</div>
+</section>
+<!-- Exclusive Limited-Run Grid (6 Items) -->
+<section class="w-full px-margin pb-space-xl relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Look 01 -->
+<article class="group bg-surface-container/50 backdrop-blur-md rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-500 hover:shadow-[0_0_30px_-6px_rgba(124,58,237,0.35)] hover:-translate-y-1">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High fashion runway model in avant-garde midnight obsidian sculptured coat with iridescent purple sheen walking dimly lit Paris runway, ambient neon reflections, editorial couture lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx_BufUaZ9KQqwlSvNdKcwJgyA0M1UH2XJv6b-nrqhT-kXWtCC93-9SgT567IBZaRmX54J1C2zSg3-sJdsJyijS5LenncAXvkxgb87kcJUTKcZ50W1EXilSNreHyiBqlZ6LALZzo4BQcxPZbPDZDuKaHf_5gSZs-yoncE9nCJLTYXzYvIT9BDU8GuNm83stvZ8R0BJafe91vfjITRpGzVNtTdDUQnhAxzJC78LBpjOF6l0813HrN8D_g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface-container-lowest/30 pointer-events-none"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-caps text-label-caps uppercase tracking-widest shadow-md">
+                1 of 50 Pieces Worldwide
+              </span>
+<span class="px-space-sm py-0.5 rounded bg-primary-container/80 backdrop-blur-md text-on-primary-container font-label-sm text-label-sm">
+                Look 01 • Runway Opening
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-tertiary flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">search_off</span> 96h hand-embroidery
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1 justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Couture Coat</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">€6,850</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors duration-200">
+                The Obsidian Monolith Trench
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1 font-light">
+                Structural padded shoulder profile forged from coated Japanese moiré and woven carbon-filament lining.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-caps text-label-caps uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20">
+<span class="material-symbols-outlined text-[18px]">bolt</span> Reserve Look
+              </button>
+<button aria-label="Quick View Details" class="p-space-sm rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Look 02 -->
+<article class="group bg-surface-container/50 backdrop-blur-md rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-500 hover:shadow-[0_0_30px_-6px_rgba(93,230,255,0.3)] hover:-translate-y-1">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Female runway model sporting structural electric cyan and deep indigo evening tailored blazer with crystal-laced lapels, atmospheric smoke, editorial French Vogue aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxqP6CRbcqLK1XPGpzB3-E2YOwhDCkx0AigZ8IZPxnyYOZ07U2XSFwyoWcqRoFw5kKTVBtkuX9hmd4tYQ1SwDU7yR4PSSe7cTH-EYbEqWZEu_Sw2flA3sJQrR8cWEXyTGpBsIwpEx4PY_v9oTHOcAUkAZXb3YvpOZPTOPxzih3xKQUAiORuRnwpnUhsTXClqd3-afjSGiw61D-fBCkTJfeJ6hlwzVw9jljpzPllp6Ke09Q5ymoUZ9lWw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface-container-lowest/30 pointer-events-none"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-caps text-label-caps uppercase tracking-widest shadow-md">
+                1 of 35 Pieces Worldwide
+              </span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+                Look 04 • Evening Segment
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-tertiary flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">search_off</span> 120h micro-pleating
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1 justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Tailored Ensemble</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">€5,400</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-200">
+                Caelum Razor-Cut Tuxedo
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1 font-light">
+                Double-breasted sharp contour tailored in deep Lyon velvet with luminescent cyan Swarovski silk-thread inlays.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-caps text-label-caps uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20">
+<span class="material-symbols-outlined text-[18px]">bolt</span> Reserve Look
+              </button>
+<button aria-label="Quick View Details" class="p-space-sm rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Look 03 -->
+<article class="group bg-surface-container/50 backdrop-blur-md rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-500 hover:shadow-[0_0_30px_-6px_rgba(233,195,73,0.3)] hover:-translate-y-1">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model wearing a structured, full-length tailored coat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ZhpnWsVeH5wtdvqHuM50dk0ZrBMLKGR5ViBJ4acw61rGNUAKuOzathwZpcBLW62LvzdaPzdPT2ipOSZmw01xHFzOqQah9Vim5918xgRlINh3IK8uTOTVjluXbl1-xTR4RH81otPxKGhe0m79BVcj2IOIaOUtyd96OGCcnjN8BjYVyJ6VB48Pd5CH6wtPnzFycOJUGtnYOWAaY8qIAdY1vDreWJjwTmGFmt3N8yMdgoLuNYKeyqVYkw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface-container-lowest/30 pointer-events-none"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-caps text-label-caps uppercase tracking-widest shadow-md">
+                1 of 20 Pieces Worldwide
+              </span>
+<span class="px-space-sm py-0.5 rounded bg-tertiary-container/80 text-on-tertiary-container font-label-sm text-label-sm">
+                Look 09 • Grand Finale
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-tertiary flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">search_off</span> 180h 24k wire weave
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1 justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Atelier Gown</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">€11,200</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors duration-200">
+                Aurelia Aurum Kinetic Column
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1 font-light">
+                Hand-spun brushed gold filament woven with liquid purple duchess satin, engineered to shift tone under stage lighting.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-tertiary hover:bg-tertiary-fixed text-on-tertiary font-label-caps text-label-caps uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-tertiary/20">
+<span class="material-symbols-outlined text-[18px]">verified</span> VIP Pre-Order
+              </button>
+<button aria-label="Quick View Details" class="p-space-sm rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Look 04 -->
+<article class="group bg-surface-container/50 backdrop-blur-md rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-500 hover:shadow-[0_0_30px_-6px_rgba(124,58,237,0.35)] hover:-translate-y-1">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Chiseled male model in deep navy architectural leather carapace overcoat with structured high collar, late-night high-fashion runway, blue mood lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV50t0P4wsXClcvjx9OfA7sjuv6V2uIiUsS0NmfcOaDrvCuBaNvjHxjxkJHxRBEol7o_Q_ODOP-P6-VtQLwfm5JUdVQdsjn05hBe1wnSbuLJWVu0SPL4jaH04iSml4r9plcLIzn6bldRDSXftleKOVvNoQ1Z6KTBXFHf2HAwBq6pa33SWR-MK3MvhNsXHENN_QgBNZ1h9UjBnE-N6yaS4zjUmsJ89-x0g1E9mzHw13HCJ3CUHiLQL8hw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface-container-lowest/30 pointer-events-none"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-caps text-label-caps uppercase tracking-widest shadow-md">
+                1 of 40 Pieces Worldwide
+              </span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+                Look 12 • Nocturne
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-tertiary flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">search_off</span> 74h saddle-stitch
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1 justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Cuir Carapace</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">€7,900</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors duration-200">
+                Vanguard Full-Grain Armor Coat
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1 font-light">
+                Vegetable-tanned French calfskin molded seamlessly with interior titanium wire ribs for unyielding architecture.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-caps text-label-caps uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20">
+<span class="material-symbols-outlined text-[18px]">bolt</span> Reserve Look
+              </button>
+<button aria-label="Quick View Details" class="p-space-sm rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Look 05 -->
+<article class="group bg-surface-container/50 backdrop-blur-md rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-500 hover:shadow-[0_0_30px_-6px_rgba(93,230,255,0.3)] hover:-translate-y-1">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model wearing a structured, full-length tailored coat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ZhpnWsVeH5wtdvqHuM50dk0ZrBMLKGR5ViBJ4acw61rGNUAKuOzathwZpcBLW62LvzdaPzdPT2ipOSZmw01xHFzOqQah9Vim5918xgRlINh3IK8uTOTVjluXbl1-xTR4RH81otPxKGhe0m79BVcj2IOIaOUtyd96OGCcnjN8BjYVyJ6VB48Pd5CH6wtPnzFycOJUGtnYOWAaY8qIAdY1vDreWJjwTmGFmt3N8yMdgoLuNYKeyqVYkw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface-container-lowest/30 pointer-events-none"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-caps text-label-caps uppercase tracking-widest shadow-md">
+                1 of 60 Pieces Worldwide
+              </span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+                Look 15 • Kinetic Veil
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-tertiary flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">search_off</span> 112h micro-draping
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1 justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Ethereal Draping</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">€4,950</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-200">
+                Spectra Organza Mantle &amp; Suit
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1 font-light">
+                Multilayered gossamer silk organza finished with electro-luminescent vapor plating for fluid midnight movement.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-caps text-label-caps uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20">
+<span class="material-symbols-outlined text-[18px]">bolt</span> Reserve Look
+              </button>
+<button aria-label="Quick View Details" class="p-space-sm rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Look 06 -->
+<article class="group bg-surface-container/50 backdrop-blur-md rounded-xl overflow-hidden flex flex-col justify-between transition-all duration-500 hover:shadow-[0_0_30px_-6px_rgba(124,58,237,0.35)] hover:-translate-y-1">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model in sculpted charcoal cashgora structured longline dinner jacket with exaggerated lapels and subtle metallic violet interior trim, clean minimalist studio runway photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ZhpnWsVeH5wtdvqHuM50dk0ZrBMLKGR5ViBJ4acw61rGNUAKuOzathwZpcBLW62LvzdaPzdPT2ipOSZmw01xHFzOqQah9Vim5918xgRlINh3IK8uTOTVjluXbl1-xTR4RH81otPxKGhe0m79BVcj2IOIaOUtyd96OGCcnjN8BjYVyJ6VB48Pd5CH6wtPnzFycOJUGtnYOWAaY8qIAdY1vDreWJjwTmGFmt3N8yMdgoLuNYKeyqVYkw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface-container-lowest/30 pointer-events-none"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-caps text-label-caps uppercase tracking-widest shadow-md">
+                1 of 45 Pieces Worldwide
+              </span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+                Look 18 • Tailoring Master
+              </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="px-space-sm py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-tertiary flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">search_off</span> 88h canvas molding
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1 justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Cashgora Coat</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">€6,100</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors duration-200">
+                Nocturne Asymmetric Tailcoat
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1 font-light">
+                Double-faced Italian cashgora sculpted with architectural vents and subtle ultraviolet gradient thread stitches.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-caps text-label-caps uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20">
+<span class="material-symbols-outlined text-[18px]">bolt</span> Reserve Look
+              </button>
+<button aria-label="Quick View Details" class="p-space-sm rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Runway Lookbook & Stream Experience Mosaic -->
+<section class="w-full px-margin pb-space-xl relative z-10">
+<div class="bg-surface-container-low/70 backdrop-blur-2xl rounded-2xl p-space-lg shadow-2xl overflow-hidden">
+<div class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-label-caps text-label-caps uppercase tracking-widest mb-1">
+<span class="material-symbols-outlined text-[16px]">videocam</span> Live Recording Stream
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">The Palais Omnisports Runway</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">Multi-angle cinema feed, spatial audio, and backstage lookbook index.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-md py-space-xs rounded-full bg-surface-container-highest font-label-sm text-label-sm text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span> 4K ProRes Archive
+            </span>
+</div>
+</div>
+<!-- Bento Media Mosaic -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Hero Video Card -->
+<div class="lg:col-span-8 relative aspect-[16/9] rounded-xl overflow-hidden group bg-surface-container cursor-pointer shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700" data-alt="Dark dramatic Paris fashion week runway hall with models walking in unison under suspended violet and cyan neon architectural lighting structures, front row silhouettes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdxnrQaj_veAklUYAkMTZspQxl6mjucWz_LgL1L-ux3rKhzsjk6RJZnPxqm5CA9LMmV0nA51tmCAGISB8RpzQL5cXncHmVUS7vjKSjcT1QKUuMwwJxL54lZ-kSIFtSZGhj1Mtw_QsCXbTuhLVXbZse-FxUxp6_cavExBN1mPisGj5Q6itLsviZc3NCoJtabSwVS_7vfe_6ccUf1EyBIoen_OaQntGcpDh9y9IKgJEdR6TdnmAzmJdb9A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/90 text-on-primary flex items-center justify-center shadow-[0_0_25px_rgba(210,187,255,0.6)] group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-[32px] ml-1">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Full Show Cut • 14:28</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Atmosphere 07: Nocturnal Geometry</p>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant bg-surface-dim/80 backdrop-blur-md px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-tertiary">spatial_audio</span> Soundscape by V. Moreau
+              </div>
+</div>
+</div>
+<!-- Secondary Lookbook Angles -->
+<div class="lg:col-span-4 flex flex-col gap-gutter justify-between">
+<div class="relative flex-1 aspect-[16/9] lg:aspect-auto rounded-xl overflow-hidden group bg-surface-container cursor-pointer shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Backstage dramatic portrait of fashion model having structured metallic violet collar adjusted by haute couture seamstresses wearing black gloves, intimate cinematic flash" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEZZ4CcKkhSXQdQemm91GNaPKZAHfEyvqSBA-PYmpjZ5jvpOYrR02ikyJumUj4f0yfFSJUKoCa6-6lA_ElIF3XrgXYM_kpTufsG34DDXa3u0Prjkp0AYcm5fnBW6emvKCvzdgOKSXQUVthvDqvQN0gClfks8aKO8pxs6FTl6HZMGEvMRB60Rw-j_DaPH_w-O7arf7CypQKyJYocKUqxkolR5KScKdtPzEsVY7NVs9d2g_aeZ8KDioXuw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider block">Backstage Cadence</span>
+<span class="font-label-sm text-label-sm text-secondary">32 Stills Captured</span>
+</div>
+</div>
+<div class="relative flex-1 aspect-[16/9] lg:aspect-auto rounded-xl overflow-hidden group bg-surface-container cursor-pointer shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Extreme macro close up of luminescent high-tech woven fabric threads interlocking with brushed golden wires, microscopic fashion texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHqb7HFJQj5477BhD1vroWz-gxU_dVynblC4U2xiIo4YJOtQiDyPq6vMVQCCNEsLDD3rW_n9dJDB_7Qhd7hrvuEl-JTkQflSRQA4Unl_RSUnSqa-spsVf5lF9Nsd3CBarCaBmBPYFG68T9JWKTOSjDs3fIRR5rJySAfXDnICOKQwXWrupyR5Yexxv1AkylrVAZDcTitzrjIHClQwi3WqGX5pQF0hSaYgv5OFv_a9jFXX1qmvA-gfbZ8A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-sm left-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider block">Macro Fiber Lab</span>
+<span class="font-label-sm text-label-sm text-tertiary">Optical Weave Analysis</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Craftsmanship & Backstage Tab Suite -->
+<section class="w-full px-margin pb-space-xl relative z-10">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Savoir-Faire Dossier</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Backstage Craftsmanship Index</h2>
+</div>
+<div class="font-label-sm text-label-sm text-outline">
+            Interactive Technical Specifications
+          </div>
+</div>
+<!-- Custom Tab Navigation -->
+<div class="flex items-center gap-space-xs bg-surface-container/40 p-1.5 rounded-full max-w-fit backdrop-blur-md">
+<button class="tab-trigger px-space-md py-space-xs rounded-full font-label-caps text-label-caps uppercase transition-all duration-300 bg-primary-container text-on-primary-container shadow-md" data-tab="tab-materials">
+            Raw Materials &amp; Fibers
+          </button>
+<button class="tab-trigger px-space-md py-space-xs rounded-full font-label-caps text-label-caps uppercase transition-all duration-300 text-on-surface-variant hover:text-on-surface" data-tab="tab-tailoring">
+            Bespoke Architecture
+          </button>
+<button class="tab-trigger px-space-md py-space-xs rounded-full font-label-caps text-label-caps uppercase transition-all duration-300 text-on-surface-variant hover:text-on-surface" data-tab="tab-provenance">
+            Provenance &amp; Numbering
+          </button>
+</div>
+<!-- Tab 1: Materials -->
+<div class="tab-panel grid grid-cols-1 md:grid-cols-3 gap-gutter transition-all duration-500" id="tab-materials">
+<div class="p-space-lg rounded-xl bg-surface-container/40 backdrop-blur-lg flex flex-col justify-between shadow-lg">
+<div class="flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-[32px] text-secondary">flare</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Luminescent Silk Filament</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+                Extracted from micro-engineered silkworms fed on mineral-enriched mulberry leaves, imparting a subtle photo-reactive glow under artificial night light.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-high/30 p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Tensile Grade</span>
+<span class="font-label-caps text-label-caps text-secondary">A+ 840 Denier</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container/40 backdrop-blur-lg flex flex-col justify-between shadow-lg">
+<div class="flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-[32px] text-tertiary">diamond</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">24k Cold-Drawn Gold Thread</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+                Pure French bullion wire drawn to microscopic tolerance (0.02mm), ensuring full fluid movement without the rigidity of historical metallic brocades.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-high/30 p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Weight Ratio</span>
+<span class="font-label-caps text-label-caps text-tertiary">38g / Meter</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container/40 backdrop-blur-lg flex flex-col justify-between shadow-lg">
+<div class="flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-[32px] text-primary">grain</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Volcanic Washed Cashgora</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+                Rare hybrid cashmere-angora wool washed in mineral volcanic water from Auvergne to yield a razor-crisp hand while retaining whisper softness.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-high/30 p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Thermal Shield</span>
+<span class="font-label-caps text-label-caps text-primary">Class IV Alpine</span>
+</div>
+</div>
+</div>
+<!-- Tab 2: Tailoring (Hidden by default) -->
+<div class="tab-panel hidden grid grid-cols-1 md:grid-cols-2 gap-gutter transition-all duration-500" id="tab-tailoring">
+<div class="p-space-lg rounded-xl bg-surface-container/40 backdrop-blur-lg flex flex-col gap-space-md shadow-lg">
+<span class="material-symbols-outlined text-[32px] text-secondary">architecture</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Internal Padded Carapace Systems</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+              Rather than traditional cotton shoulder wadding, each AW25 coat incorporates custom 3D-printed bio-elastomer meshes that preserve aggressive Saint-Laurent angles without sagging during movement.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-high/40 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline block">Fitting Sessions</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">4 Atelier Fits</span>
+</div>
+<div class="bg-surface-container-high/40 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline block">Shoulder Drop Angle</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Exact 18.5°</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container/40 backdrop-blur-lg flex flex-col gap-space-md shadow-lg">
+<span class="material-symbols-outlined text-[32px] text-primary">straighten</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Floating Full Canvas Architecture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+              Tailoring utilizes horsehair floating canvassing attached completely by pick-stitch, requiring 42 individual hand steps per jacket front before garment assembly.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-high/40 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline block">Hand Stitches</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">8,400+ per unit</span>
+</div>
+<div class="bg-surface-container-high/40 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline block">Structural Longevity</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">Guaranteed Decades</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 3: Provenance (Hidden by default) -->
+<div class="tab-panel hidden grid grid-cols-1 md:grid-cols-3 gap-gutter transition-all duration-500" id="tab-provenance">
+<div class="p-space-lg rounded-xl bg-surface-container/40 backdrop-blur-lg flex flex-col gap-space-sm shadow-lg">
+<span class="material-symbols-outlined text-[32px] text-tertiary">fingerprint</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Laser-Etched Titanium Plaque</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+              Sewn seamlessly inside the right interior breast pocket is an anodized violet titanium plaque bearing the piece's specific archive edition number and artisan maker code.
+            </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container/40 backdrop-blur-lg flex flex-col gap-space-sm shadow-lg">
+<span class="material-symbols-outlined text-[32px] text-secondary">token</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">NFC Tap Certificate</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+              Embedded cryptographic thread within the Aurelia label delivers instant authenticity verification and direct access to your private salon stylist via tap.
+            </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container/40 backdrop-blur-lg flex flex-col gap-space-sm shadow-lg">
+<span class="material-symbols-outlined text-[32px] text-primary">lock</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Never Re-Issued Clause</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+              Patterns and fiber formulas are permanently sealed in the Aurelia Paris Vault post-allocation. AW25 Runway creations will never enter secondary production.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- VIP Atelier Concierge Banner -->
+<section class="w-full px-margin pb-space-xl relative z-10">
+<div class="rounded-2xl p-space-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-2xl">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<div class="flex items-center gap-2 text-tertiary font-label-caps text-label-caps uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">stars</span> Private Fitting Appointments
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Need Bespoke Measuring?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            Our head tailors are available for discreet hotel or salon appointments in Paris, London, Milan, and New York.
+          </p>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="px-space-lg py-space-sm rounded-full bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase hover:bg-tertiary-fixed transition-colors duration-200 shadow-lg shadow-tertiary/20">
+            Book Private Master
+          </button>
+</div>
+</div>
+</section>
+</div>
+<!-- Vanilla JS Interactive Logic -->
+<script>
+    (function initRunwayPage() {
+      // Backstage Tab Switcher
+      const tabTriggers = document.querySelectorAll('.tab-trigger');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+
+      tabTriggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const targetId = trigger.getAttribute('data-tab');
+
+          // Reset triggers
+          tabTriggers.forEach((btn) => {
+            btn.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-md');
+            btn.classList.add('text-on-surface-variant');
+          });
+
+          // Activate clicked trigger
+          trigger.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-md');
+          trigger.classList.remove('text-on-surface-variant');
+
+          // Toggle panels
+          tabPanels.forEach((panel) => {
+            if (panel.id === targetId) {
+              panel.classList.remove('hidden');
+            } else {
+              panel.classList.add('hidden');
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="w-full px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="tracking-[0.25em] font-headline-md text-headline-md text-on-surface uppercase">AURELIA <span class="text-tertiary font-light text-label-sm">PARIS</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Avant-garde haute couture designed for discerning connoisseurs. Late-night structural silhouettes born from architectural minimalism.</p><div class="flex items-center gap-space-md pt-space-sm"><div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div><span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Paris Flagship Open • Salon Privé</span></div></div><div class="flex flex-col gap-space-md"><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">Collections</span><nav class="flex flex-col gap-space-sm"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="shop" href="#">All Ensembles</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="women" href="#">Women Haute Couture</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="men" href="#">Men Tailoring</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="new-arrivals" href="#">Winter Runway 2026</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="sale" href="#">Private Archive Sale</a></nav></div><div class="flex flex-col gap-space-md"><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">Maison Care</span><nav class="flex flex-col gap-space-sm"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="contact" href="#">Concierge Service</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Bespoke Fitting</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Global Discreet Delivery</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Garment Preservation</a></nav></div><div class="flex flex-col gap-space-md"><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">The Atelier</span><nav class="flex flex-col gap-space-sm"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Philosophy &amp; Ethos</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Sustainability Matrix</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Press &amp; Editorial</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Legal &amp; Imprint</a></nav></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><p class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">© 2026 AURELIA PARIS MAISON DE COUTURE. TOUS DROITS RÉSERVÉS.</p><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">75008 Place Vendôme, Paris</span></div></div></div></footer><script src="../aurelia-site.js"></script><script src="../../portfolio-branding.js" data-portfolio-href="../../code.html" defer></script></body></html>

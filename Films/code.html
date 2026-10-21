@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#121f00", "on-secondary-fixed": "#23005c", "tertiary-fixed-dim": "#a2d748", "tertiary-fixed": "#bdf461", "on-surface": "#dee2f2", "on-tertiary-container": "#3d5c00", "primary-container": "#36e0b0", "secondary-fixed-dim": "#d0bcff", "outline-variant": "#3c4a43", "surface-bright": "#343946", "secondary-container": "#571bc1", "primary-fixed-dim": "#35dfaf", "on-background": "#dee2f2", "on-secondary": "#3c0091", "error": "#ffb4ab", "on-primary-fixed-variant": "#00513d", "secondary-fixed": "#e9ddff", "surface-variant": "#303541", "on-tertiary": "#223600", "primary": "#5dfdcb", "on-error": "#690005", "on-tertiary-fixed-variant": "#344e00", "surface-tint": "#35dfaf", "inverse-on-surface": "#2b303d", "tertiary-container": "#a3d849", "surface-container-lowest": "#090e19", "inverse-surface": "#dee2f2", "surface-container-low": "#161b27", "on-surface-variant": "#bacac2", "on-secondary-container": "#c4abff", "error-container": "#93000a", "on-primary": "#003829", "background": "#0e131e", "primary-fixed": "#5cfcca", "secondary": "#d0bcff", "on-primary-container": "#005f48", "on-primary-fixed": "#002117", "outline": "#85948c", "surface-container-highest": "#303541", "surface": "#0e131e", "inverse-primary": "#006c52", "surface-container-high": "#252a36", "surface-dim": "#0e131e", "on-error-container": "#ffdad6", "tertiary": "#bef562", "on-secondary-fixed-variant": "#5516be", "surface-container": "#1b1f2b" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-sm": "1rem", "gutter": "1.5rem", "margin": "3rem", "margin-tablet": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-lg": "2rem", "margin-mobile": "1.25rem" }, "fontFamily": { "body-lg": [ "Geist" ], "headline-xl-mobile": [ "Space Grotesk" ], "body-md": [ "Geist" ], "headline-lg": [ "Space Grotesk" ], "label-caps": [ "Space Grotesk" ], "display-hero": [ "Space Grotesk" ], "title-sm": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "label-sm": [ "Geist" ], "headline-lg-mobile": [ "Space Grotesk" ], "label-md": [ "Geist" ], "body-sm": [ "Geist" ], "headline-md": [ "Space Grotesk" ], "headline-xl": [ "Space Grotesk" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" } ], "display-hero": [ "64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "title-sm": [ "18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl": [ "44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/70 backdrop-blur-2xl shadow-[0_4px_30px_rgba(0,0,0,0.6)]"><div class="h-20 w-full px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><img alt="AURORA CINEMA Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WumTQ3R_SP4wJ_pOllf7VaxM9d69HXEmPyJlfRRUPOGOs-zT7DUpJY0k-Htmqby9mMllvr5aW9HeWtT34L2s84rIF0oPNjRDKdeuRfBY0y7g6aIVxB7_h2GzA9B4HphSzB4OsM6_T_uDYyksliwNeQe1A3X4jl62OjPolz4rPFH_HxGOrukf3wl7yWpfNxAsR2sEhBjW8IPco-xCZh9gH1wiO5uebXAUxBXvcFN-7MTGfWKwf661g_rZTb"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface uppercase">AURORA <span class="text-primary">CINEMA</span></span></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container rounded-full px-space-md py-space-xs font-title-sm text-title-sm shadow-[0_0_20px_rgba(93,253,203,0.35)]"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container rounded-full px-space-md py-space-xs font-title-sm text-title-sm shadow-[0_0_20px_rgba(93,253,203,0.35)]" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="genres" href="#">Genres</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="top-rated" href="#">Top Rated</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-xs" data-path="watchlist" href="#"><span>Watchlist</span><span class="bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-full font-label-caps text-label-caps">12</span></a></nav><div class="flex items-center gap-space-md flex-1 max-w-md justify-end"><div class="relative w-full max-w-xs hidden sm:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full bg-surface-container-low/60 backdrop-blur-md rounded-full pl-10 pr-4 py-2 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Search ultra-fidelity titles, directors, IMAX..." type="text"/></div><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-high/60 backdrop-blur-md px-space-sm py-1 rounded-full shadow-[0_0_15px_rgba(190,245,98,0.15)]"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-caps text-label-caps text-tertiary tracking-widest uppercase">VIP CINÉASTE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer shadow-[0_0_12px_rgba(93,253,203,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full text-on-surface select-none relative overflow-x-hidden">
+<!-- LIVING AURORA GLOW CANVAS (Ambient Layer) -->
+<div class="pointer-events-none fixed inset-0 z-0 overflow-hidden opacity-40">
+<div class="absolute -top-[25%] -left-[10%] w-[65vw] h-[65vw] rounded-full bg-primary/10 blur-[130px] animate-pulse" style="animation-duration: 8s;"></div>
+<div class="absolute top-[20%] right-[-12%] w-[55vw] h-[55vw] rounded-full bg-secondary-container/20 blur-[140px] animate-pulse" style="animation-duration: 12s;"></div>
+<div class="absolute top-[60%] left-[20%] w-[45vw] h-[45vw] rounded-full bg-tertiary/10 blur-[150px] animate-pulse" style="animation-duration: 10s;"></div>
+</div>
+<!-- HERO SECTION: FULL BLEED WITH FILM SCRIM & ATMOSPHERICS -->
+<section class="relative w-full -mt-20 z-10 flex flex-col justify-end min-h-[92vh] lg:min-h-[98vh] overflow-hidden">
+<!-- Cinematic Backdrop Media -->
+<div class="absolute inset-0 w-full h-full">
+<img alt="Chronicles of Aethel: Resurgence Keyframe" class="w-full h-full object-cover object-center scale-105 transform motion-safe:transition-transform motion-safe:duration-1000 motion-safe:ease-out" id="hero-backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm57n3n4TimmjEq5_V8Ln_LxN1bI1_KF5ezP7EBw-0QEuHvD_g9vaZ6YyThhPFcHJ4plLyG-FCw0QaGY0RktYyFdU6kslDTHemlXy3KCDjNkS9obvJONtSjKe-fL7b5kbO7bPvDMI6G5WWQW-larS9KHChF3ZDwyrLW382Wo_os5RAahVh3u4PD5cBvDEzLpS3j-5zKZLNercNKBXF4uE0J98WFjzOVQOdkWIm4zgY2b_4cm4gG-khbA"/>
+<!-- Multidirectional Luxury Film Scrims -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent w-full lg:w-3/4"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/80 via-transparent to-background"></div>
+<div class="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-surface-container-lowest to-transparent pointer-events-none"></div>
+</div>
+<!-- Hero Content Container -->
+<div class="relative z-20 w-full px-margin-mobile md:px-margin-tablet lg:px-margin pt-36 pb-space-xl flex flex-col justify-end">
+<!-- Celestial Micro-Tag -->
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high/70 backdrop-blur-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-caps text-label-caps text-tertiary tracking-widest uppercase">WORLD PREMIERE EXCLUSIVE</span>
+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider hidden sm:inline">DIRECTION OF DENIS VILLENEUVE</span>
+</div>
+<!-- Main Master Title -->
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-surface uppercase tracking-tight max-w-4xl text-balance drop-shadow-2xl">
+        CHRONICLES OF AETHEL<span class="text-primary font-light block md:inline md:ml-4">: RESURGENCE</span>
+</h1>
+<!-- High-Fidelity Technical Specs & Ratings -->
+<div class="flex flex-wrap items-center gap-space-xs md:gap-space-sm my-space-md font-label-caps text-label-caps">
+<span class="bg-surface-container-high/80 text-tertiary px-2.5 py-1 rounded shadow-sm">IMAX 70MM</span>
+<span class="bg-surface-container-high/80 text-on-surface px-2.5 py-1 rounded shadow-sm">AURORA SOUND 9.1.4</span>
+<span class="bg-secondary-container/30 text-secondary px-2.5 py-1 rounded shadow-sm">DOLBY VISION</span>
+<div class="flex items-center gap-1 bg-surface-container-low/90 px-2 py-1 rounded text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-md text-label-md font-bold">99%</span>
+<span class="text-on-surface-variant text-[10px]">CRITICS</span>
+</div>
+<span class="text-on-surface-variant px-1">•</span>
+<span class="text-on-surface-variant">2025</span>
+<span class="text-on-surface-variant px-1">•</span>
+<span class="text-on-surface-variant">2H 48M</span>
+<span class="text-on-surface-variant px-1">•</span>
+<span class="text-primary">SCI-FI / SPACE OPERA</span>
+</div>
+<!-- Curated Editorial Synopsis -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl text-pretty line-clamp-3 md:line-clamp-none mb-space-lg leading-relaxed">
+        Beyond the shattered rings of Kepler-452b, an uncharted cosmic distortion unlocks humanity’s ancestral gateway—igniting a silent war across lightyears. Mastered in native IMAX 70mm celestial aspect.
+      </p>
+<!-- Primary Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Watch Trailer Primary -->
+<button class="group relative px-6 py-3.5 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm flex items-center gap-space-sm shadow-[0_0_28px_rgba(93,253,203,0.35)] hover:shadow-[0_0_38px_rgba(93,253,203,0.55)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300" id="btn-watch-trailer">
+<span class="material-symbols-outlined text-[22px] transition-transform group-hover:scale-110" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Watch Master Trailer</span>
+</button>
+<!-- Explore Film Drawer -->
+<button class="px-6 py-3.5 rounded-xl bg-surface-container-high/80 text-on-surface font-title-sm text-title-sm backdrop-blur-xl hover:bg-surface-bright hover:shadow-[0_0_25px_rgba(208,188,255,0.2)] hover:scale-[1.01] active:scale-[0.98] transition-all duration-300 flex items-center gap-space-xs" data-film="aethel" id="btn-hero-explore">
+<span>Explore Archives</span>
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+<!-- Watchlist Quick Add -->
+<button class="watchlist-toggle-btn w-12 h-12 rounded-xl bg-surface-container-low/90 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all duration-200 flex items-center justify-center shadow-md" data-id="film-hero-aethel" data-title="Chronicles of Aethel: Resurgence" id="hero-watchlist-btn">
+<span class="material-symbols-outlined text-[22px] bookmark-icon">bookmark_add</span>
+</button>
+<!-- Sound Spec Indicator -->
+<div class="hidden xl:flex items-center gap-space-sm ml-auto pl-space-md bg-surface-container-low/40 backdrop-blur-md px-4 py-2 rounded-xl">
+<span class="material-symbols-outlined text-primary text-[20px]">graphic_eq</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface tracking-wider">UNCOMPRESSED MASTER</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">24-bit / 96kHz Lossless Auro-3D</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FLOATING DISCOVERY & CURATED FILTER DOCK -->
+<section class="sticky top-20 z-40 w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-sm bg-surface-container-lowest/80 backdrop-blur-2xl shadow-xl transition-all">
+<div class="w-full flex items-center justify-between gap-space-md overflow-x-auto no-scrollbar py-1">
+<!-- Genre Dimension Chips -->
+<div class="flex items-center gap-space-xs shrink-0" id="genre-filter-bar">
+<button class="genre-pill active px-4 py-2 rounded-full font-label-md text-label-md bg-primary-container text-on-primary-container shadow-[0_0_15px_rgba(93,253,203,0.3)] transition-all">
+          All Dimensions
+        </button>
+<button class="genre-pill px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low/70 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          Sci-Fi Worlds
+        </button>
+<button class="genre-pill px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low/70 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          Midnight Thrillers
+        </button>
+<button class="genre-pill px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low/70 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          Critics' Favorites
+        </button>
+<button class="genre-pill px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low/70 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          Hidden Gems
+        </button>
+<button class="genre-pill px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low/70 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          Cosmic Horror
+        </button>
+<button class="genre-pill px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low/70 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all">
+          Cyberpunk
+        </button>
+</div>
+<!-- Quick Audio/Format Specs Indicator -->
+<div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant shrink-0 font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>STREAMING IN PRORES RAW ARCHIVE</span>
+</div>
+</div>
+</section>
+<!-- CONTENT RAILS CONTAINER -->
+<div class="relative z-20 w-full flex flex-col space-y-space-xl pt-space-lg pb-space-xl">
+<!-- RAIL 1: TRENDING IN THE UNIVERSE -->
+<section class="w-full pl-margin-mobile md:pl-margin-tablet lg:pl-margin flex flex-col group/rail">
+<!-- Rail Header & Carousel Controllers -->
+<div class="pr-margin-mobile md:pr-margin-tablet lg:pr-margin flex items-end justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(93,253,203,0.8)]"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">MOST TRANSMITTED</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-semibold tracking-tight">
+            Trending in the Universe
+          </h2>
+</div>
+<!-- Carousel Nav Buttons -->
+<div class="flex items-center gap-2">
+<button class="carousel-nav-btn w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors flex items-center justify-center shadow-md" data-direction="-1" data-target="rail-trending">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="carousel-nav-btn w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors flex items-center justify-center shadow-md" data-direction="1" data-target="rail-trending">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Card Track -->
+<div class="film-rail flex items-stretch gap-space-md overflow-x-auto no-scrollbar scroll-smooth pr-margin-mobile md:pr-margin-tablet lg:pr-margin py-2" id="rail-trending">
+<!-- Film Card 1: Singularity 2099 -->
+<div class="film-card group relative flex-none w-72 md:w-80 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_-8px_rgba(93,253,203,0.3)]">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic glowing hyperspace tunnel with neon cyan streaks and a solitary silhouette gazing toward a black hole event horizon in deep cosmic night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACWsNSMtnpXA9pYKiIPiASVQFvwP1IE41LreQ4SqSg2IfpMu5IAZgtjfD8uI2NfPefm3QZO9sV9WIV4L6jdK0tW8lR6Y9-rEr74hqhZ2CqZQYz6FH9mgT_2TNnXOPbVVNnujZ9UIH5jwiAXESkXs2BGiyIfAQgpI-z53ra0_7Ob-dMSV2VuV85bXfcxKDc-oqf1p1JDjzf_ItZbfUtKG6ALa2k9HX5QPcLGCiv5PkvOKXcoEPm6Qyq4A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">IMAX 70MM</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-singularity" data-title="Singularity 2099">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="text-primary font-semibold">98% Match</span>
+<span>2024 • 2h 15m</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors font-medium">Singularity 2099</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">An artificial consciousness fragments across parallel multiverses, leaving humanity to decode the fallout.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary px-2 py-0.5 rounded bg-secondary-container/20">Neo-Cyberpunk</span>
+<button class="preview-trigger text-primary font-label-md text-label-md flex items-center gap-1 hover:underline" data-badge="IMAX 70MM" data-rating="98%" data-synopsis="An artificial consciousness fragments across parallel multiverses, leaving humanity to decode the fallout." data-title="Singularity 2099">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card 2: Solaris Protocol -->
+<div class="film-card group relative flex-none w-72 md:w-80 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_-8px_rgba(93,253,203,0.3)]">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Deep red solar flare illuminating a crystalline space research vessel hovering over a gigantic living plasma sea in deep space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKtfvP8HKxxRbkYaXv4azBiv6uiv1TMUmyej_QLkBGeRAwITdQahBX0dH7hFft4IfKKIjPQGtfHBQ-guo-6--ftea2HxR7sOhHaXRLW0Y9zjU8TzgC-OxQhkfqmyxKwp-7zWPsDO-odyDbnV7GT4d8uvmeBeot7ETPZFCaNy9yvV1IDhv7ioicxMJewlRNfNifyVf9RistTnr3zHT55MOeJ8-6m0aFd8VL-kXY2lWRu8ZK8j32zBJHCw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">EXCLUSIVE 4K</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-solaris" data-title="Solaris Protocol">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="text-tertiary font-semibold">96% Match</span>
+<span>2025 • 2h 32m</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors font-medium">Solaris Protocol</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Cosmonauts aboard an orbital observatory confront sentient psychological phantoms summoned by a sun.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary px-2 py-0.5 rounded bg-primary/10">Philosophical Sci-Fi</span>
+<button class="preview-trigger text-primary font-label-md text-label-md flex items-center gap-1 hover:underline" data-badge="EXCLUSIVE 4K" data-rating="96%" data-synopsis="Cosmonauts aboard an orbital observatory confront sentient psychological phantoms summoned by a sun." data-title="Solaris Protocol">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card 3: Neon Eclipse -->
+<div class="film-card group relative flex-none w-72 md:w-80 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_-8px_rgba(93,253,203,0.3)]">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rain slicked neo-Tokyo dark alley bathed in electric violet and emerald neon lights with high tech flying hovercars" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb0ootPEzoMIhAY58UrZPkbDw8rOB7Zh2eX6NLokd-53UHVZ5Tt0OIYxR8Nt5aUvH6EJm7rRxrfH4mOgx4DyPPSe5yNSj3J3IlAEq3bAA584jQS32-bAhH_LfJoYhUaF2emT2443-5ArEV-6kSEKqWFrVsZEgaw2bz9CQU17Xsd-Oh6YdTW23wUH9qGLzgK-e_mi0MRIij8IFc74uKOrrDxEl5swL2DPL4XPpj3BUdSgN5EK3YQyxQvw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-surface-container-high text-tertiary font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">DOLBY ATMOS</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-neon" data-title="Neon Eclipse">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="text-primary font-semibold">94% Match</span>
+<span>2024 • 1h 58m</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors font-medium">Neon Eclipse</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">A rogue bio-hacker unearths memory syndicates harvesting synthetic dreams from synthetic androids.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary px-2 py-0.5 rounded bg-secondary-container/20">Neo-Noir</span>
+<button class="preview-trigger text-primary font-label-md text-label-md flex items-center gap-1 hover:underline" data-badge="DOLBY ATMOS" data-rating="94%" data-synopsis="A rogue bio-hacker unearths memory syndicates harvesting synthetic dreams from synthetic androids." data-title="Neon Eclipse">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card 4: Event Horizon V -->
+<div class="film-card group relative flex-none w-72 md:w-80 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_-8px_rgba(93,253,203,0.3)]">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Monolithic black obsidian spacecraft warping through an eerie dimensional tear surrounded by ghostly purple auroral matter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqBS004aRhJ9xze4Bo8w-0ugvNIpt4PlR0o3iPC3kipg4XCRoGUp-vxiwasCEiFZO4ecDt3OUu5EpbLHXip8hybGF6gYGZFKIs-PngM42AcR19GorAZsg5tYV7XXQSLEsTxoMjE1EJWf12FLiKAWWy5p3ZYaqIwJEsCQk5nrmFvJBZ65ACt9ubZjD-2SNSQz5B5uagIyEuGA-Pojdrj71ZTz2IZp7JRT0gGEk5fMmaFo4hBjboCof4hA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">70MM REMASTER</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-event" data-title="Event Horizon V">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="text-primary font-semibold">97% Match</span>
+<span>2025 • 2h 09m</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors font-medium">Event Horizon V</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">The prototype gravity drive pulls a search and rescue crew directly into the void of living consciousness.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary px-2 py-0.5 rounded bg-tertiary/10">Cosmic Horror</span>
+<button class="preview-trigger text-primary font-label-md text-label-md flex items-center gap-1 hover:underline" data-badge="70MM REMASTER" data-rating="97%" data-synopsis="The prototype gravity drive pulls a search and rescue crew directly into the void of living consciousness." data-title="Event Horizon V">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card 5: The Orbital Bloom -->
+<div class="film-card group relative flex-none w-72 md:w-80 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_-8px_rgba(93,253,203,0.3)]">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Massive celestial botanical habitat ring orbiting planet Earth with lush bioluminescent green forests under glass domes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApddflUBW6yYUmSet5W0uM7iYwers5SUkNE6SdAGsrG68dTVuLqXFKMKg0BO6fjdaYZOU9hOJdRjkqWsdvQtD1PhZ6LPgFPBx5T_b5bc9Kz_NzsaFLcsv-9aeLGzWPn805NruhaSdp6rsodh737kA9qsOo9v2GtqL6SJPR75faSjqiPifPY7-ko3xYhyRISUmWDqWxIOBHHE9SqdnuaIlslE7f7cgPOZ1vjK2sGuZUhY0Sw7saul1yWg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">PREMIERE</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-orbital" data-title="The Orbital Bloom">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="text-tertiary font-semibold">95% Match</span>
+<span>2024 • 2h 21m</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors font-medium">The Orbital Bloom</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Botanists in low orbit breed flora capable of synthesizing oxygen directly from celestial radiation.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary px-2 py-0.5 rounded bg-primary/10">Hard Sci-Fi</span>
+<button class="preview-trigger text-primary font-label-md text-label-md flex items-center gap-1 hover:underline" data-badge="PREMIERE" data-rating="95%" data-synopsis="Botanists in low orbit breed flora capable of synthesizing oxygen directly from celestial radiation." data-title="The Orbital Bloom">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RAIL 2: CRITICS' FAVORITES & PALME D'OR (TALL POSTER RATIO) -->
+<section class="w-full pl-margin-mobile md:pl-margin-tablet lg:pl-margin flex flex-col group/rail">
+<!-- Rail Header & Nav -->
+<div class="pr-margin-mobile md:pr-margin-tablet lg:pr-margin flex items-end justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(208,188,255,0.8)]"></span>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">AUTEUR SELECTION</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-semibold tracking-tight">
+            Critics' Favorites &amp; Palme d'Or
+          </h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="carousel-nav-btn w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors flex items-center justify-center shadow-md" data-direction="-1" data-target="rail-critics">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="carousel-nav-btn w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors flex items-center justify-center shadow-md" data-direction="1" data-target="rail-critics">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Card Track (Poster Ratios) -->
+<div class="film-rail flex items-stretch gap-space-md overflow-x-auto no-scrollbar scroll-smooth pr-margin-mobile md:pr-margin-tablet lg:pr-margin py-2" id="rail-critics">
+<!-- Poster 1: The Quiet Void -->
+<div class="film-card group relative flex-none w-56 md:w-64 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(208,188,255,0.25)] flex flex-col justify-end">
+<div class="relative aspect-[2/3] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Haunting cinematic film poster of an astronaut drifting alone in infinite black space with faint purple cosmic aurora dusting the horizon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeT6iZJJp_GZZmmpXWI1W3Q2jVG7thhjLB74DYNA9zhv48WeHxnv8LDMlHeXxj2KFE6So7us7d_ZA26ywQP0sk7KkzZac0Aa5wkYbfv2Y0Vn2276rIT7vjdyR1wXG4Xdp_nmThCnLmYs63ihwE_75MvyezfQTbNUj_bh0LAXIpdfu-craFP-KoW0XbPPi4pRPBG0dIeibR3QV-YhaYSgOTQ09nY3BZ5Tkjs1NL9WvDf_gi2VBsux933g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">CANNES 2024</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-quiet-void" data-title="The Quiet Void">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+<!-- Bottom Floating Metadata on Poster -->
+<div class="absolute bottom-0 inset-x-0 p-space-md">
+<div class="flex items-center gap-1.5 text-tertiary font-label-caps text-label-caps mb-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span>GOLDEN PALM WINNER</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">The Quiet Void</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">An intimate study of acoustic silence and human isolation in the outer belts of Saturn.</p>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="text-primary font-title-sm text-label-md">99% Rotten</span>
+<button class="preview-trigger text-on-surface hover:text-primary font-label-caps text-label-caps flex items-center gap-1" data-badge="CANNES 2024" data-rating="99%" data-synopsis="An intimate study of acoustic silence and human isolation in the outer belts of Saturn." data-title="The Quiet Void">
+<span>DETAILS</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Poster 2: Vesper's Echo -->
+<div class="film-card group relative flex-none w-56 md:w-64 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(208,188,255,0.25)] flex flex-col justify-end">
+<div class="relative aspect-[2/3] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Art-house cinematic movie poster of an ethereal female figure partially obscured by bioluminescent teal spore fungi and mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDpQvKx6QhepfDZmgeX-zzuBfjP_rSQsktSi3qqvY3tJ9w6-AzfoRw-cnbYqo9AMDWjU4QWaxhDKj-PfN5vFsyO7MhWDkmPem4mk0pOwSOEEp4ib6p-EhrXSj3YnjHie7bsDrTgCNeRRhsIbEBh4OyOcY7bIEZB-mffGWT3z5gXYbuj83SSlU5mbNMXQkAIjZotENxstx6YfryXg1-5vUzJTl0NloTm9yeBhPsRm_u2630BABZykzdRw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">CRITICS' CHOICE</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-vespers" data-title="Vesper's Echo">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-space-md">
+<div class="flex items-center gap-1.5 text-secondary font-label-caps text-label-caps mb-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>BEST CINEMATOGRAPHY</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Vesper's Echo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">A fallen ecological world where organic machinery communicates in forgotten sonics.</p>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="text-primary font-title-sm text-label-md">97% Rotten</span>
+<button class="preview-trigger text-on-surface hover:text-primary font-label-caps text-label-caps flex items-center gap-1" data-badge="CRITICS' CHOICE" data-rating="97%" data-synopsis="A fallen ecological world where organic machinery communicates in forgotten sonics." data-title="Vesper's Echo">
+<span>DETAILS</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Poster 3: Zero Gravity Dreams -->
+<div class="film-card group relative flex-none w-56 md:w-64 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(208,188,255,0.25)] flex flex-col justify-end">
+<div class="relative aspect-[2/3] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Surreal cinematic portrait of two dancers suspended weightlessly inside an orbital glass dome facing Earth illuminated by turquoise sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtHT0YT1kmw8ws0GP7DrNgPDO1N4OYrTs_lXTlM6mhFYoAfoAsaQsMgtN55E7542VuWfwa63-fR2S47oH5-fUW5yLUicBq4ciIuZYF4obtpQeMDiRQ0t1VFq5_BGXVXKaF1BHThn2RjGTNQISKjyBxFavk-KeN156E-T7Yn8ozZSvNlxp2e2EBqyr5amnH05jdyrTW9PtKIfLAcqp4luF5BJFT2j-9A3SulmYbsjC573wzJWLK77DSnQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">VENICE GOLDEN LION</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-zero-gravity" data-title="Zero Gravity Dreams">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-space-md">
+<div class="flex items-center gap-1.5 text-tertiary font-label-caps text-label-caps mb-1">
+<span class="material-symbols-outlined text-[14px]">theater_comedy</span>
+<span>MASTERCLASS ARCHIVE</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Zero Gravity Dreams</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Poetic exploration of memories stored in microgravity liquid droplets across generations.</p>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="text-primary font-title-sm text-label-md">98% Rotten</span>
+<button class="preview-trigger text-on-surface hover:text-primary font-label-caps text-label-caps flex items-center gap-1" data-badge="VENICE GOLDEN LION" data-rating="98%" data-synopsis="Poetic exploration of memories stored in microgravity liquid droplets across generations." data-title="Zero Gravity Dreams">
+<span>DETAILS</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Poster 4: Sub-Zero Odyssey -->
+<div class="film-card group relative flex-none w-56 md:w-64 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(208,188,255,0.25)] flex flex-col justify-end">
+<div class="relative aspect-[2/3] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Chilling hyper-detailed film poster of an ice explorer on Europa looking down into a deep glowing turquoise subglacial ocean chasm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgDfGLvhWyT_6AlOW1SDQUUtAkHgaagUxA_pVsQdvbeMXRuZGhwrYbDRr41qZTGJduLcMKAapuDAqUSxaEdccMd53gkKOyWcuqgIMRLbQusFVVszY9OxhO6uVSnP4itsTH-btNn-_OHUjQY8r-E4JisJv87lfx0CrKgoAZH92SjbtPODoG8Z7Sv3Gd7fU63ypD_lkSapDqHO2Mkuy5kyg-4fQyqDCy99Jqsm0U23-CJu0FZWGcxiL4Ig"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-surface-container-high text-primary font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">70MM PRESTIGE</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-subzero" data-title="Sub-Zero Odyssey">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-space-md">
+<div class="flex items-center gap-1.5 text-primary font-label-caps text-label-caps mb-1">
+<span class="material-symbols-outlined text-[14px]">diamond</span>
+<span>CURATOR'S MASTERWORK</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Sub-Zero Odyssey</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Deep drilling operations beneath the icy crust of Europa encounter ancient rhythmic vibrations.</p>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="text-primary font-title-sm text-label-md">96% Rotten</span>
+<button class="preview-trigger text-on-surface hover:text-primary font-label-caps text-label-caps flex items-center gap-1" data-badge="70MM PRESTIGE" data-rating="96%" data-synopsis="Deep drilling operations beneath the icy crust of Europa encounter ancient rhythmic vibrations." data-title="Sub-Zero Odyssey">
+<span>DETAILS</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Poster 5: Starlight Fugue -->
+<div class="film-card group relative flex-none w-56 md:w-64 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(208,188,255,0.25)] flex flex-col justify-end">
+<div class="relative aspect-[2/3] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Monochromatic silver and dark cyan film poster with an analog telescope focused on a kaleidoscopic supernova reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCabjsxgB0rxn-Q45z1XItr2bR6zX0BV24_0OyEofgPl5N2f51EQtjGhiBxXkdsZsOwlyih_I9tkciqZZSQ4Z1XzEyqcl1kjGWVrHPGPahk-qQrhW-uFcoKadJblZOCBQT-pmE8kARIwqnu-Miun_Mrf9OjesIeBoUVNN-CTaSh3b8JIyrtxrQPkjBHhHiLXL6H-j5OxeFyojWK6RIEZy8rhbd7s7fkGRZp3hNi8Hdka_PLOaidp84mcQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">SUNDANCE WINNER</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-starlight" data-title="Starlight Fugue">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-space-md">
+<div class="flex items-center gap-1.5 text-secondary font-label-caps text-label-caps mb-1">
+<span class="material-symbols-outlined text-[14px]">music_note</span>
+<span>ORIGINAL SCORE LAUREL</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Starlight Fugue</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">A mathematician converts pulsar radio emissions into orchestral symphonies that manipulate time.</p>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="text-primary font-title-sm text-label-md">95% Rotten</span>
+<button class="preview-trigger text-on-surface hover:text-primary font-label-caps text-label-caps flex items-center gap-1" data-badge="SUNDANCE WINNER" data-rating="95%" data-synopsis="A mathematician converts pulsar radio emissions into orchestral symphonies that manipulate time." data-title="Starlight Fugue">
+<span>DETAILS</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RAIL 3: MIDNIGHT THRILLERS & SCI-FI WORLDS -->
+<section class="w-full pl-margin-mobile md:pl-margin-tablet lg:pl-margin flex flex-col group/rail">
+<!-- Rail Header -->
+<div class="pr-margin-mobile md:pr-margin-tablet lg:pr-margin flex items-end justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(190,245,98,0.8)]"></span>
+<span class="font-label-caps text-label-caps text-tertiary tracking-widest uppercase">PULSE-RAISING CURATION</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-semibold tracking-tight">
+            Midnight Thrillers &amp; Sci-Fi Worlds
+          </h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="carousel-nav-btn w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors flex items-center justify-center shadow-md" data-direction="-1" data-target="rail-midnight">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="carousel-nav-btn w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors flex items-center justify-center shadow-md" data-direction="1" data-target="rail-midnight">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Card Track -->
+<div class="film-rail flex items-stretch gap-space-md overflow-x-auto no-scrollbar scroll-smooth pr-margin-mobile md:pr-margin-tablet lg:pr-margin py-2" id="rail-midnight">
+<!-- Film Card: Dark Nebula -->
+<div class="film-card group relative flex-none w-72 md:w-80 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_-8px_rgba(190,245,98,0.25)]">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dense dark space nebula with lightning flashes illuminating an eerie alien monolith structure embedded in an asteroid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABh26SAQOIfM0qIjFOZjRiI9FbqIlF7FrBJjQhne-N09HPoeLD6mXmbISQZvQ45iBP66fe9llVRdqAX55ZB7b8W-rrfXdTRDM174RZQflwLM74_TV1Kmq84BjE2p6HPy7w7uPXgSDNHnwf6qRQDl2D82YsIikKrhHGZWkmU7x75jg6JGi4ThjXGt1kcE3L2MXOeiwT-2k9E3HQdMUJs3uV18RTvhQxuWTgDM0BJCQRK9t5nQfHH0zHaA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-surface-container-high text-tertiary font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">4K MASTER</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-dark-nebula" data-title="Dark Nebula">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="text-tertiary font-semibold">93% Match</span>
+<span>2024 • 1h 49m</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors font-medium">Dark Nebula</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">A freighter crew takes an unmapped shortcut through gas clouds where shadows take physical form.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary px-2 py-0.5 rounded bg-tertiary/10">Survival Horror</span>
+<button class="preview-trigger text-primary font-label-md text-label-md flex items-center gap-1 hover:underline" data-badge="4K MASTER" data-rating="93%" data-synopsis="A freighter crew takes an unmapped shortcut through gas clouds where shadows take physical form." data-title="Dark Nebula">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card: Tesseract -->
+<div class="film-card group relative flex-none w-72 md:w-80 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_-8px_rgba(93,253,203,0.3)]">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Hypercube four dimensional geometrical architecture in glowing green and violet corridors with infinite recursive hallways" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZIkva7bIOPsWOl0D4bTy3UhnhbB_7tdPBwjWqU3Evl-yzaCW1D2tUELd5HI8nd_C1ki9QxTk9Sa8-DLi_TwaD8LHVqjbVx7dcCq7sgZZooyt4UCj3xITM9CmmNjPEBWI7wxuxXgvPWUFzb2Q3zVHZTqwRF2m7O7945eGSadMbM3mXk3yBIeAvUqtVZE9pdqUf3ykCyPuRlcBGEAgmrG8BxP2gM2Bwf8OFKNMaXIFEs5MUaDUSq1zyGA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">IMAX EXCLUSIVE</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-tesseract" data-title="Tesseract">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="text-primary font-semibold">97% Match</span>
+<span>2025 • 2h 11m</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors font-medium">Tesseract</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Four theoretical physicists are trapped inside a living 4D hypercube where every exit leads to yesterday.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary px-2 py-0.5 rounded bg-secondary-container/20">Mind-Bender</span>
+<button class="preview-trigger text-primary font-label-md text-label-md flex items-center gap-1 hover:underline" data-badge="IMAX EXCLUSIVE" data-rating="97%" data-synopsis="Four theoretical physicists are trapped inside a living 4D hypercube where every exit leads to yesterday." data-title="Tesseract">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card: Quantum Phantom -->
+<div class="film-card group relative flex-none w-72 md:w-80 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_-8px_rgba(93,253,203,0.3)]">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High tech subterranean laboratory in Geneva with particle accelerator emitting dazzling electric violet radiation sparks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB7noVj35G57If7vARBcrtHSQ1yMwpXmqzwXZaxz3QSqymRAExycbe8Kht-mAie5f8sYC6etVmt0lCeOiBM3c73Fl5Dxk1GPEGEBlw4KbI8gOkJZHFP1_q2xXJq3gYqYSWTgLYI8eHV8xqil5bh7UsVPWo_wToRZNN2lWf7-KYQ05IM5LpbmTXfxFRfwJ3QdVPtxNmDpKJU4U5WYu38-knCOngnbXSShp8O8jd7AGqsur97XHvGGzRug"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">DOLBY VISION</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-quantum" data-title="Quantum Phantom">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="text-primary font-semibold">95% Match</span>
+<span>2024 • 2h 01m</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors font-medium">Quantum Phantom</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">An accidental collision creates an entangled twin that stalks the lead researcher through security feeds.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary px-2 py-0.5 rounded bg-primary/10">Techno-Thriller</span>
+<button class="preview-trigger text-primary font-label-md text-label-md flex items-center gap-1 hover:underline" data-badge="DOLBY VISION" data-rating="95%" data-synopsis="An accidental collision creates an entangled twin that stalks the lead researcher through security feeds." data-title="Quantum Phantom">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card: Titan Colony 4 -->
+<div class="film-card group relative flex-none w-72 md:w-80 rounded-xl overflow-hidden bg-surface-container-low transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_-8px_rgba(93,253,203,0.3)]">
+<div class="relative aspect-[16/10] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dense methane orange atmosphere on moon Titan with a heavy industrial drilling mining rig and refinery lights glowing under dark storm clouds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4f6HxC3VQ5UTHIlCWf_EBcMxufL9D9L-A2sD2nL6rNpDk6U-7lyoCCzdqKVdpyGw-hOO_kAc_1Ki_uKb1Wmf2VB9luX7NpIu1MITEiwriaFfgoxyjc6JGDmLntl9D8boDKktHCsQNoPwswEY-uK7RHAmKGlRl8KpQiaQu1NJuHNhFoeiV-k6qFgXWhLsf5XxWjeQHAUKfC_9LWJQzMpvKWCeP9NCZGp45FZ3-h7Fw5xQygctcjSnWpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-surface-container-high text-tertiary font-label-caps text-label-caps px-2 py-0.5 rounded shadow-md font-bold uppercase">NEW RELEASE</span>
+<button class="watchlist-toggle-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-primary hover:bg-surface-container-high transition-all flex items-center justify-center backdrop-blur-md" data-id="film-titan" data-title="Titan Colony 4">
+<span class="material-symbols-outlined text-[18px] bookmark-icon">bookmark_add</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="text-tertiary font-semibold">91% Match</span>
+<span>2025 • 2h 24m</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors font-medium">Titan Colony 4</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">A solitary security officer investigates the radio silence of an automated liquid methane refinery.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary px-2 py-0.5 rounded bg-tertiary/10">Isolation Thriller</span>
+<button class="preview-trigger text-primary font-label-md text-label-md flex items-center gap-1 hover:underline" data-badge="NEW RELEASE" data-rating="91%" data-synopsis="A solitary security officer investigates the radio silence of an automated liquid methane refinery." data-title="Titan Colony 4">
+<span>Inspect</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- IMMERSIVE BENTO HIGHLIGHT: MASTER OF CINEMA SUITE -->
+<section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-md">
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-low p-space-lg md:p-space-xl shadow-2xl">
+<!-- Diffuse Background Accent -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary/10 blur-[100px] pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-96 h-96 rounded-full bg-secondary-container/20 blur-[100px] pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Narrative Details -->
+<div class="lg:col-span-7 space-y-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-tertiary tracking-widest uppercase">ACOUSTIC &amp; OPTICAL BENCHMARK</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface font-bold tracking-tight">
+              Auteur-Direct Master Screening Engine
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+              Every master title is streamed directly from uncompressed 12-bit DCI-P3 film vaults. Enjoy lossless audio mapping calibrated to your room acoustics with spatial Dolby Atmos 9.1.4 synthesis.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md pt-space-xs">
+<div class="p-space-sm bg-surface-container/60 rounded-xl backdrop-blur-md">
+<span class="font-display-hero text-headline-lg font-bold text-primary block">70mm</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">True Frame Scans</span>
+</div>
+<div class="p-space-sm bg-surface-container/60 rounded-xl backdrop-blur-md">
+<span class="font-display-hero text-headline-lg font-bold text-secondary block">12-Bit</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">DCI-P3 Gamut</span>
+</div>
+<div class="p-space-sm bg-surface-container/60 rounded-xl backdrop-blur-md">
+<span class="font-display-hero text-headline-lg font-bold text-tertiary block">0.00ms</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Buffer Latency</span>
+</div>
+</div>
+</div>
+<!-- Interactive Acoustic Spec Calibrator Graphic -->
+<div class="lg:col-span-5 flex flex-col items-center justify-center">
+<div class="w-full max-w-sm p-space-md rounded-2xl bg-surface-container-high/60 backdrop-blur-2xl shadow-xl space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-title-sm text-title-sm text-on-surface font-medium">Acoustic Master Node</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">ONLINE</span>
+</div>
+<!-- Animated Spec Waveform Graphic -->
+<div class="w-full h-24 bg-surface-container-lowest/80 rounded-xl flex items-center justify-around px-4 overflow-hidden relative">
+<div class="w-1.5 h-12 bg-primary/40 rounded-full animate-pulse" style="animation-duration: 0.9s;"></div>
+<div class="w-1.5 h-16 bg-primary rounded-full animate-pulse" style="animation-duration: 1.2s;"></div>
+<div class="w-1.5 h-8 bg-secondary rounded-full animate-pulse" style="animation-duration: 0.7s;"></div>
+<div class="w-1.5 h-20 bg-primary-container rounded-full animate-pulse" style="animation-duration: 1.5s;"></div>
+<div class="w-1.5 h-10 bg-secondary-container rounded-full animate-pulse" style="animation-duration: 1.1s;"></div>
+<div class="w-1.5 h-14 bg-tertiary rounded-full animate-pulse" style="animation-duration: 0.8s;"></div>
+<div class="w-1.5 h-6 bg-primary/50 rounded-full animate-pulse" style="animation-duration: 1.3s;"></div>
+<div class="w-1.5 h-16 bg-primary rounded-full animate-pulse" style="animation-duration: 1.0s;"></div>
+</div>
+<!-- Audio Channel Indicator & Master Output Trigger -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">TARGET DECODER</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Dolby Atmos Spatial 9.1.4</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:shadow-[0_0_20px_rgba(93,253,203,0.4)] transition-all">
+                  Calibrate
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- INTERACTIVE MODAL / DRAWER FOR FILM PREVIEW -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8 bg-surface-container-lowest/80 backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-300" id="film-modal">
+<div class="relative w-full max-w-2xl bg-surface-container rounded-2xl overflow-hidden shadow-[0_24px_50px_rgba(0,0,0,0.8)] scale-95 transition-transform duration-300" id="film-modal-card">
+<!-- Modal Header Close -->
+<button class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-surface-container-low text-on-surface hover:text-primary transition-colors flex items-center justify-center" id="modal-close-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Modal Body -->
+<div class="p-space-lg md:p-space-xl flex flex-col space-y-space-md">
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps">
+<span class="bg-tertiary text-on-tertiary px-2 py-0.5 rounded font-bold uppercase" id="modal-badge">IMAX 70MM</span>
+<span class="text-on-surface-variant">•</span>
+<span class="text-primary font-semibold" id="modal-rating">99% CRITIC SCORE</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold tracking-tight" id="modal-title">
+          Film Preview Title
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="modal-synopsis">
+          Detailed cinematic archive description will appear here on inspect interaction.
+        </p>
+<!-- Technical Parameters -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">RESOLUTION</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Native 4K Master / 70mm Scan</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">AUDIO PIPELINE</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Auro-3D 9.1 Spatial</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">VAULT TIER</span>
+<span class="font-label-md text-label-md text-tertiary font-medium">VIP CINÉASTE</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<button class="flex-1 py-3 px-6 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm flex items-center justify-center gap-2 hover:shadow-[0_0_24px_rgba(93,253,203,0.4)] transition-all">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Stream Film Now</span>
+</button>
+<button class="py-3 px-5 rounded-xl bg-surface-container-high text-on-surface font-title-sm text-title-sm hover:text-primary transition-colors flex items-center gap-1.5" id="modal-add-watchlist">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Watchlist</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- TOAST NOTIFICATION CONTAINER -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-2 px-4 py-3 rounded-xl bg-surface-container-high text-on-surface shadow-2xl backdrop-blur-xl" id="toast-notify">
+<span class="material-symbols-outlined text-primary text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-msg">Added to your Watchlist</span>
+</div>
+</div>
+<!-- INTERACTIVE DISCOVERY CLIENT SCRIPT -->
+<script>
+  (function initAuroraDiscovery() {
+    // 1. WATCHLIST PERSISTENCE AND LIVE COUNTER
+    const STORAGE_KEY = 'aurora_watchlist_ids';
+    let savedWatchlist = [];
+    try {
+      savedWatchlist = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    } catch (e) {
+      savedWatchlist = [];
+    }
+
+    function updateNavCounter() {
+      const badges = document.querySelectorAll('nav a[data-path="watchlist"] span:last-child');
+      badges.forEach(badge => {
+        badge.textContent = savedWatchlist.length;
+      });
+    }
+
+    function showToast(message, icon = 'check_circle') {
+      const toast = document.getElementById('toast-notify');
+      const msgEl = document.getElementById('toast-msg');
+      const iconEl = document.getElementById('toast-icon');
+      if (!toast) return;
+      msgEl.textContent = message;
+      iconEl.textContent = icon;
+      toast.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+      }, 2600);
+    }
+
+    function refreshButtonStates() {
+      document.querySelectorAll('.watchlist-toggle-btn').forEach(btn => {
+        const filmId = btn.getAttribute('data-id');
+        const icon = btn.querySelector('.bookmark-icon');
+        if (savedWatchlist.includes(filmId)) {
+          btn.classList.add('text-primary');
+          if (icon) {
+            icon.textContent = 'bookmark_added';
+            icon.style.fontVariationSettings = "'FILL' 1";
+          }
+        } else {
+          btn.classList.remove('text-primary');
+          if (icon) {
+            icon.textContent = 'bookmark_add';
+            icon.style.fontVariationSettings = "'FILL' 0";
+          }
+        }
+      });
+    }
+
+    // Attach Watchlist Event Listeners
+    document.querySelectorAll('.watchlist-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const filmId = btn.getAttribute('data-id');
+        const filmTitle = btn.getAttribute('data-title') || 'Film';
+
+        const index = savedWatchlist.indexOf(filmId);
+        if (index > -1) {
+          savedWatchlist.splice(index, 1);
+          showToast(`Removed "${filmTitle}" from Watchlist`, 'bookmark_remove');
+        } else {
+          savedWatchlist.push(filmId);
+          showToast(`Added "${filmTitle}" to Watchlist`, 'bookmark_added');
+        }
+
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(savedWatchlist));
+        } catch (e) {}
+
+        refreshButtonStates();
+        updateNavCounter();
+      });
+    });
+
+    updateNavCounter();
+    refreshButtonStates();
+
+    // 2. HORIZONTAL CAROUSEL CONTROLS
+    document.querySelectorAll('.carousel-nav-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const direction = parseInt(button.getAttribute('data-direction'), 10) || 1;
+        const rail = document.getElementById(targetId);
+        if (rail) {
+          const scrollDistance = rail.clientWidth * 0.75 * direction;
+          rail.scrollBy({ left: scrollDistance, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // 3. GENRE FILTER CHIPS INTERACTIVITY
+    const genrePills = document.querySelectorAll('.genre-pill');
+    genrePills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        genrePills.forEach(p => {
+          p.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_15px_rgba(93,253,203,0.3)]');
+          p.classList.add('bg-surface-container-low/70', 'text-on-surface-variant');
+        });
+        pill.classList.remove('bg-surface-container-low/70', 'text-on-surface-variant');
+        pill.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_15px_rgba(93,253,203,0.3)]');
+      });
+    });
+
+    // 4. PREVIEW MODAL / DRAWER
+    const modal = document.getElementById('film-modal');
+    const modalCard = document.getElementById('film-modal-card');
+    const modalClose = document.getElementById('modal-close-btn');
+    const modalTitle = document.getElementById('modal-title');
+    const modalSynopsis = document.getElementById('modal-synopsis');
+    const modalBadge = document.getElementById('modal-badge');
+    const modalRating = document.getElementById('modal-rating');
+
+    function openModal(title, synopsis, badge, rating) {
+      if (!modal) return;
+      modalTitle.textContent = title;
+      modalSynopsis.textContent = synopsis;
+      modalBadge.textContent = badge || 'IMAX 70MM';
+      modalRating.textContent = `${rating || '99%'} CRITIC SCORE`;
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-95');
+      modalCard.classList.add('scale-100');
+    }
+
+    function closeModal() {
+      if (!modal) return;
+      modalCard.classList.remove('scale-100');
+      modalCard.classList.add('scale-95');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    if (modalClose) {
+      modalClose.addEventListener('click', closeModal);
+    }
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    // Trigger preview from cards
+    document.querySelectorAll('.preview-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const title = trigger.getAttribute('data-title');
+        const synopsis = trigger.getAttribute('data-synopsis');
+        const badge = trigger.getAttribute('data-badge');
+        const rating = trigger.getAttribute('data-rating');
+        openModal(title, synopsis, badge, rating);
+      });
+    });
+
+    // Hero Explore Archive Trigger
+    const heroExplore = document.getElementById('btn-hero-explore');
+    if (heroExplore) {
+      heroExplore.addEventListener('click', () => {
+        openModal(
+          'Chronicles of Aethel: Resurgence',
+          'Beyond the shattered rings of Kepler-452b, an uncharted cosmic distortion unlocks humanity\'s ancestral gateway—igniting a silent war across lightyears. Mastered in native IMAX 70mm celestial aspect with lossless 24-bit 96kHz spatial aural mastering.',
+          'IMAX 70MM MASTER',
+          '99%'
+        );
+      });
+    }
+
+    // Hero Trailer Button Interaction
+    const heroTrailer = document.getElementById('btn-watch-trailer');
+    if (heroTrailer) {
+      heroTrailer.addEventListener('click', () => {
+        showToast('Transmitting 70mm Master Trailer feed...', 'play_circle');
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest relative overflow-hidden"><div class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="AURORA CINEMA Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WumTQ3R_SP4wJ_pOllf7VaxM9d69HXEmPyJlfRRUPOGOs-zT7DUpJY0k-Htmqby9mMllvr5aW9HeWtT34L2s84rIF0oPNjRDKdeuRfBY0y7g6aIVxB7_h2GzA9B4HphSzB4OsM6_T_uDYyksliwNeQe1A3X4jl62OjPolz4rPFH_HxGOrukf3wl7yWpfNxAsR2sEhBjW8IPco-xCZh9gH1wiO5uebXAUxBXvcFN-7MTGfWKwf661g_rZTb"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface uppercase">AURORA <span class="text-primary">CINEMA</span></span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">The definitive celestial canvas for visionary auteurs, pristine IMAX 70mm mastering, and high-order spatial audio discovery.</p><div class="flex flex-wrap items-center gap-space-xs pt-space-xs"><span class="bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps px-space-sm py-1 rounded">IMAX 70MM</span><span class="bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps px-space-sm py-1 rounded">DOLBY VISION</span><span class="bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps px-space-sm py-1 rounded">DOLBY ATMOS</span><span class="bg-surface-container-low text-primary font-label-caps text-label-caps px-space-sm py-1 rounded">DCI-P3 12-BIT</span></div></div><div class="space-y-space-sm"><h4 class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Curations</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a href="#">Space Odysseys</a></li><li class="hover:text-primary transition-colors"><a href="#">Cybernetic Neo-Noir</a></li><li class="hover:text-primary transition-colors"><a href="#">Auteur Archives</a></li><li class="hover:text-primary transition-colors"><a href="#">70mm Restorations</a></li><li class="hover:text-primary transition-colors"><a href="#">Cannes Selects</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Experience</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a href="#">VIP Lounge</a></li><li class="hover:text-primary transition-colors"><a href="#">Spatial Calibration</a></li><li class="hover:text-primary transition-colors"><a href="#">Cinéma Pass</a></li><li class="hover:text-primary transition-colors"><a href="#">Offline Screening Vault</a></li><li class="hover:text-primary transition-colors"><a href="#">Masterclass Interviews</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Signals</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Receive transmissions on uncompressed premiere releases.</p><div class="space-y-space-xs"><input class="w-full bg-surface-container-low/70 rounded-lg px-space-sm py-2 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="cineaste@auroracinema.film" type="email"/><button class="w-full bg-primary text-on-primary font-title-sm text-title-sm py-2 rounded-lg hover:shadow-[0_0_24px_rgba(93,253,203,0.4)] transition-all flex items-center justify-center gap-space-xs"><span>Join Transmission</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-outline"><p class="font-body-sm text-body-sm">© 2025 AURORA CINEMA ENTERTAINMENT CORP. ALL ARCHIVES ENCRYPTED &amp; PRESERVED.</p><div class="flex items-center gap-space-lg font-body-sm text-body-sm"><a class="hover:text-on-surface transition-colors" href="#">Archival Protocol</a><a class="hover:text-on-surface transition-colors" href="#">Privacy Architecture</a><a class="hover:text-on-surface transition-colors" href="#">Dolby Compliance</a></div></div></div></footer><script src="../portfolio-branding.js" data-portfolio-href="../code.html" defer></script></body></html>

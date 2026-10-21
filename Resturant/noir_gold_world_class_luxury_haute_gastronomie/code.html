@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#ffc8a2", "primary-container": "#d6b36a", "inverse-surface": "#e5e2e1", "on-secondary-fixed": "#271900", "on-primary-fixed-variant": "#5b4302", "surface-container-high": "#2a2a2a", "on-surface-variant": "#d0c5b4", "outline-variant": "#4d4639", "on-error-container": "#ffdad6", "on-secondary-container": "#dbb26c", "surface-dim": "#131313", "surface-variant": "#353534", "on-tertiary-fixed-variant": "#653d1e", "primary": "#f4ce83", "surface-container": "#201f1f", "on-tertiary-fixed": "#301400", "background": "#131313", "error": "#ffb4ab", "on-primary-container": "#5d4403", "primary-fixed-dim": "#e6c277", "secondary": "#eac078", "surface-container-lowest": "#0e0e0e", "tertiary-container": "#e4ac84", "surface-container-highest": "#353534", "surface-tint": "#e6c277", "primary-fixed": "#ffdf9f", "surface-bright": "#3a3939", "inverse-primary": "#755a1a", "on-tertiary": "#4a280a", "on-background": "#e5e2e1", "surface": "#131313", "on-surface": "#e5e2e1", "outline": "#998f80", "secondary-fixed": "#ffdea8", "on-error": "#690005", "on-primary-fixed": "#261a00", "on-primary": "#402d00", "on-secondary": "#422d00", "on-secondary-fixed-variant": "#5e4203", "secondary-fixed-dim": "#eac078", "surface-container-low": "#1c1b1b", "tertiary-fixed-dim": "#f4bb92", "error-container": "#93000a", "secondary-container": "#604405", "on-tertiary-container": "#673f20", "inverse-on-surface": "#313030", "tertiary-fixed": "#ffdcc5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-lg": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "3.5rem", "margin-mobile": "1.25rem", "margin": "4rem", "gutter-mobile": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "body-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Playfair Display" ], "label-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ], "headline-lg-mobile": [ "Playfair Display" ], "display-lg": [ "Playfair Display" ], "headline-md": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Playfair Display" ], "label-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "label-lg": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "400" } ], "display-lg": [ "56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "headline-md": [ "26px", { "lineHeight": "34px", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-lg-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "12px", "letterSpacing": "0.16em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl transition-all duration-300 border-b border-outline-variant/30"><div class="h-20 w-full px-gutter lg:px-margin flex items-center justify-between"><a class="flex items-center gap-space-sm group text-decoration-none" data-path="home" href="#"><span class="material-symbols-outlined text-primary text-[22px] transition-transform duration-500 group-hover:rotate-180">auto_awesome</span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-[0.2em] uppercase text-primary font-bold">NOIR &amp; GOLD</span><span class="font-label-sm text-label-sm tracking-[0.28em] uppercase text-on-surface-variant">Haute Gastronomie</span></div></a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container"><a aria-current="page" class="font-label-lg uppercase tracking-[0.16em] transition-colors py-space-xs bg-primary-container text-on-primary-container" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg uppercase tracking-[0.16em] text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="our-story" href="#story">Our Story</a><a class="font-label-lg text-label-lg uppercase tracking-[0.16em] text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="tasting-menu" href="#menu">Menu</a><a class="font-label-lg text-label-lg uppercase tracking-[0.16em] text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="experience" href="#experience">Experience</a><a class="font-label-lg text-label-lg uppercase tracking-[0.16em] text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="gallery" href="#gallery">Gallery</a><a class="font-label-lg text-label-lg uppercase tracking-[0.16em] text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="contact-inquiries" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-[0.14em] hover:bg-primary transition-all duration-300 shadow-[0_8px_32px_-8px_rgba(214,179,106,0.15)]" data-path="reservation" href="#">Reserve a Table</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. BREATHTAKING FULL-SCREEN HERO -->
+<section class="relative w-full -mt-20 min-h-[92vh] flex items-center justify-center overflow-hidden bg-surface-container-lowest">
+<!-- Atmospheric Visual Layer with Vignette Scrim -->
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Cinematic luxury fine dining composition, exquisite charcoal seared wagyu with gold leaf and glistening truffle reduction on artisan black matte slate, dramatic moody chiaroscuro lighting, deep obsidian shadows, warm ambient candlelight and champagne gold highlights, 8k culinary photography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDu1BoGgEe8zbU_UzVPIu6iQBH-Q5AognyQZIEwRZHd7JGTVnG1Sqw0NIrKTLtBCh5bsAhbQAOwQxklCy2r-If-PelLZWJmuVtRK2-xNWlPZfgWu3yCf5M5CHTRhEmm2coxIom5GWuRRdyPQ5qwORazrtcZMNc5--3CfmGfq6xq_BJguIGPHHL6pdpJxGo3EFGNjULBffvEgFSs1QtrrwzXdn5PzImAHjYlDa1QTnt22aumn7IoAyoNIA')">
+</div>
+<div class="absolute inset-0 z-10 bg-gradient-to-t from-background via-surface-container-lowest/80 to-surface-container-lowest/50"></div>
+<div class="absolute inset-0 z-10 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(11,11,11,0.85)_100%)]"></div>
+<!-- Hero Content -->
+<div class="relative z-20 w-full max-w-6xl mx-auto px-gutter lg:px-margin pt-28 pb-16 flex flex-col items-center text-center">
+<!-- Monogram Emblem Display -->
+<div class="mb-6 flex flex-col items-center group">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 bg-surface-container-low shadow-[0_0_40px_rgba(214,179,106,0.18)] transition-transform duration-700 group-hover:scale-105">
+<img alt="Noir &amp; Gold Insignia" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDdFxVimg226tJd4FR3EsKGRlPnaffrIQYm4pr1NPd1blzPNyqt0tmpX8UrUqmX3a99fZEzBw_lRXDbqtW7CdNaQOWckTDJfbgbpRNsZpt5Gy_UhLrXB6PKckEafqKDT0lLxHV-jvyZz8n8NT8jz2HG7EsJzrp7Dc3L8A9PC-UVpPd1RDen6UIJnfhr4eQAU_mMTRSPy7mCFtY1KGsPoyyDUcK5C1-I8Z1HKtc6HTJItfucQphvfIUiw"/>
+</div>
+<div class="flex items-center gap-2 mt-4 text-primary">
+<span class="w-8 h-[1px] bg-primary-container/40"></span>
+<span class="material-symbols-outlined text-[16px] text-primary">star_rate</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.3em] text-primary">Three Michelin Stars</span>
+<span class="material-symbols-outlined text-[16px] text-primary">star_rate</span>
+<span class="w-8 h-[1px] bg-primary-container/40"></span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg tracking-[0.25em] uppercase text-primary mb-3">Haute Gastronomie • Paris</span>
+<h1 class="font-display-lg text-headline-lg lg:text-display-lg text-inverse-surface max-w-4xl tracking-tight leading-none mb-6">
+        An Extraordinary <span class="italic font-light text-primary">Taste.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-light mb-10 leading-relaxed">
+        Discover exceptional flavors, carefully crafted dishes, and an unforgettable dining experience where culinary artistry meets nocturnal elegance.
+      </p>
+<!-- Interactive Call to Actions -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-4 bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-[0.18em] font-bold shadow-[0_10px_35px_-5px_rgba(214,179,106,0.25)] hover:bg-primary transition-all duration-300 transform hover:-translate-y-0.5 text-center" href="#signature-menu">
+          Explore Our Menu
+        </a>
+<a class="w-full sm:w-auto px-8 py-4 bg-surface-container-high/60 backdrop-blur-md text-inverse-surface font-label-lg text-label-lg uppercase tracking-[0.18em] hover:bg-surface-bright transition-all duration-300 text-center" href="#booking-ledger">
+          Reserve a Table
+        </a>
+</div>
+<!-- Scroll Prompt -->
+<div class="mt-16 flex flex-col items-center gap-2 opacity-75 hover:opacity-100 transition-opacity">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-outline">L’Immersion</span>
+<span class="material-symbols-outlined text-primary text-[20px] animate-bounce">south</span>
+</div>
+</div>
+</section>
+<!-- 2. SIGNATURE MENU SECTION -->
+<section class="w-full py-space-xl bg-surface-dim" id="signature-menu">
+<div class="w-full max-w-7xl mx-auto px-gutter lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center mb-12">
+<div class="flex items-center gap-3 mb-2">
+<span class="w-6 h-[1px] bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.26em] text-primary font-semibold">Tasting Repertory</span>
+<span class="w-6 h-[1px] bg-primary"></span>
+</div>
+<h2 class="font-display-lg text-headline-lg lg:text-display-lg text-inverse-surface font-normal">
+          Culinary Creations
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-3 font-light">
+          Sculpted with season, provenance, and uncompromising French precision. Paired with cellar grands crus.
+        </p>
+</div>
+<!-- Filter Tabs Bar -->
+<div class="flex items-center justify-center flex-wrap gap-2 sm:gap-3 mb-12">
+<button class="menu-tab-btn px-5 py-2.5 bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-[0.14em] transition-all duration-300" data-menu-category="all" onclick="filterMenu('all')">
+          All Creations
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-[0.14em] hover:text-primary transition-all duration-300" data-menu-category="signature" onclick="filterMenu('signature')">
+          Signature Dishes
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-[0.14em] hover:text-primary transition-all duration-300" data-menu-category="mains" onclick="filterMenu('mains')">
+          Main Courses
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-[0.14em] hover:text-primary transition-all duration-300" data-menu-category="appetizers" onclick="filterMenu('appetizers')">
+          Appetizers
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-[0.14em] hover:text-primary transition-all duration-300" data-menu-category="desserts" onclick="filterMenu('desserts')">
+          Desserts
+        </button>
+<button class="menu-tab-btn px-5 py-2.5 bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-[0.14em] hover:text-primary transition-all duration-300" data-menu-category="beverages" onclick="filterMenu('beverages')">
+          Grands Crus
+        </button>
+</div>
+<!-- Menu Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="menu-grid">
+<!-- Dish 1 -->
+<div class="menu-card group flex flex-col bg-surface-container-low overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(214,179,106,0.1)]" data-category="signature mains">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Culinary close up of A5 Miyazaki Wagyu beef tenderloin with glistening black perigord winter truffle shaved on top, charred maitake mushroom, and glossy dark balsamic reduction, warm golden accent lighting, high end Michelin presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChhdJpVxzo3B0fzgic8731rMvxPQcfkCQPBd9uWwbDWL807bVEr2tMLv1YxzYO9QuPjiVlHpfNaVZ_dRlzr8KIHZKW_KTer2uiXRW3zTQi5aXsDMZy9lSld6zFDk12iH63cMZOFDdTM29QEFFt2AmlQzC8u8pdbE9T38mzXq-zpoWQ1OvqV1BRjuhN2HyzPHRu-Ot4Jthzi5_Bl_8-nRZYZ2EKI2DfHIUKotLTaiy1xLvP9Ear5y50YQ"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">A5 Wagyu</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">GF</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-start justify-between gap-4 mb-2">
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface group-hover:text-primary transition-colors">A5 Miyazaki Wagyu &amp; Périgord Truffle</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€165</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-4">
+                Charcoal-seared Japanese A5 beef tenderloin, charred maitake mushroom, aged balsamic reduction, shaved winter black truffles.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Origin: Miyazaki Prefecture</span>
+<span class="material-symbols-outlined text-[18px] text-primary">wine_bar</span>
+</div>
+</div>
+</div>
+<!-- Dish 2 -->
+<div class="menu-card group flex flex-col bg-surface-container-low overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(214,179,106,0.1)]" data-category="signature mains">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Roasted blue lobster tail glazed in glossy obsidian squid-ink emulsion with champagne beurre blanc swirls and delicate sea fennel microgreens, dark minimalist plate, dark background luxury dining" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYJU6kNnccxGaMU9tN34D3olvp0XrOY-txcqZRYL2mUUfYMWB6fiOYmGEe-X-0S2WZvXOKlOsOVzsfju3nXpN0YKJLt11lSil9dubI28GYZGlX1E0PbLCeAg1ipXevgzyFBzMMFM9LkrwqtbnqxWv4zCk0lBzaHFPYzf-GOA8Uc4426kWg_HI2Rl9EFEEJuXGYgFciDt94_tpy5x6t-CO05Gm04fX58GPARbLBVR9nNGgAwVNG3u_ZdA"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Brittany Coast</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Shellfish</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-start justify-between gap-4 mb-2">
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface group-hover:text-primary transition-colors">Obsidian Glazed Brittany Lobster</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€145</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-4">
+                Roasted blue lobster tail, squid-ink emulsion, champagne beurre blanc, oscillated sea fennel, and candied lime zest.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Pairing: Dom Pérignon Vintage</span>
+<span class="material-symbols-outlined text-[18px] text-primary">wine_bar</span>
+</div>
+</div>
+</div>
+<!-- Dish 3 -->
+<div class="menu-card group flex flex-col bg-surface-container-low overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(214,179,106,0.1)]" data-category="signature appetizers">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Imperial Beluga Caviar topped with genuine 24k edible gold leaf resting atop a chilled smoked potato veloute quenelle, golden mother of pearl spoon, warm black marble background, luxury fine dining appetizer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0DRljwGogFT5JVF0RJ1l2hj9LbFMnbzD0PWSOrqU6qzustQQT8zgISoNSQ-fQLgtl6qZYR_bJRiIGMlZYudVZk-bIc0vgeReyw9cUl9sd7ucLM_lkUGQISQMcM9kY-0tIm-if2jZyrbKMtmPo-xAokNG-Ur9Ti5fRpdqty9lfsZYwoUZLpLHrU1n_ZzgigeAZF0nrWjUmYQHFxTd3urHDErOjS8emSMDiW5BKLQTd09lNkTELCME2pw"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2.5 py-1 bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">Chef's Signature</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">24K Gold</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-start justify-between gap-4 mb-2">
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface group-hover:text-primary transition-colors">Gold Leaf Imperial Beluga Caviar</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€210</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-4">
+                Royal Baerii &amp; Beluga selection, chilled smoked potato velouté, 24k edible gold leaf, warm clarified brioche crisps.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Caspian Basin Reserve</span>
+<span class="material-symbols-outlined text-[18px] text-primary">stars</span>
+</div>
+</div>
+</div>
+<!-- Dish 4 -->
+<div class="menu-card group flex flex-col bg-surface-container-low overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(214,179,106,0.1)]" data-category="mains">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Pan-seared line-caught wild turbot fillet with golden saffron fumet broth, braised baby leeks, sea asparagus, finger lime pearls, obsidian ceramic dishware, Michelin three star plating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAI5yUSA2X4ca_kDbWpZox73D0Lku-NjAw3IHU_PCr3ZF0agATCZu3ZQ8UZ6DzZeKRSV3nnSqMxDT8voVhxYZemB3kAqyTEwxEdvLeb7C76iCwk2TR1rtIHPmTZYjc_aCywk6uqlFlqVNGzpu09kE8QiUdBZksSE5cRjJ2NIKhaK_gpfOluvnMk63ZHHGM9GdUolGtUtEeFuxdEmjNZI6cSeSe-1nnyLL81C1f5oydXITpIG-x0kyWpg"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Wild Catch</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">GF</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-start justify-between gap-4 mb-2">
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface group-hover:text-primary transition-colors">Pan-Seared Line-Caught Turbot</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€120</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-4">
+                Wild Atlantic turbot, saffron fumet, sea asparagus, braised baby leeks, finger lime pearls, smoked salt butter.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Pairing: Meursault 1er Cru</span>
+<span class="material-symbols-outlined text-[18px] text-primary">wine_bar</span>
+</div>
+</div>
+</div>
+<!-- Dish 5 -->
+<div class="menu-card group flex flex-col bg-surface-container-low overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(214,179,106,0.1)]" data-category="mains">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Roasted Scottish venison loin with juniper crust, silk parsnip puree, fermented black currant glaze droplets, chanterelle dust, autumn culinary elegance, moody dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEw1EeSJ7reLMDqMkCxtNWKsjahchoVupY3R6kfNZ7wvBXIymbNZkgcqqJV0JsUrnkWNXsjD-j-Mgm-5zbnCDPJdJGsYPME_R0UuhJ9fz3HhdJdddn0L2G0JF81-v3zZ03p_0C7M_JKEIxNlwR3RCI7cetyDXiIIb3ySjBL7qlxXG7p1bJsGRhq1UurpVVBoAdLqe-b2kuiZcfuqqIwDj9qfTfWm3Ozh1rK3mY83QAZeZFYqemSFe8Qw"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Game Season</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-start justify-between gap-4 mb-2">
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface group-hover:text-primary transition-colors">Smoked Highland Venison Loin</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€130</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-4">
+                Juniper-crusted Scottish venison, parsnip puree, fermented black currant glaze, chanterelle dust, pine oil infusion.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Pairing: Côte-Rôtie Brune et Blonde</span>
+<span class="material-symbols-outlined text-[18px] text-primary">wine_bar</span>
+</div>
+</div>
+</div>
+<!-- Dish 6 -->
+<div class="menu-card group flex flex-col bg-surface-container-low overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(214,179,106,0.1)]" data-category="desserts signature">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Gourmet dessert dark chocolate geometric sphere adorned with delicate brushed gold leaf and gold dust, melting under hot salted caramel poured from a copper pot, Madagascar vanilla bean cream, dark studio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm0eH2T88VMkyMDO61OyfPvQH4QU89VoIf7UjVPUo7JowqXpxikGTPaxD7BmGiy3rkWZHXB_kHJTSkPgcPrMIfIUnnnL_JHUDligVu6zLQ_yT6Floxy2PD8hjwpK51snJVHpd3DWNxZXCu1vHVKm0btA-RvBfwpTmDmANVVrk77aZrbwO_bqd8WAtDhYygv3ZJgPHrnImgBKW6vC4CSJXy2nuA39h6FQkaCO_CVg6GdkuSMgS2iRsgpA"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2.5 py-1 bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">Final Accord</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Dessert</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-start justify-between gap-4 mb-2">
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface group-hover:text-primary transition-colors">The Noir &amp; Gold Sphere</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€45</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-4">
+                70% Valrhona single-origin dark chocolate dome, smoked gold leaf, Madagascar vanilla mousse, warm salted caramel coulis table-side pour.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Pairing: Château d’Yquem 2011</span>
+<span class="material-symbols-outlined text-[18px] text-primary">local_cafe</span>
+</div>
+</div>
+</div>
+<!-- Dish 7 (Appetizer - Extra depth) -->
+<div class="menu-card group flex flex-col bg-surface-container-low overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(214,179,106,0.1)]" data-category="appetizers">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Tasting plate of cold smoked diver scallops carpaccio with yuzu kosho pearls, edible gold leaf flakes, borage blossoms, and crystallized kombu broth reduction on dark obsidian plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAylbpUMMuE6nJ0W5x7xUzPtl_5ybeJlFsM6myjcJyiZ48vScdonRjpPxc5cJDdXbji1J7cuxBTWez72JWc0pFuBNaN6bypKEeOuEjqP39VlA8ONXwdHVxrOZPBz5a9AmjO6TUmWvtJ8oMAMSLcY9UtqypwJ8kOXld77xyfIOY_y9IJOM-sZC5yp8Sr9I1r2eMYyqEwc07lv4y63-m4rV0qc6I6DlwiytCTmCwoA_gNRAw7RsRMic_qUA"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Hokkaido Sea</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Raw</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-start justify-between gap-4 mb-2">
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface group-hover:text-primary transition-colors">Carpaccio de Saint-Jacques &amp; Yuzu</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€75</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-4">
+                Thinly planed hand-dived scallops, white yuzu vinaigrette, oscillated cucumber crystal, and crushed hazelnut crumble.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Origin: Normandy Coasts</span>
+<span class="material-symbols-outlined text-[18px] text-primary">water_drop</span>
+</div>
+</div>
+</div>
+<!-- Dish 8 (Beverage / Wine Flight) -->
+<div class="menu-card group flex flex-col bg-surface-container-low overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(214,179,106,0.1)]" data-category="beverages">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Antique luxury wine bottles in dark atmospheric stone cellar with amber candlelight, sommelier holding crystal burgundy glass reflecting golden candlelight, prestige grand cru vintage wine bottles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPbuXo9tKyvsogrteteroMD9sT-RuAQVyELUKQo51Rn_huel921xilo8WSF8wf-3SKnuPVE9ehkq7qhP0D8IalmoSYMw641rzSTd-YxEEGP7hghwjEKseOLxi0TEIs63n20pKD4wX9aBSRelnAM-WZgxOgtGUKW8TwBLPzqmBFSOm2gwZ9n8nURGl756Cv0Pm3qr4w1O0N7_WHnzl-jSnrUFU7nEzS799a2_7VvkUGE6iz9mYOpdQOVw"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Grand Cru</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Reserve</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-start justify-between gap-4 mb-2">
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface group-hover:text-primary transition-colors">Sommelier’s Imperial Flight (7 Parings)</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€280</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-4">
+                Curated tasting journey traversing Romanée-Conti, Chablis Grand Cru, and century-old Madeira, personalized by Chief Sommelier.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">3,500 Cellar References</span>
+<span class="material-symbols-outlined text-[18px] text-primary">liquor</span>
+</div>
+</div>
+</div>
+<!-- Dish 9 (Beverage - Vintage Champagne) -->
+<div class="menu-card group flex flex-col bg-surface-container-low overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(214,179,106,0.1)]" data-category="beverages">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Pouring effervescent champagne into an elegant crystal flute, glowing golden bubbles rising, dark reflective slate table, moody luxury nightclub and restaurant atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Zz_h0NfE64mp-JLO9RqP_0HM7_raFUeuXQxt38ecMY5vPx3yqwFldTaRlruYhklti3ruX9LNGV699msj6rwfGDOspLeSkn0eBLqTbnYY6Nlkk-__0bkINJQ8ZjGCFVc3ZQxdBlMbqDXAP7_xrmC7DfIzQY6WkfLMWAM0O0AhZDkz1NeWBEONylXkbHjhjB80aknWWcXzF83ZptUYQgb8zcUUQ14d6xzsr40hG7WhE9fpb-7QZEza5Q"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-sm">Champagne</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between bg-surface-container-low">
+<div>
+<div class="flex items-start justify-between gap-4 mb-2">
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface group-hover:text-primary transition-colors">Krug Clos d'Ambonnay 2002</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€1,850</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed mb-4">
+                Single tiny walled plot of Pinot Noir. Rare brioche notes, crystalline minerality, endless finish served at cellar temperature.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Provenance: Montagne de Reims</span>
+<span class="material-symbols-outlined text-[18px] text-primary">wine_bar</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Cellar Ledger Banner -->
+<div class="mt-16 p-8 bg-surface-container flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[28px]">menu_book</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-inverse-surface">Private Gastronomic Tasting Flights</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ten courses tailored specifically to guest palate preferences and rare seasonal market arrivals.</p>
+</div>
+</div>
+<a class="px-6 py-3 bg-surface-container-high text-primary font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-all duration-300 whitespace-nowrap" href="#booking-ledger">
+          Inquire with Sommelier
+        </a>
+</div>
+</div>
+</section>
+<!-- 3. CHEF'S SPECIAL EDITORIAL SECTION -->
+<section class="w-full py-space-xl bg-surface-container-lowest overflow-hidden">
+<div class="w-full max-w-7xl mx-auto px-gutter lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Feature Showcase -->
+<div class="lg:col-span-6 relative">
+<div class="relative p-2 bg-surface-container-low shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+<div class="w-full h-[460px] sm:h-[540px] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Culinary art masterpiece Turbot Roti aux Morilles et Vin Jaune, roasted turbot in Jura yellow wine sauce with hand foraged wild morels, gold leaf garnish, black background high contrast editorial culinary photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyCoKUEcKekBHoVuRs4rRiASpL5etqu2XgtjZO08eJ2JmloFsIXfemD11VpBVMEfIR-V62kQOVyw2P4qFWihMc42SdboU674-BKC0nd69IpACNBw7sDVCnsyZoGnMUq1xD7PrNdaboYQdmE4Lzbs-7aky2YHd_ilJMQI9cQDAoOliQWV3Rc6V9jgw07kI8IceaDzoztYCF4LMOcA_tfcfRUxv4R8d13DFMqqb9pEfSzlzAvR0g8swSDw"/>
+</div>
+<!-- Floating Monogram Badge -->
+<div class="absolute -bottom-6 -right-6 w-24 h-24 bg-surface-container-lowest p-2 shadow-2xl flex items-center justify-center">
+<img alt="Noir &amp; Gold Masterpiece" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDdFxVimg226tJd4FR3EsKGRlPnaffrIQYm4pr1NPd1blzPNyqt0tmpX8UrUqmX3a99fZEzBw_lRXDbqtW7CdNaQOWckTDJfbgbpRNsZpt5Gy_UhLrXB6PKckEafqKDT0lLxHV-jvyZz8n8NT8jz2HG7EsJzrp7Dc3L8A9PC-UVpPd1RDen6UIJnfhr4eQAU_mMTRSPy7mCFtY1KGsPoyyDUcK5C1-I8Z1HKtc6HTJItfucQphvfIUiw"/>
+</div>
+</div>
+</div>
+<!-- Right Editorial Text -->
+<div class="lg:col-span-6 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-[20px]">workspace_premium</span>
+<span class="font-label-lg text-label-lg uppercase tracking-[0.25em] text-primary">Chef de Cuisine Spotlight</span>
+</div>
+<h2 class="font-display-lg text-headline-lg lg:text-display-lg text-inverse-surface mb-6 leading-tight font-normal">
+            Turbot Rôti aux Morilles <span class="text-primary italic">&amp; Vin Jaune</span>
+</h2>
+<div class="relative pl-6 mb-8 bg-surface-container-low/40 py-4 pr-4">
+<p class="font-headline-sm text-headline-sm text-secondary-fixed italic font-normal leading-relaxed">
+              “Cooking is an ephemeral architecture where memory, fire, and obsessive precision align in silence.”
+            </p>
+<span class="block mt-2 font-label-md text-label-md text-outline uppercase tracking-widest">— Antoine Laurent, 3-Michelin Star Laureate</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed mb-6">
+            Hand-foraged wild black morels harvested from high altitude pine forests of the Jura mountains, slowly braised with 2014 Chateau Chalon Vin Jaune and unpasteurized alpine butter. The wild Atlantic turbot is seared skin-crisp over binchotan embers before taking a bath in golden emulsion.
+          </p>
+<div class="grid grid-cols-2 gap-4 py-4 mb-8 bg-surface-container p-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Harvest Provenance</span>
+<span class="font-body-md text-body-md text-inverse-surface font-semibold">Jura Pine Foothills, France</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Vessel Curation</span>
+<span class="font-body-md text-body-md text-inverse-surface font-semibold">Bespoke Obsidian Cloche</span>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<a class="group flex items-center gap-2 font-label-lg text-label-lg uppercase tracking-[0.18em] text-primary hover:text-secondary-fixed transition-colors" href="#signature-menu">
+<span>Discover the Dish</span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-2">arrow_forward</span>
+</a>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<a class="font-label-lg text-label-lg uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors" href="#experience">
+              Meet the Chef
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. OUR STORY & CULINARY HERITAGE -->
+<section class="w-full py-space-xl bg-surface-dim" id="story">
+<div class="w-full max-w-7xl mx-auto px-gutter lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Story Text -->
+<div class="lg:col-span-6 flex flex-col">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">Heritage &amp; Philosophy</span>
+</div>
+<h2 class="font-display-lg text-headline-lg lg:text-display-lg text-inverse-surface mb-6 font-normal">
+            The Philosophy of <span class="italic text-primary">Nocturnal Luxury</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-light leading-relaxed mb-6">
+            Born within an 18th-century private mansion on Rue du Faubourg Saint-Honoré in Paris, NOIR &amp; GOLD was conceived to strip away theatrical distractions and place unconditional focus on pure product, rare heat, and liquid gold pairings.
+          </p>
+<p class="font-body-md text-body-md text-outline font-light leading-relaxed mb-8">
+            Expanding subsequently into discreet enclaves in Mayfair, London, and Tokyo’s Ginza district, every dining salon remains strictly capped at 28 covers per service. We hold an enduring commitment: uncompromising reverence for biodiversity, seasonal micro-farms, and century-old viticulture.
+          </p>
+<!-- Three Pillars -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+<div class="p-4 bg-surface-container flex flex-col">
+<span class="font-display-lg text-headline-sm text-primary font-bold mb-1">01</span>
+<span class="font-headline-sm text-[16px] text-inverse-surface mb-1">Obsessive Terroir</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Direct farmer contracts spanning Brittany coasts to Hokkaido.</span>
+</div>
+<div class="p-4 bg-surface-container flex flex-col">
+<span class="font-display-lg text-headline-sm text-primary font-bold mb-1">02</span>
+<span class="font-headline-sm text-[16px] text-inverse-surface mb-1">Blade Precision</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Japanese forged knives preserving natural cellular textures.</span>
+</div>
+<div class="p-4 bg-surface-container flex flex-col">
+<span class="font-display-lg text-headline-sm text-primary font-bold mb-1">03</span>
+<span class="font-headline-sm text-[16px] text-inverse-surface mb-1">The 3,500 Vault</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Subterranean cellar storing unreleased mythical French vintages.</span>
+</div>
+</div>
+</div>
+<!-- Visual Interior Showcase -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full h-[520px] bg-surface-container-low shadow-[0_25px_60px_rgba(0,0,0,0.7)] overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Atmospheric warm interior of Noir and Gold restaurant, dark obsidian polished tables, glowing amber candles, brass modern chandeliers, private banquettes, ultra luxury Paris dining atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcTR8bRl9B1bQTAR2TJVfz2_4Expj64Kj43gm-uI_SkVXlkAYA3F-ioupPA4N6zdzH_mOXnr921QcRrpfUoFzsATWyVGnjEV-itLSzZdaGshCd9P8bUZEgON7_x3XIMVBaUvsqS8EMOr6_DcsrWWFYko0xomBZEcqEeSKCc47ImxwAxxZ65jIj3TADT3KZek10R7zHz5rsLePSStW6YwK3k9vWrocQvTBcCqu_E9AdHDewiYaioisR0A"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 bg-surface-container-lowest/90 backdrop-blur-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block">Salon Paris VIII</span>
+<span class="font-headline-sm text-[17px] text-inverse-surface">L'Hôtel Particulier</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Covers</span>
+<span class="font-headline-sm text-[17px] text-primary">28 Exclusive</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. RESTAURANT ATMOSPHERE & EXPERIENCE GALLERY -->
+<section class="w-full py-space-xl bg-surface-container-lowest" id="experience">
+<div class="w-full max-w-7xl mx-auto px-gutter lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary font-semibold block mb-2">Curated Spaces</span>
+<h2 class="font-display-lg text-headline-lg lg:text-display-lg text-inverse-surface font-normal">
+            Atmospheric Architecture
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md font-light">
+          Spaces planned for acoustic privacy, candlelit warmth, and intimate culinary theater.
+        </p>
+</div>
+<!-- Curated Mosaic Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Main Dining Room (Big Card) -->
+<div class="md:col-span-8 group relative h-96 overflow-hidden bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Main dining room at Noir and Gold, architectural brass overhead lighting, velvet dark charcoal banquettes, discreet tables illuminated by glowing beeswax candles, moody cinematic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBUG5rBNjQhhHKNy-oc2Vrr6Cn1XhkSJkJ5dUeFf7NaXBSgI3aDW-FA4mFEJpxEzz99tI6p85FS5WhbkoQ3wX0QdSgeqwKfke8A_V9VRlEVonbkejZ2nehXVCHCg8NvJeTwrFdybsBRrn1-Fn8cJ_UG-cdCgmUS80ti2IPIAl0kOheAlYtsdxnzcc2PXUyWlCsoju2WOBdjn88bK4aoTiY-InADMKC8LQxL0m1UCe2C8M64J1hND7EQA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1 block">Sanctuary of Taste</span>
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface">The Main Dining Room</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-1">Candlelit obsidian banquettes beneath architectural hand-patinated brass fixtures.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px] opacity-0 group-hover:opacity-100 transition-opacity">north_east</span>
+</div>
+</div>
+<!-- The Sommelier's Reserve -->
+<div class="md:col-span-4 group relative h-96 overflow-hidden bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Floor to ceiling glass wine cellar vault, lit with warm golden backlighting showcasing rare vintage burgundy and bordeaux wine bottles on custom dark steel racks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmzeXEj40Izu3TnhHesuIkTLqGkoq0etxaKr296fTodXLVOXOt55x9wLhvM2o6DKOHDiLRCKwLjM6M72ZoCWkA4_eCLNrPNl_l2_n2ZOrjfpxZHtgcLiTSBAEK_7IhyFgzKRm7LxPRT_fGpEhLkNaX4c7NVtDpPlRibI6itojqmLanS3pakIOW09M7VlCgpsVrZ-KUiKTMldnC8OI4SDx6iOjDCGPKT2k15tfFf4p915rriwusegWvhA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1 block">Cellar Sanctum</span>
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface">The Reserve Cellar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-1">Floor-to-ceiling climate vault containing 3,500 historic appellations.</p>
+</div>
+</div>
+<!-- The Chef's Counter -->
+<div class="md:col-span-4 group relative h-80 overflow-hidden bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Intimate chef counter dining view, Michelin star chefs plating dishes under warm golden spotlight, dark minimalist kitchen pass with steam rising softly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjTbDK4YwAsM0ZY5FB4SOiYsZW80N0ydF_VsL0hrQDIQAs9f92aKdxKH_cATiWoaSkeyWuBFSg9iLQ1B1z9SPlXMsDASwwwnIG1Au4vLsO0LQuXtEibNpf_xQWhQbVU2Xs_cOHFOj1VdiMi3PodbroOhXebmpTKW5eQ75-PT6BBPrKkvvnm9YSeoi3y62dYoAAplqHalPlUStTEdTj1doqJfQE3Iyzy9ci8X4F5yrDu9hi70c0co9Pjg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1 block">Front Row Pass</span>
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface">The Chef’s Counter</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-1">Eight velvet stools fronting the open fire culinary pass.</p>
+</div>
+</div>
+<!-- The Private Salon Prive -->
+<div class="md:col-span-4 group relative h-80 overflow-hidden bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Private luxury dining salon with single long monolithic black marble table set for twelve guests with gold flatware, crystal stemware, and grand contemporary chandelier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQrJhJdWTF-fj5LELoK6xMZT99KP9cy2HA9nNaaFxIWZoSLTejbspAE6DzqCm0OwwdGhupzafiHPnqnqZJfR2Y-70A908Q1t8RBTTN3V0JWs8AZNZPxCfVX0uWF9OtkA9oUZOTB9eERX2Q2YukEcmvYmwS9nEr419bN0H9BtlHvT3Q5PFsCaIHnDXnauUt9hvI4KIMar3p4TR1syqtYUv2VQc4dwZ9dsAljKQkxaZkRihe7lblmTfXvw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1 block">Secluded Splendor</span>
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface">Salon Privé Colbert</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-1">A secluded imperial vault welcoming up to 14 distinguished guests.</p>
+</div>
+</div>
+<!-- Table Art & Ceramics -->
+<div class="md:col-span-4 group relative h-80 overflow-hidden bg-surface-container cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of table setting art, bespoke hand thrown charcoal ceramics with metallic gold rim, custom engraved brass cutlery, fine linen napkin on dark table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiHJ5NVYPtQD9FzufTsIO5tug38TqhlRtrCk_PjaFvyK8WXG9eoOsFvy_w-Qb4gHNygDl4BsrsrEsjLP6spTE0h6D94KH6yUKEWczQyJjjyUU5ACjyhanQbSeoS1JGblx75iufx6lN0YwjyE51MRcnMhwVnYBfxRM-xefMGIDUZW0izHdi01IaJ-YFzTKDMIJL4pXtda4S8wKh-piGlcMR7BFgJrnuhupcbLlasx574jQqekFc-BZezg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1 block">Tactile Craft</span>
+<h3 class="font-headline-sm text-headline-sm text-inverse-surface">Bespoke Table Art</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-1">Hand-thrown stoneware sculpted by master ceramists in Kyoto and Vallauris.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. INTERACTIVE RESERVATION BOOKING INTERFACE -->
+<section class="w-full py-space-xl bg-surface-dim relative" id="booking-ledger">
+<div class="w-full max-w-5xl mx-auto px-gutter lg:px-margin">
+<!-- Booking Frame Container -->
+<div class="bg-surface-container-low p-8 sm:p-12 lg:p-16 shadow-[0_20px_60px_rgba(0,0,0,0.85)] relative">
+<!-- Header Info -->
+<div class="text-center max-w-2xl mx-auto mb-12">
+<div class="flex items-center justify-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[22px]">calendar_month</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.28em] text-primary">Prestige Booking</span>
+</div>
+<h2 class="font-display-lg text-headline-lg lg:text-display-lg text-inverse-surface mb-4 font-normal">
+            Secure Your Table at NOIR &amp; GOLD
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            Bookings open precisely 60 days in advance. For parties exceeding 6 or private salon acquisitions, please contact our maître d’ directly.
+          </p>
+</div>
+<!-- Feedback Messages Slot -->
+<div class="hidden mb-8 p-5 bg-surface-container-high transition-all" id="booking-alert">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]" id="booking-alert-icon">verified</span>
+<div>
+<h5 class="font-headline-sm text-[16px] text-inverse-surface font-semibold" id="booking-alert-title">Reservation Request Transmitted</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-1" id="booking-alert-desc">Our Chief Concierge is reviewing your table parameters.</p>
+</div>
+</div>
+</div>
+<!-- Reservation Form -->
+<form class="space-y-8" id="reservation-form" onsubmit="handleReservationSubmit(event)">
+<!-- Row 1: Guest Information -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline">Full Guest Name *</label>
+<input class="w-full px-4 py-3 bg-surface-container text-inverse-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" id="guest-name" placeholder="Lord / Lady / Antoine Laurent" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline">Direct Email *</label>
+<input class="w-full px-4 py-3 bg-surface-container text-inverse-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" id="guest-email" placeholder="concierge@noblesse.fr" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline">Telephone Contact *</label>
+<input class="w-full px-4 py-3 bg-surface-container text-inverse-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" id="guest-phone" placeholder="+33 6 12 34 56 78" required="" type="tel"/>
+</div>
+</div>
+<!-- Row 2: Date & Experience Selection -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline">Reservation Date *</label>
+<input class="w-full px-4 py-3 bg-surface-container text-inverse-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" id="res-date" required="" type="date"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline">Dining Space Environment *</label>
+<select class="w-full px-4 py-3 bg-surface-container text-inverse-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" id="res-seating">
+<option value="main">Main Candlelit Salon</option>
+<option value="counter">The Chef’s Counter (Front-row Pass)</option>
+<option value="prive">Salon Privé Colbert (Exclusive Group)</option>
+</select>
+</div>
+</div>
+<!-- Row 3: Guests Selector -->
+<div class="flex flex-col gap-3">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline">Party Size *</label>
+<div class="flex flex-wrap gap-3" id="guest-selector-container">
+<button class="guest-btn w-12 h-12 bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm transition-colors" onclick="selectGuests(1)" type="button">1</button>
+<button class="guest-btn w-12 h-12 bg-primary-container text-on-primary font-headline-sm text-headline-sm transition-colors" onclick="selectGuests(2)" type="button">2</button>
+<button class="guest-btn w-12 h-12 bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm transition-colors" onclick="selectGuests(3)" type="button">3</button>
+<button class="guest-btn w-12 h-12 bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm transition-colors" onclick="selectGuests(4)" type="button">4</button>
+<button class="guest-btn w-12 h-12 bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm transition-colors" onclick="selectGuests(5)" type="button">5</button>
+<button class="guest-btn w-12 h-12 bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm transition-colors" onclick="selectGuests(6)" type="button">6</button>
+<button class="guest-btn px-4 h-12 bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md uppercase tracking-wider transition-colors" onclick="selectGuests(8)" type="button">Salon (8+)</button>
+</div>
+<input id="selected-guests" type="hidden" value="2"/>
+</div>
+<!-- Row 4: Seating Time Selector -->
+<div class="flex flex-col gap-3">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline">Preferred Service Seating *</label>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-3" id="time-selector-container">
+<button class="time-btn py-3 px-2 bg-surface-container hover:bg-surface-container-high text-inverse-surface font-label-md text-label-md tracking-wider transition-colors" onclick="selectTime('18:30')" type="button">18:30</button>
+<button class="time-btn py-3 px-2 bg-surface-container hover:bg-surface-container-high text-inverse-surface font-label-md text-label-md tracking-wider transition-colors" onclick="selectTime('19:15')" type="button">19:15</button>
+<button class="time-btn py-3 px-2 bg-primary-container text-on-primary font-label-md text-label-md tracking-wider transition-colors font-bold" onclick="selectTime('20:00')" type="button">20:00</button>
+<button class="time-btn py-3 px-2 bg-surface-container hover:bg-surface-container-high text-inverse-surface font-label-md text-label-md tracking-wider transition-colors" onclick="selectTime('20:45')" type="button">20:45</button>
+<button class="time-btn py-3 px-2 bg-surface-container hover:bg-surface-container-high text-inverse-surface font-label-md text-label-md tracking-wider transition-colors" onclick="selectTime('21:30')" type="button">21:30</button>
+</div>
+<input id="selected-time" type="hidden" value="20:00"/>
+</div>
+<!-- Row 5: Dietary Notes -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase tracking-wider text-outline">Dietary Preferences &amp; Sommelier Requests</label>
+<textarea class="w-full px-4 py-3 bg-surface-container text-inverse-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors resize-none" id="guest-notes" placeholder="Please indicate allergies, celebratory anniversaries, or specific Grand Cru wine interests..." rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-[18px] text-primary">lock</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Instant Concierge Verification</span>
+</div>
+<button class="w-full sm:w-auto px-10 py-4 bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-[0.2em] font-bold shadow-[0_10px_35px_-5px_rgba(214,179,106,0.3)] hover:bg-primary transition-all duration-300" type="submit">
+              Request a Reservation
+            </button>
+</div>
+</form>
+<p class="font-label-sm text-label-sm text-outline/80 text-center uppercase tracking-wider mt-8">
+          *Front-end demonstration: submissions simulate real-time confirmation pipeline without financial obligation.
+        </p>
+</div>
+</div>
+</section>
+<!-- 7. GUEST TESTIMONIALS & CRITIQUE -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="w-full max-w-7xl mx-auto px-gutter lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center mb-16">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[18px]">grade</span>
+<span class="material-symbols-outlined text-primary text-[18px]">grade</span>
+<span class="material-symbols-outlined text-primary text-[18px]">grade</span>
+</div>
+<h2 class="font-display-lg text-headline-lg lg:text-display-lg text-inverse-surface font-normal">
+          Accolades &amp; Praise
+        </h2>
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-primary mt-2">Critical Acclaim Across Continents</span>
+</div>
+<!-- Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Michelin Guide -->
+<div class="p-8 bg-surface-container-low flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center gap-1 text-primary mb-6">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm tracking-widest text-outline ml-2">2024</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-inverse-surface italic font-normal leading-relaxed mb-6">
+              “A symphony of nocturnal luxury and staggering technical discipline. Chef Laurent balances primeval embers with crystalline French classicism.”
+            </p>
+</div>
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary block">Michelin Guide</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Three Michelin Stars Evaluation</span>
+</div>
+</div>
+<!-- Gault & Millau -->
+<div class="p-8 bg-surface-container-low flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center gap-1 text-primary mb-6">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm tracking-widest text-outline ml-2">19.5 / 20</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-inverse-surface italic font-normal leading-relaxed mb-6">
+              “Every course is a sculpted meditation on texture, temperature, and mineral salinity. The cellar pairing reaches near celestial heights.”
+            </p>
+</div>
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary block">Gault &amp; Millau</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">Five Golden Toques &amp; Laureate</span>
+</div>
+</div>
+<!-- The New York Times -->
+<div class="p-8 bg-surface-container-low flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center gap-1 text-primary mb-6">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm tracking-widest text-outline ml-2">Critics' Pick</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-inverse-surface italic font-normal leading-relaxed mb-6">
+              “NOIR &amp; GOLD elevates European classical gastronomy into modern artistic ecstasy. Paris dining has reclaimed its sovereign crown.”
+            </p>
+</div>
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary block">The New York Times</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-light">International Dining Review</span>
+</div>
+</div>
+</div>
+<!-- Provenance Seal Strip -->
+<div class="mt-16 pt-8 border-t border-surface-container flex flex-wrap items-center justify-center gap-8 sm:gap-16 opacity-60">
+<span class="font-label-md text-label-md uppercase tracking-[0.3em] text-outline">Relais &amp; Châteaux 2025</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md uppercase tracking-[0.3em] text-outline">Les Grandes Tables du Monde</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md uppercase tracking-[0.3em] text-outline">World's 50 Best Discovery</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Client-side Scripting -->
+<script>
+  // 1. Interactive Menu Filtering
+  function filterMenu(category) {
+    const cards = document.querySelectorAll('.menu-card');
+    const buttons = document.querySelectorAll('.menu-tab-btn');
+
+    // Update active button classes
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-menu-category') === category) {
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+      } else {
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      }
+    });
+
+    // Toggle card visibility
+    cards.forEach(card => {
+      const cardCats = card.getAttribute('data-category') || '';
+      if (category === 'all' || cardCats.includes(category)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // 2. Guest Count Selector
+  function selectGuests(count) {
+    document.getElementById('selected-guests').value = count;
+    const buttons = document.querySelectorAll('#guest-selector-container button');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary');
+      btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+
+    event.currentTarget.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    event.currentTarget.classList.add('bg-primary-container', 'text-on-primary');
+  }
+
+  // 3. Seating Time Selector
+  function selectTime(time) {
+    document.getElementById('selected-time').value = time;
+    const buttons = document.querySelectorAll('#time-selector-container button');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+      btn.classList.add('bg-surface-container', 'text-inverse-surface');
+    });
+
+    event.currentTarget.classList.remove('bg-surface-container', 'text-inverse-surface');
+    event.currentTarget.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+  }
+
+  // 4. Booking Submission Validation & Notice
+  function handleReservationSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('guest-name').value;
+    const date = document.getElementById('res-date').value;
+    const time = document.getElementById('selected-time').value;
+    const guests = document.getElementById('selected-guests').value;
+    
+    const alertBox = document.getElementById('booking-alert');
+    const alertTitle = document.getElementById('booking-alert-title');
+    const alertDesc = document.getElementById('booking-alert-desc');
+    
+    if (name && date) {
+      alertTitle.textContent = `Reservation Requested: ${name} (${guests} Guests)`;
+      alertDesc.textContent = `Table held on ${date} at ${time}. Our concierge will verify wine cellar pairings and send your imperial access code within 2 hours.`;
+      alertBox.classList.remove('hidden');
+      alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  // Default initial date to tomorrow
+  window.addEventListener('DOMContentLoaded', () => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const dateInput = document.getElementById('res-date');
+    if (dateInput) {
+      dateInput.value = tomorrow.toISOString().split('T')[0];
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 pt-space-xl pb-space-lg"><div class="w-full px-gutter lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl border-b border-outline-variant/20"><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[24px]">auto_awesome</span><span class="font-headline-md text-headline-md uppercase tracking-[0.2em] text-primary">NOIR &amp; GOLD</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Where culinary artistry meets timeless obsidian elegance. Bespoke tasting flights and rare reserves tailored for the discerning palate.</p><p class="font-label-md text-label-md uppercase tracking-[0.2em] text-primary-fixed-dim">Place Vendôme • Mayfair • Ginza</p></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-[0.18em] text-primary">Service Hours</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span>Tuesday – Sunday: 18:00 – 00:00</span><span>Private Salon: By Imperial Appointment</span><span class="text-outline text-label-sm pt-space-xs">Cellar Sommelier Consultations 17:00 onwards</span></div></div><div class="lg:col-span-4 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-[0.18em] text-primary">L’Hôtel Particulier</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span>84 Rue du Faubourg Saint-Honoré, 75008 Paris</span><span>+33 1 42 68 55 00</span><span>concierge@noirandgold.com</span></div><div class="flex flex-wrap gap-space-sm pt-space-sm"><span class="px-space-sm py-space-xs border border-outline-variant/40 font-label-sm text-label-sm uppercase text-secondary tracking-wider">Michelin Guide</span><span class="px-space-sm py-space-xs border border-outline-variant/40 font-label-sm text-label-sm uppercase text-secondary tracking-wider">Relais &amp; Châteaux</span><span class="px-space-sm py-space-xs border border-outline-variant/40 font-label-sm text-label-sm uppercase text-secondary tracking-wider">Les Grandes Tables</span></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md"><span class="font-label-sm text-label-sm uppercase tracking-[0.14em] text-outline">© 2025 NOIR &amp; GOLD HAUTE GASTRONOMIE. ALL RIGHTS RESERVED.</span><div class="flex items-center gap-space-lg font-label-sm text-label-sm uppercase tracking-[0.14em] text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" href="#">Terms of Gastronomy</a><a class="hover:text-primary transition-colors" href="#">Press Dossier</a></div></div></div></footer><script src="../../portfolio-branding.js" data-portfolio-href="../../code.html" defer></script></body></html>

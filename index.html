@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio and CV of Mahmoud AbuSaeda, Information Technology graduate and front-end developer.">
+  <link rel="canonical" href="./">
+  <meta name="theme-color" content="#090a0b">
+  <title>Mahmoud AbuSaeda | Front-End Developer &amp; CV</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#home" aria-label="Mahmoud AbuSaeda, home">
+        <span class="brand-mark">MA</span>
+        <span class="brand-name">Mahmoud AbuSaeda</span>
+      </a>
+
+      <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language to Arabic" aria-pressed="false">العربية</button>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="menu-toggle-label" data-i18n="menu">Menu</span>
+      </button>
+
+      <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-i18n-aria="navLabel">
+        <a href="#about" data-i18n="navProfile">Profile</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#education" data-i18n="navEducation">Education</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <a class="header-contact" href="mailto:zxaq.ama77@gmail.com"><span data-i18n="getInTouch">Get in touch</span><span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">Information Technology Graduate</span></p>
+          <h1><span data-i18n="heroName">Mahmoud</span> <span data-i18n="heroSurname">AbuSaeda</span><br><span data-i18n="heroRole">Front-End Developer</span></h1>
+          <p class="hero-intro">
+            <span data-i18n="heroIntro">I build thoughtful, responsive web experiences with a focus on polished interfaces, clear interactions, and distinctive visual identity.</span>
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact"><span data-i18n="workTogether">Let's work together</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#projects" data-i18n="exploreWork">Explore my work</a>
+          </div>
+          <div class="hero-contact-links" aria-label="Contact links" data-i18n-aria="contactLinks">
+            <a href="mailto:zxaq.ama77@gmail.com">zxaq.ama77@gmail.com</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://wa.me/972597253835" target="_blank" rel="noopener noreferrer"><span data-i18n="whatsapp">WhatsApp</span>: +972 59 725 3835</a>
+          </div>
+        </div>
+
+        <figure class="portrait" data-reveal>
+          <div class="portrait-frame" data-image-motion>
+            <img src="img/mahmoud2.jpg" alt="Portrait of Mahmoud AbuSaeda" fetchpriority="high">
+          </div>
+          <figcaption><span class="status-dot"></span><span data-i18n="availability">Open to front-end opportunities</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container content-grid">
+        <div>
+          <p class="eyebrow" data-i18n="aboutEyebrow">A little about me</p>
+          <h2 data-i18n="aboutHeading">Building thoughtful web experiences.</h2>
+        </div>
+        <div class="about-copy">
+          <p data-i18n="aboutFirst">
+            I'm Mahmoud AbuSaeda, an Information Technology graduate focused on
+            Front-End Development. I turn ideas into responsive, user-friendly
+            websites and enjoy shaping each project into a memorable digital experience.
+          </p>
+          <p data-i18n="aboutSecond">
+            My work combines clean structure, considered visual details, and intuitive
+            interactions to create interfaces that feel polished across screen sizes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="skillsEyebrow">What I work with</p>
+          <h2 data-i18n="skillsHeading">Skills &amp; interests</h2>
+        </div>
+        <div class="skill-list" aria-label="Skills" data-i18n-aria="skillsLabel">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive design</span>
+          <span>Front-End development</span>
+          <span>UI implementation</span>
+          <span>Accessible interfaces</span>
+          <span>Interactive prototypes</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="projectsEyebrow">Selected work</p>
+          <h2 data-i18n="projectsHeading">Selected projects</h2>
+          <p class="section-intro" data-i18n="projectsIntro">A collection of responsive web experiences, from portfolio and authentication interfaces to cinema and restaurant concepts.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-preview" data-image-motion data-reveal>
+              <img class="project-image" src="img/portfolio-preview.png" alt="Screenshot of Mahmoud's personal portfolio website" loading="lazy">
+            </div>
+            <div class="project-details">
+              <div class="project-title-row">
+                <div>
+                  <p class="project-label" data-i18n="portfolioLabel">PERSONAL PROJECT</p>
+                  <h3 data-i18n="portfolioTitle">Personal Portfolio Website</h3>
+                </div>
+                <span class="project-status" data-i18n="portfolioStatus">You're here</span>
+              </div>
+              <p data-i18n="portfolioDescription">
+                A responsive portfolio site introducing my background, front-end interests,
+                and contact details. Built with semantic HTML, custom CSS, and lightweight JavaScript.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive design</li>
+              </ul>
+            </div>
+          </article>
+
+          <a class="project-card project-link" href="Sign/code.html" target="_blank" rel="noopener noreferrer" aria-label="Open the sign up and login system demo">
+            <div class="project-preview" data-image-motion data-reveal>
+              <img class="project-image" src="Sign/screen.png" alt="Screenshot of the sign up and login system interface" loading="lazy">
+            </div>
+            <div class="project-details">
+              <div class="project-title-row">
+                <div>
+                  <p class="project-label" data-i18n="authLabel">FRONT-END DEMO</p>
+                  <h3 data-i18n="authTitle">Sign Up &amp; Login System</h3>
+                </div>
+                <span class="project-status" data-i18n="openProject">Click to open ↗</span>
+              </div>
+              <p data-i18n="authDescription">
+                A responsive authentication interface with sign-in and sign-up forms,
+                input validation, and password visibility controls. This is a front-end
+                demonstration only; it does not create accounts or store passwords.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Form validation</li>
+              </ul>
+            </div>
+          </a>
+
+          <a class="project-card project-link" href="Films/code.html" target="_blank" rel="noopener noreferrer" aria-label="Open the Aurora Cinema project">
+            <div class="project-preview" data-image-motion data-reveal>
+              <img class="project-image" src="Films/screen.png" alt="Screenshot of the Aurora Cinema movie discovery interface" loading="lazy">
+            </div>
+            <div class="project-details">
+              <div class="project-title-row">
+                <div>
+                  <p class="project-label" data-i18n="cinemaLabel">CINEMA EXPERIENCE</p>
+                  <h3 data-i18n="cinemaTitle">Aurora Cinema</h3>
+                </div>
+                <span class="project-status" data-i18n="viewProject">View project ↗</span>
+              </div>
+              <p data-i18n="cinemaDescription">
+                A cinematic movie discovery concept featuring a premium dark interface,
+                searchable titles, genre navigation, and curated film collections.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>HTML</li>
+                <li>Tailwind CSS</li>
+                <li>Responsive UI</li>
+                <li>Movie discovery</li>
+              </ul>
+            </div>
+          </a>
+
+          <a class="project-card project-link" href="Resturant/noir_gold_world_class_luxury_haute_gastronomie/code.html" target="_blank" rel="noopener noreferrer" aria-label="Open the Noir and Gold restaurant project">
+            <div class="project-preview" data-image-motion data-reveal>
+              <img class="project-image" src="Resturant/noir_gold_world_class_luxury_haute_gastronomie/screen.png" alt="Screenshot of the Noir and Gold restaurant website" loading="lazy">
+            </div>
+            <div class="project-details">
+              <div class="project-title-row">
+                <div>
+                  <p class="project-label" data-i18n="restaurantLabel">RESTAURANT WEBSITE</p>
+                  <h3 data-i18n="restaurantTitle">Noir &amp; Gold</h3>
+                </div>
+                <span class="project-status" data-i18n="viewProject">View project ↗</span>
+              </div>
+              <p data-i18n="restaurantDescription">
+                A luxury restaurant concept with an editorial visual identity,
+                refined menu presentation, dining experience highlights, and reservation call to action.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>HTML</li>
+                <li>Tailwind CSS</li>
+                <li>Responsive UI</li>
+                <li>Restaurant concept</li>
+              </ul>
+            </div>
+          </a>
+
+          <a class="project-card project-link" href="Online%20Clothing%20Store/aurelia_paris_haute_couture_luxury_fashion/code.html" target="_blank" rel="noopener noreferrer" aria-label="Open the Aurelia Paris fashion store project">
+            <div class="project-preview" data-image-motion data-reveal>
+              <img class="project-image" src="Online%20Clothing%20Store/aurelia_paris_haute_couture_luxury_fashion/screen.png" alt="Screenshot of the Aurelia Paris fashion storefront" loading="lazy">
+            </div>
+            <div class="project-details">
+              <div class="project-title-row">
+                <div>
+                  <p class="project-label" data-i18n="fashionLabel">FASHION STOREFRONT</p>
+                  <h3 data-i18n="fashionTitle">Aurelia Paris Fashion Store</h3>
+                </div>
+                <span class="project-status" data-i18n="viewProject">View project ↗</span>
+              </div>
+              <p data-i18n="fashionDescription">
+                An elegant fashion storefront concept with editorial product imagery,
+                curated clothing and accessory collections, and responsive shopping navigation.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>HTML</li>
+                <li>Tailwind CSS</li>
+                <li>Responsive UI</li>
+                <li>Fashion e-commerce</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="container education-card">
+        <div>
+          <p class="eyebrow" data-i18n="educationEyebrow">Education</p>
+          <h2 data-i18n="educationHeading">Information Technology Graduate</h2>
+        </div>
+        <p data-i18n="educationDescription">Focused on front-end development and building useful, engaging digital experiences.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow" data-i18n="contactEyebrow">Have a project in mind?</p>
+          <h2 data-i18n="contactHeading">Let's create something useful.</h2>
+          <p data-i18n="contactDescription">Get in touch about opportunities, freelance work, or a project you'd like to discuss.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:zxaq.ama77@gmail.com"><span data-i18n="emailMe">Email me</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://wa.me/972597253835" target="_blank" rel="noopener noreferrer"><span data-i18n="messageWhatsapp">Message on WhatsApp</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="current-year"></span> Mahmoud AbuSaeda</p>
+      <a href="#home" data-i18n="backToTop">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

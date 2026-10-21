@@ -1,0 +1,60 @@
+.site-backdrop {
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 18% 18%, rgba(118, 104, 181, 0.18), transparent 36%),
+    radial-gradient(ellipse at 82% 28%, rgba(85, 184, 202, 0.12), transparent 32%),
+    linear-gradient(145deg, #0d1324 0%, #101a30 52%, #0d1324 100%);
+}
+
+.site-backdrop::before {
+  position: absolute;
+  inset: -14px;
+  background:
+    linear-gradient(rgba(8, 13, 27, 0.72), rgba(8, 13, 27, 0.82)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2400&q=85") center 48% / cover no-repeat;
+  content: "";
+  filter: blur(8px);
+  opacity: 0.48;
+}
+
+.glass-panel {
+  background: rgba(21, 29, 51, 0.8);
+  border: 1px solid rgba(118, 104, 181, 0.32);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.glass-panel-subtle {
+  background: rgba(17, 24, 43, 0.72);
+  border: 1px solid rgba(85, 184, 202, 0.18);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.glass-input {
+  background: rgba(11, 16, 32, 0.78);
+  border: 1px solid rgba(118, 104, 181, 0.34);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-input:focus {
+  border-color: #55b8ca;
+  box-shadow: 0 0 0 2px rgba(85, 184, 202, 0.2);
+  outline: none;
+}
+
+.gradient-top-line {
+  position: relative;
+}
+
+.gradient-top-line::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background: linear-gradient(90deg, #7668b5 0%, #55b8ca 100%);
+  content: "";
+}

@@ -1,0 +1,137 @@
+.ma-signature {
+  position: relative;
+  z-index: 60;
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 8px clamp(18px, 5vw, 72px);
+  border-bottom: 1px solid rgba(214, 182, 106, 0.32);
+  background: #090a0b;
+  color: #f5f3ee;
+  font: 500 12px/1.4 "Segoe UI", Arial, sans-serif;
+}
+
+.ma-signature-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.ma-signature-mark {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  place-items: center;
+  border: 1px solid rgba(214, 182, 106, 0.65);
+  border-radius: 8px;
+  color: #d6b66a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.ma-signature-name,
+.ma-signature-portfolio {
+  color: #d6b66a;
+  font-weight: 700;
+}
+
+.ma-signature-role {
+  color: #aaa9a4;
+}
+
+.ma-signature-portfolio {
+  text-decoration: none;
+}
+
+.ma-signature a:hover,
+.ma-project-footer a:hover {
+  color: #f5d991;
+}
+
+.ma-project-footer {
+  position: relative;
+  z-index: 5;
+  padding: 30px clamp(18px, 5vw, 72px);
+  border-top: 1px solid rgba(214, 182, 106, 0.3);
+  background: #090a0b;
+  color: #f5f3ee;
+  font: 400 13px/1.6 "Segoe UI", Arial, sans-serif;
+}
+
+.ma-project-footer-inner {
+  display: flex;
+  max-width: 1240px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.ma-project-footer p {
+  margin: 0;
+}
+
+.ma-footer-kicker {
+  margin-bottom: 4px !important;
+  color: #d6b66a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.ma-footer-name {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.ma-footer-role {
+  color: #aaa9a4;
+}
+
+.ma-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 22px;
+}
+
+.ma-project-footer a {
+  color: #d6b66a;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.ma-footer-portfolio {
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .ma-signature {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 7px 14px;
+  }
+
+  .ma-signature-role {
+    flex: 1 1 calc(100% - 45px);
+    margin-left: 38px;
+  }
+
+  .ma-signature-portfolio {
+    margin-left: auto;
+  }
+
+  .ma-project-footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ma-footer-links {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mahmoud AbuSaeda | Web Developer</title>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter & JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            midnight: {
+              900: '#0D1324',
+              800: '#141C31',
+              700: '#202B45',
+              card: 'rgba(21, 29, 51, 0.82)'
+            },
+            electric: {
+              violet: '#7668B5',
+              violetLight: '#B5AADF',
+              cyan: '#55B8CA',
+              cyanLight: '#91D8E3',
+              border: 'rgba(118, 104, 181, 0.4)',
+              borderSubtle: 'rgba(85, 184, 202, 0.22)'
+            },
+            slateText: {
+              primary: '#F1F5F9',
+              secondary: '#A6B0C3'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          },
+          boxShadow: {
+            'electric-glow': '0 0 22px -8px rgba(118, 104, 181, 0.3), 0 0 14px -5px rgba(85, 184, 202, 0.18)',
+            'card-glass': '0 8px 32px 0 rgba(0, 0, 0, 0.38)'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-midnight-900 text-slateText-primary font-sans antialiased min-h-screen relative selection:bg-electric-violet selection:text-white overflow-x-hidden">
+<div aria-hidden="true" class="site-backdrop fixed inset-0 z-0 pointer-events-none"></div>
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 w-full border-b border-electric-border/40 bg-midnight-900/85 backdrop-blur-md px-4 sm:px-8 py-3.5">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+<!-- Brand Title and Role -->
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-lg bg-gradient-to-br from-electric-violet to-electric-cyan flex items-center justify-center shadow-lg shadow-electric-violet/30">
+<svg aria-hidden="true" class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h1 class="text-base sm:text-lg font-bold tracking-tight text-white flex items-center gap-2">
+            Mahmoud AbuSaeda
+            <span class="text-xs px-2 py-0.5 rounded-full font-mono font-medium bg-gradient-to-r from-electric-violet/30 to-electric-cyan/30 text-electric-cyan border border-electric-cyan/40">
+              Web Developer
+            </span>
+</h1>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-midnight-800/80 border border-electric-border text-xs text-slateText-secondary font-mono">
+<span class="w-2 h-2 rounded-full bg-electric-cyan"></span>
+<span class="text-slateText-primary font-medium">Front-End Developer</span>
+</div>
+<a class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-electric-violet/20 hover:bg-electric-violet/30 border border-electric-violet text-electric-violetLight transition-colors" href="#auth-section">
+          Sign In
+        </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: NavigationBar -->
+<div class="relative z-40 max-w-7xl mx-auto px-4 pt-6 sm:pt-8 flex justify-center">
+<nav aria-label="Main Navigation" class="glass-panel-subtle rounded-full px-4 sm:px-6 py-2 shadow-electric-glow flex items-center gap-1 sm:gap-2">
+<a class="px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-white bg-electric-violet/30 border border-electric-violet shadow-sm transition-all duration-200" href="#auth-section" id="nav-home">
+        Home
+      </a>
+<a class="px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-slateText-secondary hover:text-white hover:bg-white/5 transition-all duration-200" href="#auth-section" onclick="switchAuthTab('signup')">
+        Sign Up
+      </a>
+<a class="px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-slateText-secondary hover:text-white hover:bg-white/5 transition-all duration-200" href="#about-section">
+        About Us
+      </a>
+<a class="px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-slateText-secondary hover:text-white hover:bg-white/5 transition-all duration-200" href="#contact-section">
+        Contact Us
+      </a>
+</nav>
+</div>
+<!-- END: NavigationBar -->
+<!-- BEGIN: MainContent -->
+<main class="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-24">
+<!-- BEGIN: Authentication Section -->
+<section aria-labelledby="auth-portal-title" class="flex flex-col items-center justify-center pt-2 pb-6" id="auth-section">
+<aside aria-label="Demo notice" class="w-full max-w-lg mb-6 rounded-xl bg-midnight-800/90 border border-electric-cyan/30 p-4 shadow-lg text-xs leading-relaxed text-electric-cyanLight flex gap-3 items-start" role="note">
+<svg aria-hidden="true" class="w-5 h-5 text-electric-cyan shrink-0 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<p>
+<strong class="font-semibold text-electric-cyanLight">Demo notice:</strong> Sign-in and sign-up are visual demonstrations only. No account is created and no password is sent to a server.
+        </p>
+</aside>
+<!-- Center Glassmorphism Authentication Card -->
+<div class="w-full max-w-[500px] glass-panel gradient-top-line rounded-2xl shadow-card-glass p-6 sm:p-8">
+<!-- Tab Switcher (Sign In vs Sign Up) -->
+<div aria-label="Authentication Options" class="grid grid-cols-2 p-1 mb-8 rounded-xl bg-midnight-900/80 border border-slate-700/60" role="tablist">
+<button aria-controls="panel-signin" aria-selected="true" class="py-2.5 text-sm font-semibold rounded-lg transition-all duration-200 text-white bg-gradient-to-r from-electric-violet to-electric-cyan shadow-md" id="tab-signin" onclick="switchAuthTab('signin')" role="tab" type="button">
+            Sign In
+          </button>
+<button aria-controls="panel-signup" aria-selected="false" class="py-2.5 text-sm font-medium rounded-lg transition-all duration-200 text-slateText-secondary hover:text-white" id="tab-signup" onclick="switchAuthTab('signup')" role="tab" type="button">
+            Sign Up
+          </button>
+</div>
+<!-- Form feedback -->
+<div class="hidden mb-6 p-3 rounded-lg text-xs font-medium border" id="auth-alert" role="alert"></div>
+<!-- BEGIN: Sign In Form Panel -->
+<div aria-labelledby="tab-signin" class="space-y-6" id="panel-signin" role="tabpanel">
+<div class="text-left">
+<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-electric-cyan" id="auth-portal-title">
+              Welcome Back
+            </h2>
+<p class="text-xs sm:text-sm text-slateText-secondary mt-1">
+              Sign in to try the front-end form demo.
+            </p>
+</div>
+<form class="space-y-4" id="form-signin" novalidate="" onsubmit="handleSignInSubmit(event)">
+<!-- Username Input -->
+<div>
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider mb-1.5" for="signin-username">
+                Email or Username <span class="text-electric-cyan">*</span>
+</label>
+<input autocomplete="username" class="glass-input w-full px-3.5 py-2.5 rounded-lg text-sm text-slateText-primary placeholder-slate-500" id="signin-username" name="username" placeholder="Enter your email or username" required="" type="text"/>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="signin-username-error" role="alert">Username is required.</span>
+</div>
+<!-- Password Input with Toggle -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider" for="signin-password">
+                  Password <span class="text-electric-cyan">*</span>
+</label>
+<a class="text-xs text-electric-cyan hover:text-electric-cyanLight transition-colors" href="#contact-section">
+                  Forgot key?
+                </a>
+</div>
+<div class="relative">
+<input autocomplete="current-password" class="glass-input w-full px-3.5 py-2.5 rounded-lg text-sm text-slateText-primary placeholder-slate-500 pr-10" id="signin-password" name="password" placeholder="••••••••••••" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slateText-secondary hover:text-electric-cyan focus:outline-none" onclick="togglePasswordVisibility('signin-password', this)" type="button">
+<svg class="h-4 w-4 eye-icon" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="signin-password-error" role="alert">Password is required.</span>
+</div>
+<!-- Remember Me -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input class="w-4 h-4 rounded bg-midnight-900 border-electric-border text-electric-violet focus:ring-electric-violet focus:ring-offset-midnight-900" id="signin-remember" type="checkbox"/>
+<span class="text-xs text-slateText-secondary">Remember session for 30 days</span>
+</label>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-3 px-4 rounded-lg bg-gradient-to-r from-electric-violet to-electric-cyan hover:from-electric-violetLight hover:to-electric-cyanLight text-white font-semibold text-sm shadow-electric-glow transition-all duration-200 transform hover:scale-[1.01] active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-electric-cyan focus:ring-offset-2 focus:ring-offset-midnight-900" type="submit">
+              Sign In
+            </button>
+</form>
+<!-- Switch Link -->
+<div class="text-center pt-2">
+<p class="text-xs text-slateText-secondary">
+              Don't have an account? 
+              <button class="text-electric-cyan hover:text-white font-medium ml-1 underline decoration-electric-cyan/40 underline-offset-4 transition-colors" onclick="switchAuthTab('signup')" type="button">
+                Sign Up
+              </button>
+</p>
+</div>
+</div>
+<!-- END: Sign In Form Panel -->
+<!-- BEGIN: Sign Up Form Panel -->
+<div aria-labelledby="tab-signup" class="space-y-6 hidden" id="panel-signup" role="tabpanel">
+<div class="text-left">
+<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-electric-cyan">
+              Create Account
+            </h2>
+<p class="text-xs sm:text-sm text-slateText-secondary mt-1">
+              Try the sign-up form interaction.
+            </p>
+</div>
+<form class="space-y-4" id="form-signup" novalidate="" onsubmit="handleSignUpSubmit(event)">
+<!-- Full Name -->
+<div>
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider mb-1.5" for="signup-name">
+                Full Name <span class="text-electric-cyan">*</span>
+</label>
+<input autocomplete="name" class="glass-input w-full px-3.5 py-2 rounded-lg text-sm text-slateText-primary placeholder-slate-500" id="signup-name" name="fullname" placeholder="Your full name" required="" type="text"/>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="signup-name-error" role="alert">Full name is required.</span>
+</div>
+<!-- Username -->
+<div>
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider mb-1.5" for="signup-username">
+                Username <span class="text-electric-cyan">*</span>
+</label>
+<input autocomplete="username" class="glass-input w-full px-3.5 py-2 rounded-lg text-sm text-slateText-primary placeholder-slate-500" id="signup-username" name="username" placeholder="Choose a username" required="" type="text"/>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="signup-username-error" role="alert">Please provide a valid username (min 3 characters).</span>
+</div>
+<!-- Email Address -->
+<div>
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider mb-1.5" for="signup-email">
+                Email Address <span class="text-electric-cyan">*</span>
+</label>
+<input autocomplete="email" class="glass-input w-full px-3.5 py-2 rounded-lg text-sm text-slateText-primary placeholder-slate-500" id="signup-email" name="email" placeholder="you@example.com" required="" type="email"/>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="signup-email-error" role="alert">A valid email address is required.</span>
+</div>
+<!-- Password -->
+<div>
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider mb-1.5" for="signup-password">
+                Password <span class="text-electric-cyan">*</span>
+</label>
+<div class="relative">
+<input autocomplete="new-password" class="glass-input w-full px-3.5 py-2 rounded-lg text-sm text-slateText-primary placeholder-slate-500 pr-10" id="signup-password" name="password" placeholder="Min 8 characters" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slateText-secondary hover:text-electric-cyan focus:outline-none" onclick="togglePasswordVisibility('signup-password', this)" type="button">
+<svg class="h-4 w-4 eye-icon" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="signup-password-error" role="alert">Password must be at least 8 characters.</span>
+</div>
+<!-- Confirm Password -->
+<div>
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider mb-1.5" for="signup-confirmpassword">
+                Confirm Password <span class="text-electric-cyan">*</span>
+</label>
+<div class="relative">
+<input autocomplete="new-password" class="glass-input w-full px-3.5 py-2 rounded-lg text-sm text-slateText-primary placeholder-slate-500 pr-10" id="signup-confirmpassword" name="confirmpassword" placeholder="Re-type password" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slateText-secondary hover:text-electric-cyan focus:outline-none" onclick="togglePasswordVisibility('signup-confirmpassword', this)" type="button">
+<svg class="h-4 w-4 eye-icon" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="signup-confirmpassword-error" role="alert">Passwords do not match.</span>
+</div>
+<!-- Submit Button -->
+<button class="w-full mt-2 py-3 px-4 rounded-lg bg-gradient-to-r from-electric-violet to-electric-cyan hover:from-electric-violetLight hover:to-electric-cyanLight text-white font-semibold text-sm shadow-electric-glow transition-all duration-200 transform hover:scale-[1.01] active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-electric-cyan" type="submit">
+              Create Account
+            </button>
+</form>
+<!-- Return Link -->
+<div class="text-center pt-2">
+<p class="text-xs text-slateText-secondary">
+              Already have an account? 
+              <button class="text-electric-cyan hover:text-white font-medium ml-1 underline decoration-electric-cyan/40 underline-offset-4 transition-colors" onclick="switchAuthTab('signin')" type="button">
+                Sign In
+              </button>
+</p>
+</div>
+</div>
+<!-- END: Sign Up Form Panel -->
+</div>
+</section>
+<!-- END: Authentication Section -->
+<!-- BEGIN: About Us Section -->
+<section aria-labelledby="about-heading" class="scroll-mt-24" id="about-section">
+<div class="glass-panel gradient-top-line rounded-2xl p-8 sm:p-12 shadow-card-glass">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric-violet/15 border border-electric-violet/40 text-electric-violetLight text-xs font-mono mb-4">
+<span>ABOUT ME</span>
+</div>
+<h2 class="text-2xl sm:text-4xl font-bold tracking-tight bg-gradient-to-r from-white via-slate-100 to-electric-cyan bg-clip-text text-transparent" id="about-heading">
+            Mahmoud AbuSaeda
+          </h2>
+<p class="mt-4 text-sm sm:text-base text-slateText-secondary leading-relaxed">
+            I'm Mahmoud AbuSaeda, an Information Technology graduate passionate about Front-End Development. I enjoy building modern, responsive, and user-friendly websites, and I'm always learning new technologies to turn ideas into digital experiences.
+          </p>
+<div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div class="p-4 rounded-xl bg-midnight-900/60 border border-electric-border/30">
+<div class="text-electric-cyan font-mono font-bold text-lg mb-1">01. IT Graduate</div>
+<p class="text-xs text-slateText-secondary">Information Technology graduate with a strong interest in modern web development.</p>
+</div>
+<div class="p-4 rounded-xl bg-midnight-900/60 border border-electric-border/30">
+<div class="text-electric-violetLight font-mono font-bold text-lg mb-1">02. Front-End</div>
+<p class="text-xs text-slateText-secondary">Focused on building clear, responsive interfaces that work smoothly across screen sizes.</p>
+</div>
+<div class="p-4 rounded-xl bg-midnight-900/60 border border-electric-border/30">
+<div class="text-electric-cyan font-mono font-bold text-lg mb-1">03. Always Learning</div>
+<p class="text-xs text-slateText-secondary">Exploring new technologies and turning useful ideas into digital experiences.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: About Us Section -->
+<!-- BEGIN: Contact Us Section -->
+<section aria-labelledby="contact-heading" class="scroll-mt-24" id="contact-section">
+<div class="glass-panel gradient-top-line rounded-2xl p-8 sm:p-12 shadow-card-glass">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Contact Info Column -->
+<div class="lg:col-span-5 space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric-cyan/15 border border-electric-cyan/40 text-electric-cyan text-xs font-mono">
+<span>GET IN TOUCH</span>
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold text-white" id="contact-heading">
+              Contact Mahmoud
+            </h2>
+<p class="text-xs sm:text-sm text-slateText-secondary leading-relaxed">
+              Interested in working together or have a question? Feel free to reach out by email or WhatsApp.
+            </p>
+<div class="pt-4 space-y-3 text-xs sm:text-sm">
+<div class="flex items-center gap-3 text-slateText-secondary">
+<svg class="w-5 h-5 text-electric-cyan shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<a class="hover:text-electric-cyan transition-colors" href="mailto:zxaq.ama77@gmail.com">zxaq.ama77@gmail.com</a>
+</div>
+<div class="flex items-center gap-3 text-slateText-secondary">
+<svg class="w-5 h-5 text-electric-violetLight shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<a class="hover:text-electric-violetLight transition-colors" href="https://wa.me/972597253835" rel="noopener noreferrer" target="_blank">WhatsApp: +972 59 725 3835</a>
+</div>
+</div>
+<div class="mt-6 p-4 rounded-xl bg-midnight-900/80 border border-electric-border/40 text-xs text-slateText-secondary">
+<strong class="text-electric-cyan block mb-1">Contact form notice:</strong>
+              This form is a front-end demo and does not send messages yet. Please contact me by email or WhatsApp.
+            </div>
+</div>
+<!-- Contact Form Column -->
+<div class="lg:col-span-7">
+<form class="space-y-4" id="contact-form" novalidate="" onsubmit="handleContactSubmit(event)">
+<div class="hidden p-3 rounded-lg text-xs font-medium border" id="contact-alert" role="alert"></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider mb-1.5" for="contact-name">
+                    Your Name <span class="text-electric-cyan">*</span>
+</label>
+<input class="glass-input w-full px-3.5 py-2.5 rounded-lg text-sm text-slateText-primary placeholder-slate-500" id="contact-name" name="name" placeholder="Mahmoud AbuSaeda" required="" type="text"/>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="contact-name-error" role="alert">Name is required.</span>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider mb-1.5" for="contact-email">
+                    Your Email <span class="text-electric-cyan">*</span>
+</label>
+<input class="glass-input w-full px-3.5 py-2.5 rounded-lg text-sm text-slateText-primary placeholder-slate-500" id="contact-email" name="email" placeholder="zxaq.ama77@gmail.com" required="" type="email"/>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="contact-email-error" role="alert">Valid email is required.</span>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slateText-primary uppercase tracking-wider mb-1.5" for="contact-message">
+                  Your Message <span class="text-electric-cyan">*</span>
+</label>
+<textarea class="glass-input w-full px-3.5 py-2.5 rounded-lg text-sm text-slateText-primary placeholder-slate-500" id="contact-message" name="message" placeholder="Write your message here..." required="" rows="4"></textarea>
+<span class="text-[11px] text-rose-400 mt-1 hidden" id="contact-message-error" role="alert">Message cannot be empty.</span>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-electric-violet hover:bg-electric-violetLight text-white font-semibold text-sm transition-all duration-200 shadow-md hover:shadow-electric-glow focus:outline-none focus:ring-2 focus:ring-electric-cyan" type="submit">
+                Send Message
+              </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Contact Us Section -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: MainFooter -->
+<footer class="relative z-30 border-t border-electric-border/30 bg-midnight-900/90 py-8 px-4 text-center text-xs text-slateText-secondary">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-electric-cyan"></span>
+<span class="font-mono text-slateText-primary font-medium">Mahmoud AbuSaeda · Web Developer</span>
+</div>
+<p>
+        © 2026 Mahmoud AbuSaeda. Front-End Developer.
+      </p>
+<div class="flex items-center gap-4 text-slateText-secondary">
+<a class="hover:text-electric-cyan transition-colors" href="#auth-section">Sign In</a>
+<a class="hover:text-electric-cyan transition-colors" href="#about-section">About Me</a>
+<a class="hover:text-electric-cyan transition-colors" href="#contact-section">Contact</a>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: Interactive Logic Scripts -->
+<script>
+    // Switches authentication mode between Sign In and Sign Up
+    function switchAuthTab(targetTab) {
+      const signInBtn = document.getElementById('tab-signin');
+      const signUpBtn = document.getElementById('tab-signup');
+      const signInPanel = document.getElementById('panel-signin');
+      const signUpPanel = document.getElementById('panel-signup');
+      const authAlert = document.getElementById('auth-alert');
+
+      // Reset alert on tab change
+      authAlert.classList.add('hidden');
+      authAlert.innerHTML = '';
+
+      if (targetTab === 'signin') {
+        signInPanel.classList.remove('hidden');
+        signUpPanel.classList.add('hidden');
+
+        signInBtn.setAttribute('aria-selected', 'true');
+        signUpBtn.setAttribute('aria-selected', 'false');
+
+        signInBtn.className = "py-2.5 text-sm font-semibold rounded-lg transition-all duration-200 text-white bg-gradient-to-r from-electric-violet to-electric-cyan shadow-md";
+        signUpBtn.className = "py-2.5 text-sm font-medium rounded-lg transition-all duration-200 text-slateText-secondary hover:text-white";
+      } else {
+        signInPanel.classList.add('hidden');
+        signUpPanel.classList.remove('hidden');
+
+        signInBtn.setAttribute('aria-selected', 'false');
+        signUpBtn.setAttribute('aria-selected', 'true');
+
+        signUpBtn.className = "py-2.5 text-sm font-semibold rounded-lg transition-all duration-200 text-white bg-gradient-to-r from-electric-violet to-electric-cyan shadow-md";
+        signInBtn.className = "py-2.5 text-sm font-medium rounded-lg transition-all duration-200 text-slateText-secondary hover:text-white";
+      }
+    }
+  </script>
+<script>
+    // Toggles password input between masked and visible
+    function togglePasswordVisibility(inputId, btn) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+
+      const isPassword = input.type === 'password';
+      input.type = isPassword ? 'text' : 'password';
+
+      // Update button SVG icon
+      if (isPassword) {
+        btn.innerHTML = `
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+          </svg>
+        `;
+        btn.setAttribute('aria-label', 'Hide password');
+      } else {
+        btn.innerHTML = `
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+          </svg>
+        `;
+        btn.setAttribute('aria-label', 'Show password');
+      }
+    }
+  </script>
+<script>
+    // Utility to show notification toast
+    function showNotification(elementId, message, isSuccess = true) {
+      const alertBox = document.getElementById(elementId);
+      if (!alertBox) return;
+
+      alertBox.classList.remove('hidden', 'bg-emerald-950/80', 'border-emerald-500/50', 'text-emerald-300', 'bg-rose-950/80', 'border-rose-500/50', 'text-rose-300');
+      
+      if (isSuccess) {
+        alertBox.classList.add('bg-emerald-950/80', 'border-emerald-500/50', 'text-emerald-300');
+      } else {
+        alertBox.classList.add('bg-rose-950/80', 'border-rose-500/50', 'text-rose-300');
+      }
+
+      alertBox.textContent = message;
+      alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // Handles Client-Side Sign In Validation
+    function handleSignInSubmit(event) {
+      event.preventDefault();
+      let isValid = true;
+
+      const usernameInput = document.getElementById('signin-username');
+      const passwordInput = document.getElementById('signin-password');
+      const userError = document.getElementById('signin-username-error');
+      const passError = document.getElementById('signin-password-error');
+
+      // Validation
+      if (!usernameInput.value.trim()) {
+        userError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        userError.classList.add('hidden');
+      }
+
+      if (!passwordInput.value) {
+        passError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        passError.classList.add('hidden');
+      }
+
+      if (isValid) {
+        showNotification('auth-alert', `Demo sign-in validated for ${usernameInput.value.trim()}. No account session was created.`, true);
+      }
+    }
+
+    // Handles Client-Side Sign Up Validation
+    function handleSignUpSubmit(event) {
+      event.preventDefault();
+      let isValid = true;
+
+      const nameInput = document.getElementById('signup-name');
+      const userInput = document.getElementById('signup-username');
+      const emailInput = document.getElementById('signup-email');
+      const passInput = document.getElementById('signup-password');
+      const confirmInput = document.getElementById('signup-confirmpassword');
+
+      const nameError = document.getElementById('signup-name-error');
+      const userError = document.getElementById('signup-username-error');
+      const emailError = document.getElementById('signup-email-error');
+      const passError = document.getElementById('signup-password-error');
+      const confirmError = document.getElementById('signup-confirmpassword-error');
+
+      // Name
+      if (!nameInput.value.trim()) {
+        nameError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        nameError.classList.add('hidden');
+      }
+
+      // Username
+      if (userInput.value.trim().length < 3) {
+        userError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        userError.classList.add('hidden');
+      }
+
+      // Email
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(emailInput.value.trim())) {
+        emailError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        emailError.classList.add('hidden');
+      }
+
+      // Password
+      if (passInput.value.length < 8) {
+        passError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        passError.classList.add('hidden');
+      }
+
+      // Confirm Password
+      if (passInput.value !== confirmInput.value || !confirmInput.value) {
+        confirmError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        confirmError.classList.add('hidden');
+      }
+
+      if (isValid) {
+        showNotification('auth-alert', `Demo form validated for ${userInput.value.trim()}. No account was stored.`, true);
+        document.getElementById('form-signup').reset();
+        setTimeout(() => switchAuthTab('signin'), 1600);
+      }
+    }
+
+    // Handles Contact Form Validation
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      let isValid = true;
+
+      const name = document.getElementById('contact-name');
+      const email = document.getElementById('contact-email');
+      const message = document.getElementById('contact-message');
+
+      const nameError = document.getElementById('contact-name-error');
+      const emailError = document.getElementById('contact-email-error');
+      const messageError = document.getElementById('contact-message-error');
+
+      if (!name.value.trim()) {
+        nameError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        nameError.classList.add('hidden');
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email.value.trim())) {
+        emailError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        emailError.classList.add('hidden');
+      }
+
+      if (!message.value.trim()) {
+        messageError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        messageError.classList.add('hidden');
+      }
+
+      if (isValid) {
+        showNotification('contact-alert', 'Thanks for your message. This demo does not send messages; please use the email or WhatsApp links above.', true);
+        document.getElementById('contact-form').reset();
+      }
+    }
+  </script>
+<!-- END: Interactive Logic Scripts -->
+<script src="../portfolio-branding.js" data-portfolio-href="../code.html" defer></script></body></html>

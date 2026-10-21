@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#7c3aed", "on-secondary-fixed-variant": "#004e5a", "on-primary-fixed-variant": "#5a00c6", "surface-container-highest": "#2f3446", "on-secondary": "#00363e", "on-tertiary-container": "#4e3d00", "on-surface": "#dee1f9", "tertiary-fixed-dim": "#e9c349", "on-primary-fixed": "#25005a", "tertiary-fixed": "#ffe088", "on-tertiary-fixed-variant": "#574500", "inverse-primary": "#732ee4", "surface-container": "#1a1f30", "secondary-container": "#00cbe6", "secondary": "#5de6ff", "on-primary": "#3f008e", "on-tertiary-fixed": "#241a00", "outline-variant": "#4a4455", "surface-dim": "#0e1323", "inverse-on-surface": "#2b3041", "on-secondary-fixed": "#001f25", "secondary-fixed": "#a2eeff", "tertiary-container": "#cba72f", "secondary-fixed-dim": "#2fd9f4", "outline": "#958da1", "surface-variant": "#2f3446", "tertiary": "#e9c349", "on-tertiary": "#3c2f00", "primary-fixed": "#eaddff", "primary": "#d2bbff", "error-container": "#93000a", "on-error": "#690005", "on-secondary-container": "#00515d", "primary-fixed-dim": "#d2bbff", "surface-container-lowest": "#080d1d", "surface-tint": "#d2bbff", "on-background": "#dee1f9", "on-surface-variant": "#ccc3d8", "surface-container-low": "#161b2b", "on-primary-container": "#ede0ff", "on-error-container": "#ffdad6", "surface-bright": "#34394a", "inverse-surface": "#dee1f9", "surface-container-high": "#25293a", "error": "#ffb4ab", "background": "#0e1323", "surface": "#0e1323" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin": "4rem", "space-sm": "0.5rem", "space-md": "1rem" }, "fontFamily": { "label-caps": ["Inter"], "body-xl": ["Inter"], "headline-xl-mobile": ["Sora"], "display-hero": ["Sora"], "body-lg": ["Inter"], "headline-md": ["Sora"], "headline-xl": ["Sora"], "label-sm": ["Inter"], "headline-lg": ["Sora"], "body-md": ["Inter"], "display-hero-mobile": ["Sora"], "headline-sm": ["Sora"] }, "fontSize": { "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" }], "body-xl": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "300" }], "headline-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-hero": ["80px", { "lineHeight": "88px", "letterSpacing": "-0.04em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/70 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(8,13,29,0.7)]"><div class="w-full px-margin h-20 flex items-center justify-between gap-gutter"><div class="flex items-center gap-gutter"><a class="flex items-center tracking-[0.25em] font-headline-md text-headline-md text-on-surface uppercase group" data-path="home" href="#"><span class="group-hover:text-primary transition-colors duration-300">AURELIA</span><span class="ml-2 text-tertiary font-light text-label-sm tracking-[0.3em]">PARIS</span></a></div><nav class="hidden xl:flex items-center gap-gutter" data-active-classes="text-on-surface border-b-2 border-primary-container"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="home" href="#">Home</a><a aria-current="page" class="font-label-caps uppercase py-2 transition-colors duration-200 text-on-surface border-b-2 border-primary-container" data-path="shop" href="#">Shop</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="men" href="#">Men</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="women" href="#">Women</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="new-arrivals" href="#">New Arrivals</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="sale" href="#">Sale</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors duration-200" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-lg"><button aria-label="Search Runway Archive" class="text-on-surface-variant hover:text-secondary transition-colors duration-200 flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Saved Wishlist" class="relative text-on-surface-variant hover:text-primary transition-colors duration-200 flex items-center justify-center" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] flex items-center justify-center font-bold">2</span></a><a aria-label="Shopping Bag" class="relative text-on-surface-variant hover:text-primary transition-colors duration-200 flex items-center justify-center" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[9px] flex items-center justify-center font-bold">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs in Canvas Background -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute top-12 left-1/4 w-96 h-96 rounded-full bg-primary-container/10 blur-[130px] pointer-events-none -z-10"></div>
+<div class="absolute top-96 right-12 w-80 h-80 rounded-full bg-secondary-container/10 blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute bottom-40 left-10 w-[450px] h-[450px] rounded-full bg-tertiary-container/5 blur-[160px] pointer-events-none -z-10"></div>
+<!-- Editorial Canvas Header -->
+<section class="w-full px-margin pt-space-lg pb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span></div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Automne-Hiver 2026/27</span>
+<span class="text-outline-variant font-label-caps text-label-caps">/</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Édition Limitée</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight uppercase">
+            The Atelier Catalog
+          </h1>
+<p class="font-body-xl text-body-xl text-on-surface-variant mt-space-xs font-light">
+            Curated Haute Couture &amp; Ready-to-Wear Silhouettes engineered with sculptural precision and midnight nocturnal resonance.
+          </p>
+</div>
+<!-- Atmospheric Micro Stats / Runway Telemetry -->
+<div class="flex items-center gap-space-lg self-start md:self-end bg-surface-container-low/60 backdrop-blur-md px-space-md py-space-sm rounded-xl shadow-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Archive Index</span>
+<span class="font-headline-sm text-headline-sm text-tertiary tracking-wider font-semibold">N° 08.4</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Silhouettes</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wider font-semibold" id="displayed-count">8 Ensembles</span>
+</div>
+</div>
+</section></div>
+<!-- Editorial Quote Banner Strip -->
+<div class="w-full mt-space-xl p-space-md rounded-xl bg-surface-container-low/40 backdrop-blur-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">auto_awesome</span>
+<span class="font-body-md text-body-md text-on-surface-variant italic">"Austerity meets electric liquid midnight. Each seam crafted in our Place Vendôme Atelier."</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-tertiary">Complimentary Private Courier</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Worldwide Discreet Vault Packaging</span>
+</div>
+</div>
+<!-- Glassmorphic Filter & Control Matrix -->
+<section class="w-full px-margin mb-space-xl">
+<div class="w-full bg-surface-container-low/70 backdrop-blur-xl rounded-xl p-space-lg shadow-xl flex flex-col gap-space-lg">
+<!-- Category Filter Pills -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-xs flex-wrap" id="category-filter-group">
+<button class="category-btn active px-space-md py-space-xs rounded-full font-label-caps text-label-caps uppercase tracking-widest transition-all duration-200 bg-primary-container text-on-primary-container shadow-[0_0_16px_-2px_rgba(124,58,237,0.5)]" data-cat="all">
+              All Silhouettes
+            </button>
+<button class="category-btn px-space-md py-space-xs rounded-full font-label-caps text-label-caps uppercase tracking-widest transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-cat="outerwear">
+              Outerwear
+            </button>
+<button class="category-btn px-space-md py-space-xs rounded-full font-label-caps text-label-caps uppercase tracking-widest transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-cat="tailoring">
+              Tailoring
+            </button>
+<button class="category-btn px-space-md py-space-xs rounded-full font-label-caps text-label-caps uppercase tracking-widest transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-cat="eveningwear">
+              Eveningwear
+            </button>
+<button class="category-btn px-space-md py-space-xs rounded-full font-label-caps text-label-caps uppercase tracking-widest transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-cat="knitwear">
+              Knitwear
+            </button>
+<button class="category-btn px-space-md py-space-xs rounded-full font-label-caps text-label-caps uppercase tracking-widest transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" data-cat="accessories">
+              Accessories
+            </button>
+</div>
+<!-- Dynamic Active Counter / View Toggle -->
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Curated</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm uppercase tracking-widest font-semibold" id="active-tag">Tous Ensembles</span>
+</div>
+</div>
+<!-- Secondary Controls: Fabric Filter, Price Slider & Sorter -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center pt-space-xs">
+<!-- Fabric Selector Drop-chips -->
+<div class="md:col-span-5 flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">texture</span>
+              Fabric Selection
+            </label>
+<div class="flex items-center gap-space-xs flex-wrap" id="fabric-filter-group">
+<button class="fabric-btn active px-space-sm py-1 rounded-lg font-label-sm text-label-sm uppercase transition-all duration-200 bg-surface-container-highest text-on-surface shadow-sm" data-fabric="all">
+                Any Fabric
+              </button>
+<button class="fabric-btn px-space-sm py-1 rounded-lg font-label-sm text-label-sm uppercase transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" data-fabric="Italian Cashmere">
+                Italian Cashmere
+              </button>
+<button class="fabric-btn px-space-sm py-1 rounded-lg font-label-sm text-label-sm uppercase transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" data-fabric="French Wool">
+                French Wool
+              </button>
+<button class="fabric-btn px-space-sm py-1 rounded-lg font-label-sm text-label-sm uppercase transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface" data-fabric="Silk Organza">
+                Silk Organza
+              </button>
+</div>
+</div>
+<!-- Price Ceiling Slider -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider flex items-center gap-space-xs" for="price-range">
+<span class="material-symbols-outlined text-[16px] text-tertiary">payments</span>
+                Ceiling Valuation
+              </label>
+<span class="font-label-caps text-label-caps text-tertiary font-bold tracking-widest" id="price-display">€6,500</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary-container" id="price-range" max="6500" min="1200" step="100" type="range" value="6500"/>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm opacity-60">
+<span>€1,200</span>
+<span>€6,500</span>
+</div>
+</div>
+<!-- Sorting Mode -->
+<div class="md:col-span-3 flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider flex items-center gap-space-xs" for="sort-select">
+<span class="material-symbols-outlined text-[16px] text-secondary">swap_vert</span>
+              Sort Aesthetic
+            </label>
+<div class="relative w-full">
+<select class="w-full bg-surface-container px-space-md py-space-xs pr-8 rounded-xl font-label-sm text-label-sm text-on-surface tracking-wider appearance-none cursor-pointer focus:outline-none focus:bg-surface-container-high transition-colors" id="sort-select">
+<option value="featured">Featured Runway Sequence</option>
+<option value="newest">Latest Atelier Releases</option>
+<option value="price-desc">Valuation: High to Low</option>
+<option value="price-asc">Valuation: Low to High</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Fashion Mosaic Grid -->
+<section class="w-full px-margin pb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter transition-opacity duration-300" id="product-grid">
+<!-- ITEM 1 -->
+<article class="product-card group flex flex-col bg-surface-container-low/60 backdrop-blur-md rounded-xl overflow-hidden hover:bg-surface-container/80 transition-all duration-300 hover:shadow-[0_0_28px_-6px_rgba(124,58,237,0.35)]" data-cat="outerwear" data-fabric="Italian Cashmere" data-id="1" data-price="4850">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="Haute couture female model wearing a sweeping obsidian midnight cashmere architectural trench coat with sharp exaggerated lapels in a dimly lit neon violet Paris boulevard at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqIMwKC9vXIzFVNlsi7kFDjEHC0p40uYFFZLoYDPC9xGDumVKqAuSPsbPIO-fHbKkhDPKCsptOhb-BrUQBYjBfqRsx39pbyJ8Gf6yFpVyPtOifB84VBG9_FrXHlnqwLbTJgf7Xn-5p7nUfuGjKTzKRcB0vZza5zZIct2IkJJqPF0b8T_5XufdKaEN21mugahAlq_H_RjqP26HsiHPgi33Jk3cN6FpsUkmGuvTM6etvf4swT5SHyAMtSw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Runway 01</span>
+</div>
+<button aria-label="Add to Wishlist" class="wishlist-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Italian Cashmere</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold tracking-wider">€4,850</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">Lookbook A/W 25</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Obsidian Cocoon Trench</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-1">Structural double-faced Italian cashmere with draped shoulders.</p>
+</div>
+<!-- Swatches & Sizes Controls -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#080d1d] ring-1 ring-primary-container cursor-pointer" title="Midnight Noir"></span>
+<span class="w-3 h-3 rounded-full bg-[#25293a] cursor-pointer opacity-70 hover:opacity-100" title="Dark Slate"></span>
+<span class="w-3 h-3 rounded-full bg-[#7c3aed] cursor-pointer opacity-70 hover:opacity-100" title="Deep Violet"></span>
+</div>
+<!-- Sizes -->
+<div class="size-group flex items-center gap-1">
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors active" type="button">36</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" type="button">38</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" type="button">40</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" type="button">42</button>
+</div>
+</div>
+<!-- Action -->
+<button class="add-to-cart-btn mt-space-sm w-full py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-space-xs hover:bg-primary-container/90 transition-all duration-200 active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Acquire Ensemble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 2 -->
+<article class="product-card group flex flex-col bg-surface-container-low/60 backdrop-blur-md rounded-xl overflow-hidden hover:bg-surface-container/80 transition-all duration-300 hover:shadow-[0_0_28px_-6px_rgba(124,58,237,0.35)]" data-cat="tailoring" data-fabric="French Wool" data-id="2" data-price="3200">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="Male model in high-fashion avant-garde tailored French wool double-breasted tuxedo jacket with satin peak lapels in deep midnight navy and ambient cyan rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLH2uczM-qzWvJ2zufql5O6yePqED1RXpUVz0TpqpOtZi6QzqGC8n9o6EMUsthPEt3spYyIrqg5c9CVOHZZkpfg1QSt-PKe5oDvp62JZvIxZnNZfdM4eCUR3Jt45c1qU1bSFJB85vFgrEmDp-uimiTrE6RC-ihCTGekFbp6Mutcp-v543CcGKTRDYl-ZT_OLIy4pU6fu2yv91f41zIiVzT-B5dnQHd4HUpvKmQ6UYOP2afp8BqnHHGRw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Atelier Exclusive</span>
+</div>
+<button aria-label="Add to Wishlist" class="wishlist-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">French Wool</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold tracking-wider">€3,200</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">Tailored Protocol</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Vendôme Peak Blazer</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-1">Cinched architectural waistline with hand-embroidered monogram lining.</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#0e1323] ring-1 ring-primary-container cursor-pointer"></span>
+<span class="w-3 h-3 rounded-full bg-[#161b2b] cursor-pointer opacity-70"></span>
+</div>
+<div class="size-group flex items-center gap-1">
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors active" type="button">38</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">40</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">42</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">44</button>
+</div>
+</div>
+<button class="add-to-cart-btn mt-space-sm w-full py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-space-xs hover:bg-primary-container/90 transition-all duration-200 active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Acquire Ensemble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 3 -->
+<article class="product-card group flex flex-col bg-surface-container-low/60 backdrop-blur-md rounded-xl overflow-hidden hover:bg-surface-container/80 transition-all duration-300 hover:shadow-[0_0_28px_-6px_rgba(124,58,237,0.35)]" data-cat="eveningwear" data-fabric="Silk Organza" data-id="3" data-price="5900">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="Model wearing a high-neck black cashmere sweater" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEbvwZl6eM1Eft7XUOpj2oPX1Td77_uz21X03MtOL1sl4TYMm5mH2hkRpE2L872jG2nBIivpTtoAB8GwNAoWJuGH619lOZaTDVkdTczjauQOsx8U-Xi-JlJkUbs5QOdaV4-bcu31NHzn-BVAfm4ocbC_Jbk4yFXN7z14YYEbGaDeYR4VWymq6U6Vw0wiAyO4aXiCaeJvyLuJqziOTxFixeMqMb1Ub72CQPaPMXTApNyScXWsYETcn6Cw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-semibold">Couture Piece 1/5</span>
+</div>
+<button aria-label="Add to Wishlist" class="wishlist-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Silk Organza</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold tracking-wider">€5,900</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">Evening Gala</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Aura Cascade Column</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-1">Multi-layered silk sheer column dress floating in ambient indigo shadows.</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#1a1f30] ring-1 ring-primary-container cursor-pointer"></span>
+<span class="w-3 h-3 rounded-full bg-[#cba72f] cursor-pointer opacity-70"></span>
+</div>
+<div class="size-group flex items-center gap-1">
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors active" type="button">36</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">38</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">40</button>
+</div>
+</div>
+<button class="add-to-cart-btn mt-space-sm w-full py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-space-xs hover:bg-primary-container/90 transition-all duration-200 active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Acquire Ensemble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 4 -->
+<article class="product-card group flex flex-col bg-surface-container-low/60 backdrop-blur-md rounded-xl overflow-hidden hover:bg-surface-container/80 transition-all duration-300 hover:shadow-[0_0_28px_-6px_rgba(124,58,237,0.35)]" data-cat="knitwear" data-fabric="Italian Cashmere" data-id="4" data-price="2100">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="Chic and dramatic fashion model wearing an oversized sculptural ribbed Italian cashmere turtleneck sweater in rich midnight blue with subtle violet thread accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb85ccMIBBftEuvvYIxuguqaNc8zHKh4bqf2WI5QY7WXquadDpYoYWIbnK6dKPdYhM74LZCz154JUGU2vJ8GFuDIrmEpcqX-MSSOUHUJejrBPigGfQXEYY7frgPWsbGl_eoFBzVeg8AdB7dHPBUagnlRMo5kXCWZQxJHg5LTyQM0w_dgldBsLHpCqyU6otNlIjuQ_s4utnxyqPP9vt1FIys1qX4kMubvRxPm66MJ8QKisnSFSQNfHeSA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">New Release</span>
+</div>
+<button aria-label="Add to Wishlist" class="wishlist-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Italian Cashmere</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold tracking-wider">€2,100</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">Architectural Knit</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Nocturne Funnel Knit</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-1">7-gauge heavy ribbed cashmere knit with asymmetric elongated hem.</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#080d1d] ring-1 ring-primary-container cursor-pointer"></span>
+<span class="w-3 h-3 rounded-full bg-[#4a4455] cursor-pointer opacity-70"></span>
+<span class="w-3 h-3 rounded-full bg-[#5de6ff] cursor-pointer opacity-70"></span>
+</div>
+<div class="size-group flex items-center gap-1">
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors active" type="button">36</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">38</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">40</button>
+</div>
+</div>
+<button class="add-to-cart-btn mt-space-sm w-full py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-space-xs hover:bg-primary-container/90 transition-all duration-200 active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Acquire Ensemble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 5 -->
+<article class="product-card group flex flex-col bg-surface-container-low/60 backdrop-blur-md rounded-xl overflow-hidden hover:bg-surface-container/80 transition-all duration-300 hover:shadow-[0_0_28px_-6px_rgba(124,58,237,0.35)]" data-cat="tailoring" data-fabric="French Wool" data-id="5" data-price="2750">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="High-fashion model posing in tailored high-waisted pleated wide-leg trousers cut from heavy French virgin wool in midnight anthracite black with sharp creases" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQdqWwyiODMllXjMOwM19Ph3BCAXNQ21-Uapl2Xr7mz52gvoCmnTXLKSuY80PeRBfg_OocE_tsmTT0NM8sAM09TO3cmdjlBRPfPx4vm_UsXvqu-5cffVGB4IdwlGvbAepOqjXEjW5mRcUhl-z0oauE4px38Yc_jYdn4GNwRA0lPyFHWCvoB5piq9EyBbGW9QyiU_H2P1glTrn-UNgVVMEZ1MyT-Z65VOQ4_VdcgUyN8xuTYKzewgJc0w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Core Wardrobe</span>
+</div>
+<button aria-label="Add to Wishlist" class="wishlist-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">French Wool</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold tracking-wider">€2,750</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">Volumetric Cut</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Palais Pleated Trouser</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-1">Double inverted pleats with extended waistband and concealed silver closures.</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#161b2b] ring-1 ring-primary-container cursor-pointer"></span>
+<span class="w-3 h-3 rounded-full bg-[#2f3446] cursor-pointer opacity-70"></span>
+</div>
+<div class="size-group flex items-center gap-1">
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors active" type="button">36</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">38</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">40</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">42</button>
+</div>
+</div>
+<button class="add-to-cart-btn mt-space-sm w-full py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-space-xs hover:bg-primary-container/90 transition-all duration-200 active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Acquire Ensemble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 6 -->
+<article class="product-card group flex flex-col bg-surface-container-low/60 backdrop-blur-md rounded-xl overflow-hidden hover:bg-surface-container/80 transition-all duration-300 hover:shadow-[0_0_28px_-6px_rgba(124,58,237,0.35)]" data-cat="outerwear" data-fabric="Italian Cashmere" data-id="6" data-price="5400">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="Model photographed in dramatic architectural hooded cloak tailored in brushed pure black cashmere with glowing violet interior accents under moody editorial spotlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoLQ9zPiM9dJ01U2p6rTr1dQGpIAxxXAybFhwmRn8EIWVbu1diRlUnunPKxQaLb5BA1bvqcVSWrKHQYxZEE8s7FYbFqlTDVePGKjhLXhn5Poz1fnEgwWB1PKuLVrO10kkOxqXtfP9EpSAjiA_HY77fRmgFOAsCptHZEKAT8rNCAKVTy-5FiiM2Gs1UGXk_WdIsTZ1QmJKgI1J8Ij5nmJdxfjAFyhXkkc08a_9fb5iDkTljVUpLEF3Sjw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Salons Privés</span>
+</div>
+<button aria-label="Add to Wishlist" class="wishlist-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Italian Cashmere</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold tracking-wider">€5,400</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">Manteau d'Hiver</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Sovereign Hooded Cape</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-1">Floor-sweeping dramatic cape with concealed hand pass-throughs.</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#080d1d] ring-1 ring-primary-container cursor-pointer"></span>
+<span class="w-3 h-3 rounded-full bg-[#7c3aed] cursor-pointer opacity-70"></span>
+</div>
+<div class="size-group flex items-center gap-1">
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors active" type="button">Unique</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">Longue</button>
+</div>
+</div>
+<button class="add-to-cart-btn mt-space-sm w-full py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-space-xs hover:bg-primary-container/90 transition-all duration-200 active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Acquire Ensemble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 7 -->
+<article class="product-card group flex flex-col bg-surface-container-low/60 backdrop-blur-md rounded-xl overflow-hidden hover:bg-surface-container/80 transition-all duration-300 hover:shadow-[0_0_28px_-6px_rgba(124,58,237,0.35)]" data-cat="eveningwear" data-fabric="Silk Organza" data-id="7" data-price="4200">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="Model wearing a high-neck black cashmere sweater" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEbvwZl6eM1Eft7XUOpj2oPX1Td77_uz21X03MtOL1sl4TYMm5mH2hkRpE2L872jG2nBIivpTtoAB8GwNAoWJuGH619lOZaTDVkdTczjauQOsx8U-Xi-JlJkUbs5QOdaV4-bcu31NHzn-BVAfm4ocbC_Jbk4yFXN7z14YYEbGaDeYR4VWymq6U6Vw0wiAyO4aXiCaeJvyLuJqziOTxFixeMqMb1Ub72CQPaPMXTApNyScXWsYETcn6Cw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Runway 09</span>
+</div>
+<button aria-label="Add to Wishlist" class="wishlist-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Silk Organza</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold tracking-wider">€4,200</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">Corsetry Architecture</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Sculpted Organza Corset</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-1">Steel-boned internal architecture wrapped in micro-pleated noir organza.</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#7c3aed] ring-1 ring-primary-container cursor-pointer"></span>
+<span class="w-3 h-3 rounded-full bg-[#080d1d] cursor-pointer opacity-70"></span>
+</div>
+<div class="size-group flex items-center gap-1">
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors active" type="button">34</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">36</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">38</button>
+</div>
+</div>
+<button class="add-to-cart-btn mt-space-sm w-full py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-space-xs hover:bg-primary-container/90 transition-all duration-200 active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Acquire Ensemble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 8 -->
+<article class="product-card group flex flex-col bg-surface-container-low/60 backdrop-blur-md rounded-xl overflow-hidden hover:bg-surface-container/80 transition-all duration-300 hover:shadow-[0_0_28px_-6px_rgba(124,58,237,0.35)]" data-cat="accessories" data-fabric="Italian Cashmere" data-id="8" data-price="1650">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" data-alt="Avant-garde luxury black leather and cashmere gloves with elongated gauntlet cuffs and subtle glowing brass hardware accents on a pedestal against navy stone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcJDRwYUcOgIoDXiUqB0LiO_HyKKlNvm-_cHywzJfTn8D68_cRI3mn3sviGN6Zupp02kwZaKsed653XdAaGxI-qaONjXlVczr87TfaGikQMnpZPW3t8gvjdoxxvXr8qgTJlxgkZnUO1oGPhLg7OP8ZtEmwMDQyHIAJUekKuvVbevQzeWHXKissmbJPQ-FOUhzRlYvAvp8OrZm1K7JZXfENbttW2zaieZFpFaCVZc38QuqjjCuzsiYguA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Objets de Désir</span>
+</div>
+<button aria-label="Add to Wishlist" class="wishlist-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Italian Cashmere</span>
+<span class="font-label-caps text-label-caps text-tertiary font-bold tracking-wider">€1,650</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">Maison Accessories</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Vendôme Gauntlet Pair</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-1">Lambskin gauntlet gloves fully lined in ultra-fine 16-micron Italian cashmere.</p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#080d1d] ring-1 ring-primary-container cursor-pointer"></span>
+<span class="w-3 h-3 rounded-full bg-[#d2bbff] cursor-pointer opacity-70"></span>
+</div>
+<div class="size-group flex items-center gap-1">
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors active" type="button">S</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">M</button>
+<button class="size-btn px-2 py-0.5 rounded text-[11px] font-label-sm uppercase bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">L</button>
+</div>
+</div>
+<button class="add-to-cart-btn mt-space-sm w-full py-2.5 px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-space-xs hover:bg-primary-container/90 transition-all duration-200 active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Acquire Ensemble</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty State Warning when filters yield zero items -->
+<div class="hidden w-full py-space-xl text-center flex flex-col items-center justify-center gap-space-sm" id="empty-state">
+<span class="material-symbols-outlined text-outline text-[48px]">filter_list_off</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">No Silhouettes Found</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">No couture pieces align with your designated criteria. Reset filters to explore the complete atelier archive.</p>
+<button class="mt-space-sm px-space-md py-space-xs rounded-xl bg-surface-container-high text-primary font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-bright transition-colors" id="reset-filters" type="button">
+          Reset Filter Matrix
+        </button>
+</div>
+</section>
+<!-- Infinite Runway / Editorial Lookbook Trigger Section -->
+<section class="w-full px-margin pb-space-xl">
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-low/50 backdrop-blur-xl p-space-xl shadow-xl flex flex-col items-center text-center">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-secondary-container/10 blur-[100px] pointer-events-none"></div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-[0.25em] mb-space-xs">Private Appointment &amp; Bespoke Order</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight max-w-xl">
+          Seeking a Tailored Atelier Masterpiece?
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mt-space-xs">
+          Our Paris Place Vendôme master tailors provide private concierge consultation and bespoke fitting tours globally.
+        </p>
+<!-- Lookbook Trigger / Pagination Controls -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md mt-space-lg">
+<button class="px-space-xl py-space-sm rounded-full bg-surface-container-highest text-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 flex items-center gap-space-xs shadow-lg group" id="load-more-btn" type="button">
+<span>Reveal Runway Lookbook 02</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<a class="px-space-md py-space-sm rounded-full bg-transparent text-secondary hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors flex items-center gap-space-xs" href="#">
+<span>Book Place Vendôme Salon</span>
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</a>
+</div>
+<div class="mt-space-lg flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span>Showing 8 of 32 Runway Looks</span>
+<div class="w-32 h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="w-1/4 h-full bg-primary-container"></div>
+</div>
+<span>Lookbook 25% Cataloged</span>
+</div>
+</div>
+</section>
+<!-- Floating Bag Toast Confirmation (Appears when item added) -->
+<div class="fixed bottom-8 right-8 z-50 pointer-events-none translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-space-md bg-surface-container-highest/95 backdrop-blur-2xl text-on-surface px-space-md py-space-sm rounded-2xl shadow-[0_10px_35px_rgba(0,0,0,0.6)]" id="cart-toast">
+<div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Acquisition Registered</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold" id="toast-item-name">Obsidian Cocoon Trench</span>
+</div>
+</div>
+</div>
+<script>
+  (function initAtelierCatalog() {
+    let currentCategory = 'all';
+    let currentFabric = 'all';
+    let maxPrice = 6500;
+    let currentSort = 'featured';
+
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const fabricButtons = document.querySelectorAll('.fabric-btn');
+    const priceSlider = document.getElementById('price-range');
+    const priceDisplay = document.getElementById('price-display');
+    const sortSelect = document.getElementById('sort-select');
+    const productGrid = document.getElementById('product-grid');
+    const productCards = Array.from(document.querySelectorAll('.product-card'));
+    const displayedCount = document.getElementById('displayed-count');
+    const activeTag = document.getElementById('active-tag');
+    const emptyState = document.getElementById('empty-state');
+    const resetFiltersBtn = document.getElementById('reset-filters');
+    const toast = document.getElementById('cart-toast');
+    const toastName = document.getElementById('toast-item-name');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+
+    // Category Filter Selection
+    categoryButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryButtons.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_16px_-2px_rgba(124,58,237,0.5)]');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_16px_-2px_rgba(124,58,237,0.5)]');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        
+        currentCategory = btn.getAttribute('data-cat');
+        activeTag.textContent = btn.textContent.trim();
+        applyAllFilters();
+      });
+    });
+
+    // Fabric Filter Selection
+    fabricButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        fabricButtons.forEach(b => {
+          b.classList.remove('bg-surface-container-highest', 'text-on-surface');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-surface-container-highest', 'text-on-surface');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+        currentFabric = btn.getAttribute('data-fabric');
+        applyAllFilters();
+      });
+    });
+
+    // Price Slider Listener
+    priceSlider.addEventListener('input', (e) => {
+      maxPrice = parseInt(e.target.value, 10);
+      priceDisplay.textContent = '€' + maxPrice.toLocaleString();
+      applyAllFilters();
+    });
+
+    // Sort Dropdown
+    sortSelect.addEventListener('change', (e) => {
+      currentSort = e.target.value;
+      sortAndRenderCards();
+    });
+
+    // Reset Action
+    if (resetFiltersBtn) {
+      resetFiltersBtn.addEventListener('click', () => {
+        currentCategory = 'all';
+        currentFabric = 'all';
+        maxPrice = 6500;
+        priceSlider.value = 6500;
+        priceDisplay.textContent = '€6,500';
+        
+        categoryButtons[0].click();
+        fabricButtons[0].click();
+      });
+    }
+
+    function applyAllFilters() {
+      let visibleCount = 0;
+
+      productCards.forEach(card => {
+        const cat = card.getAttribute('data-cat');
+        const fabric = card.getAttribute('data-fabric');
+        const price = parseInt(card.getAttribute('data-price'), 10);
+
+        const matchCat = (currentCategory === 'all' || cat === currentCategory);
+        const matchFabric = (currentFabric === 'all' || fabric === currentFabric);
+        const matchPrice = (price <= maxPrice);
+
+        if (matchCat && matchFabric && matchPrice) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      displayedCount.textContent = `${visibleCount} Ensemble${visibleCount === 1 ? '' : 's'}`;
+
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        productGrid.classList.add('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+        productGrid.classList.remove('hidden');
+      }
+
+      sortAndRenderCards();
+    }
+
+    function sortAndRenderCards() {
+      const sorted = [...productCards].sort((a, b) => {
+        const priceA = parseInt(a.getAttribute('data-price'), 10);
+        const priceB = parseInt(b.getAttribute('data-price'), 10);
+        const idA = parseInt(a.getAttribute('data-id'), 10);
+        const idB = parseInt(b.getAttribute('data-id'), 10);
+
+        if (currentSort === 'price-desc') return priceB - priceA;
+        if (currentSort === 'price-asc') return priceA - priceB;
+        if (currentSort === 'newest') return idB - idA;
+        return idA - idB; // featured default
+      });
+
+      sorted.forEach(card => productGrid.appendChild(card));
+    }
+
+    // Size button selection logic
+    document.querySelectorAll('.size-group').forEach(group => {
+      group.addEventListener('click', (e) => {
+        const target = e.target.closest('.size-btn');
+        if (!target) return;
+        group.querySelectorAll('.size-btn').forEach(btn => {
+          btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+          btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        target.classList.add('bg-primary-container', 'text-on-primary-container');
+        target.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      });
+    });
+
+    // Add to Bag / Interactive Cart Increment
+    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const card = e.target.closest('.product-card');
+        const title = card ? card.querySelector('h2').textContent : 'Haute Couture Ensemble';
+
+        // Animate Button Click feedback
+        const originalContent = btn.innerHTML;
+        btn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">sync</span><span>Reserving Piece...</span>';
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-fixed-variant');
+        
+        setTimeout(() => {
+          btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">done</span><span>Piece Bagged</span>';
+
+          // Update header cart counter in app shell
+          const cartBadge = document.querySelector('a[data-path="cart"] span:last-child');
+          if (cartBadge) {
+            let current = parseInt(cartBadge.textContent, 10) || 0;
+            cartBadge.textContent = current + 1;
+            cartBadge.classList.add('scale-125');
+            setTimeout(() => cartBadge.classList.remove('scale-125'), 300);
+          }
+
+          // Show Toast notification
+          toastName.textContent = title;
+          toast.classList.remove('translate-y-20', 'opacity-0');
+          toast.classList.add('translate-y-0', 'opacity-100');
+
+          setTimeout(() => {
+            toast.classList.remove('translate-y-0', 'opacity-100');
+            toast.classList.add('translate-y-20', 'opacity-0');
+          }, 3200);
+
+          setTimeout(() => {
+            btn.innerHTML = originalContent;
+            btn.classList.remove('bg-secondary-container', 'text-on-secondary-fixed-variant');
+          }, 2000);
+        }, 500);
+      });
+    });
+
+    // Wishlist Toggle
+    document.querySelectorAll('.wishlist-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const icon = btn.querySelector('span');
+        const isFilled = icon.style.fontVariationSettings?.includes("'FILL' 1");
+        
+        const wishlistBadge = document.querySelector('a[data-path="wishlist"] span:last-child');
+        let count = wishlistBadge ? (parseInt(wishlistBadge.textContent, 10) || 0) : 0;
+
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-secondary');
+          if (wishlistBadge && count > 0) wishlistBadge.textContent = count - 1;
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.add('text-secondary');
+          if (wishlistBadge) wishlistBadge.textContent = count + 1;
+        }
+      });
+    });
+
+    // Lookbook trigger simulation
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', () => {
+        loadMoreBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Transmitting Private Vault...</span>';
+        setTimeout(() => {
+          loadMoreBtn.innerHTML = '<span>All Current Runway Looks Active</span><span class="material-symbols-outlined text-[18px]">done_all</span>';
+          loadMoreBtn.classList.add('opacity-70', 'pointer-events-none');
+        }, 1200);
+      });
+    }
+
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest"><div class="w-full px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="tracking-[0.25em] font-headline-md text-headline-md text-on-surface uppercase">AURELIA <span class="text-tertiary font-light text-label-sm">PARIS</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Avant-garde haute couture designed for discerning connoisseurs. Late-night structural silhouettes born from architectural minimalism.</p><div class="flex items-center gap-space-md pt-space-sm"><div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div><span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Paris Flagship Open • Salon Privé</span></div></div><div class="flex flex-col gap-space-md"><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">Collections</span><nav class="flex flex-col gap-space-sm"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="shop" href="#">All Ensembles</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="women" href="#">Women Haute Couture</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="men" href="#">Men Tailoring</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="new-arrivals" href="#">Winter Runway 2026</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="sale" href="#">Private Archive Sale</a></nav></div><div class="flex flex-col gap-space-md"><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">Maison Care</span><nav class="flex flex-col gap-space-sm"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="contact" href="#">Concierge Service</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Bespoke Fitting</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Global Discreet Delivery</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Garment Preservation</a></nav></div><div class="flex flex-col gap-space-md"><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">The Atelier</span><nav class="flex flex-col gap-space-sm"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Philosophy &amp; Ethos</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Sustainability Matrix</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Press &amp; Editorial</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Legal &amp; Imprint</a></nav></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><p class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">© 2026 AURELIA PARIS MAISON DE COUTURE. TOUS DROITS RÉSERVÉS.</p><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">75008 Place Vendôme, Paris</span></div></div></div></footer><script src="../aurelia-site.js"></script><script src="../../portfolio-branding.js" data-portfolio-href="../../code.html" defer></script></body></html>
