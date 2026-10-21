@@ -1,16 +1,30 @@
 .ma-signature {
-  position: relative;
+  position: fixed;
   z-index: 60;
+  inset: 0 0 auto;
   display: flex;
   min-height: 48px;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  padding: 8px clamp(18px, 5vw, 72px);
+  padding: 8px clamp(12px, 5vw, 72px);
   border-bottom: 1px solid rgba(214, 182, 106, 0.32);
   background: #090a0b;
   color: #f5f3ee;
   font: 500 12px/1.4 "Segoe UI", Arial, sans-serif;
+}
+
+.ma-header-spacer {
+  flex: 0 0 auto;
+}
+
+.ma-navigation-spacer {
+  flex: 0 0 auto;
+}
+
+.ma-project-navigation {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
 }
 
 .ma-signature-brand {
@@ -65,6 +79,7 @@
 
 .ma-project-footer-inner {
   display: flex;
+  min-width: 0;
   max-width: 1240px;
   align-items: center;
   justify-content: space-between;
@@ -95,6 +110,7 @@
 
 .ma-footer-links {
   display: flex;
+  min-width: 0;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 10px 22px;

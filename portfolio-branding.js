@@ -21,15 +21,56 @@ if (brandingScript) {
     `;
     document.body.prepend(signature);
 
+    const projectHeader = document.body.querySelector(":scope > header");
+    const needsHeaderSpacer = projectHeader && getComputedStyle(projectHeader).position !== "fixed";
+    const headerSpacer = needsHeaderSpacer ? document.createElement("div") : null;
+    const nextSection = projectHeader?.nextElementSibling;
+    const projectNavigation = nextSection?.tagName !== "MAIN" && nextSection?.querySelector("nav")
+      ? nextSection
+      : null;
+    const navigationSpacer = projectNavigation ? document.createElement("div") : null;
+
+    if (headerSpacer) {
+      headerSpacer.className = "ma-header-spacer";
+      projectHeader.after(headerSpacer);
+    }
+
+    if (projectNavigation) {
+      projectNavigation.classList.add("ma-project-navigation");
+      navigationSpacer.className = "ma-navigation-spacer";
+      projectNavigation.after(navigationSpacer);
+    }
+
     const alignProjectHeader = () => {
-      const projectHeader = document.body.querySelector(":scope > header");
-      if (projectHeader && getComputedStyle(projectHeader).position === "fixed") {
-        projectHeader.style.top = `${signature.getBoundingClientRect().height}px`;
+      const signatureHeight = signature.getBoundingClientRect().height;
+      document.body.style.paddingTop = `${signatureHeight}px`;
+
+      if (projectHeader) {
+        projectHeader.style.position = "fixed";
+        projectHeader.style.top = `${signatureHeight}px`;
+        projectHeader.style.right = "0";
+        projectHeader.style.left = "0";
+        projectHeader.style.width = "100%";
+      }
+
+      if (headerSpacer) {
+        headerSpacer.style.height = `${projectHeader.getBoundingClientRect().height}px`;
+      }
+
+      if (projectNavigation) {
+        projectNavigation.style.position = "fixed";
+        projectNavigation.style.top = `${signatureHeight + projectHeader.getBoundingClientRect().height}px`;
+        projectNavigation.style.right = "0";
+        projectNavigation.style.left = "0";
+        projectNavigation.style.width = "100%";
+        projectNavigation.style.zIndex = "40";
+        navigationSpacer.style.height = `${projectNavigation.getBoundingClientRect().height}px`;
       }
     };
 
     stylesheet.addEventListener("load", alignProjectHeader);
     window.addEventListener("resize", alignProjectHeader);
+    alignProjectHeader();
 
     const footer = document.createElement("footer");
     footer.className = "ma-project-footer";
